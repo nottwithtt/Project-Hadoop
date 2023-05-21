@@ -1,0 +1,302 @@
+Africa,Northern Africa,Algeria,Female,0,0,0,0,0,0,0,0,0,0,0,0,52,39,85,73,0,0,0,92,82,2725
+Africa,Northern Africa,Algeria,Male,0,0,0,0,0,0,0,0,0,0,0,0,195,170,491,469,0,0,0,479,498,2725
+Africa,Northern Africa,Egypt,Female,0,0,0,0,52,63,144,163,110,193,197,331,261,0,0,0,0,0,0,0,0,10699
+Africa,Northern Africa,Egypt,Male,0,0,0,0,270,459,405,517,856,719,1642,2372,1945,0,0,0,0,0,0,0,0,10699
+Africa,Northern Africa,Morocco,Female,0,0,0,0,0,0,0,0,0,52,0,0,56,66,59,97,105,113,70,117,86,5008
+Africa,Northern Africa,Morocco,Male,0,0,0,0,0,0,0,0,0,379,0,0,327,363,296,334,489,648,440,510,401,5008
+Africa,Northern Africa,Tunisia,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,115,1133
+Africa,Northern Africa,Tunisia,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,468,447,1133
+Africa,Sub-Saharan Africa,Burundi,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,97,102,78,123,0,0,0,0,2180
+Africa,Sub-Saharan Africa,Burundi,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,423,462,383,512,0,0,0,0,2180
+Africa,Sub-Saharan Africa,Cabo Verde,Female,0,0,0,0,0,0,0,0,0,0,0,7,10,7,15,7,0,6,10,6,9,416
+Africa,Sub-Saharan Africa,Cabo Verde,Male,0,0,0,0,0,0,0,0,0,0,0,45,45,47,50,39,0,32,26,28,27,416
+Africa,Sub-Saharan Africa,Cameroon,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91,117,107,0,0,0,0,757
+Africa,Sub-Saharan Africa,Cameroon,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,121,152,169,0,0,0,0,757
+Africa,Sub-Saharan Africa,Kenya,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,522,611,638,433,437,0,523,13111
+Africa,Sub-Saharan Africa,Kenya,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1782,1649,1724,2032,1132,0,1628,13111
+Africa,Sub-Saharan Africa,Mauritius,Female,11,0,0,10,7,13,12,12,17,16,8,8,10,11,8,6,10,13,14,0,0,571
+Africa,Sub-Saharan Africa,Mauritius,Male,14,0,0,28,28,23,37,32,30,22,25,24,18,24,11,15,11,20,23,0,0,571
+Africa,Sub-Saharan Africa,Namibia,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,303
+Africa,Sub-Saharan Africa,Namibia,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,213,303
+Africa,Sub-Saharan Africa,Sao Tome and Principe,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Africa,Sub-Saharan Africa,Sao Tome and Principe,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Africa,Sub-Saharan Africa,Seychelles,Female,0,0,0,0,1,0,2,1,1,2,1,5,0,6,2,0,0,0,0,0,0,100
+Africa,Sub-Saharan Africa,Seychelles,Male,0,0,0,0,8,0,6,6,4,11,7,10,3,11,13,0,0,0,0,0,0,100
+Africa,Sub-Saharan Africa,South Africa,Female,0,0,0,0,0,0,2727,2679,2545,2596,2741,2399,0,0,0,0,2639,2930,2771,0,0,164205
+Africa,Sub-Saharan Africa,South Africa,Male,0,0,0,0,0,0,16378,15720,15538,14170,13151,13154,0,0,0,0,16377,17425,18265,0,0,164205
+Africa,Sub-Saharan Africa,Uganda,Female,0,0,0,0,0,0,0,0,385,0,0,743,741,791,841,0,911,834,0,0,0,30718
+Africa,Sub-Saharan Africa,Uganda,Male,0,0,0,0,0,0,0,0,2408,0,2560,3010,3325,3066,3631,0,3571,3901,0,0,0,30718
+Africa,Sub-Saharan Africa,United Republic of Tanzania,Female,0,0,0,0,0,0,0,0,0,0,550,557,521,494,0,671,0,0,0,0,0,19572
+Africa,Sub-Saharan Africa,United Republic of Tanzania,Male,0,0,0,0,0,0,0,0,0,0,3338,3592,3571,3203,0,3075,0,0,0,0,0,19572
+Americas,Latin America and the Caribbean,Anguilla,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4
+Americas,Latin America and the Caribbean,Anguilla,Male,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,4
+Americas,Latin America and the Caribbean,Antigua and Barbuda,Female,0,0,1,0,0,0,0,0,5,0,0,0,0,0,0,1,2,2,3,1,0,75
+Americas,Latin America and the Caribbean,Antigua and Barbuda,Male,0,6,3,0,0,0,0,0,11,0,0,0,0,0,0,4,7,18,9,2,0,75
+Americas,Latin America and the Caribbean,Argentina,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,387,0,408,399,409,0,9839
+Americas,Latin America and the Caribbean,Argentina,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2450,0,1909,1987,1890,0,9839
+Americas,Latin America and the Caribbean,Bahamas,Female,16,5,12,6,2,8,5,8,7,10,14,16,10,0,11,16,7,6,3,6,11,1705
+Americas,Latin America and the Caribbean,Bahamas,Male,57,37,39,44,42,44,56,70,66,77,80,111,101,0,113,130,104,116,88,89,62,1705
+Americas,Latin America and the Caribbean,Barbados,Female,5,4,7,11,0,9,1,6,4,3,8,2,2,7,3,3,2,2,4,5,0,539
+Americas,Latin America and the Caribbean,Barbados,Male,15,20,17,22,21,19,33,19,19,16,23,25,20,17,22,28,20,28,24,43,0,539
+Americas,Latin America and the Caribbean,Belize,Female,0,0,0,0,14,0,0,0,0,9,16,12,14,10,12,9,15,11,19,17,11,1573
+Americas,Latin America and the Caribbean,Belize,Male,0,0,0,0,65,0,0,0,0,88,112,112,131,89,111,110,123,131,124,117,91,1573
+Americas,Latin America and the Caribbean,Bolivia (Plurinational State of),Female,0,0,0,0,0,0,0,0,137,0,0,0,0,0,0,241,189,228,205,304,0,4164
+Americas,Latin America and the Caribbean,Bolivia (Plurinational State of),Male,0,0,0,0,0,0,0,0,690,0,0,0,0,0,0,430,410,489,339,502,0,4164
+Americas,Latin America and the Caribbean,Brazil,Female,3743,3851,3867,3937,3830,3884,4022,3772,4023,4260,4465,4512,4719,4762,4832,4616,4635,4928,4512,3728,3736,1090348
+Americas,Latin America and the Caribbean,Brazil,Male,41585,44040,45775,47082,44519,43665,45060,43886,46024,47109,47749,47619,51544,51937,54736,53424,56409,58713,51271,40231,39336,1090348
+Americas,Latin America and the Caribbean,Cayman Islands,Female,1,1,0,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,51
+Americas,Latin America and the Caribbean,Cayman Islands,Male,3,1,0,2,4,3,0,1,4,7,9,0,0,5,5,0,0,0,0,0,0,51
+Americas,Latin America and the Caribbean,Chile,Female,0,0,0,0,0,83,91,111,103,99,96,115,37,108,63,76,90,106,94,93,0,9181
+Americas,Latin America and the Caribbean,Chile,Male,0,0,0,0,0,493,499,505,485,530,445,521,397,448,375,533,530,673,731,651,0,9181
+Americas,Latin America and the Caribbean,Colombia,Female,1924,2214,2242,20,1629,1492,1323,1385,1262,1260,1226,1348,1387,1224,1170,1068,1038,1077,1060,1045,913,359652
+Americas,Latin America and the Caribbean,Colombia,Male,24614,25625,26144,21522,18581,16619,16156,15813,14878,14557,14233,14779,15053,14194,12173,11714,11364,11160,11526,11035,10605,359652
+Americas,Latin America and the Caribbean,Costa Rica,Female,40,28,33,37,38,61,45,37,60,59,61,64,50,36,51,42,66,58,65,48,0,8612
+Americas,Latin America and the Caribbean,Costa Rica,Male,208,228,224,262,241,273,306,332,452,466,466,410,357,375,426,515,512,545,520,515,0,8612
+Americas,Latin America and the Caribbean,Cuba,Female,155,159,185,153,146,168,133,139,120,153,126,132,138,147,156,139,121,0,0,0,0,10188
+Americas,Latin America and the Caribbean,Cuba,Male,432,446,476,489,514,516,443,429,395,412,379,402,483,527,444,480,451,0,0,0,0,10188
+Americas,Latin America and the Caribbean,Dominica,Female,0,1,0,2,0,0,0,0,2,0,1,0,0,0,2,1,1,2,2,1,1,139
+Americas,Latin America and the Caribbean,Dominica,Male,0,0,9,5,0,0,0,0,5,0,13,6,0,0,7,8,15,17,11,13,14,139
+Americas,Latin America and the Caribbean,Dominican Republic,Female,0,0,0,0,0,214,180,174,187,180,210,233,201,0,187,0,170,191,152,145,128,26364
+Americas,Latin America and the Caribbean,Dominican Republic,Male,0,0,0,0,0,2179,1963,1936,2206,2194,2263,2280,2067,0,1623,0,1446,1025,916,881,833,26364
+Americas,Latin America and the Caribbean,Ecuador,Female,144,148,185,182,217,165,222,229,213,276,241,251,233,253,187,176,182,198,139,150,164,38183
+Americas,Latin America and the Caribbean,Ecuador,Male,1688,1509,1720,1754,2172,1955,2162,2043,2394,2348,2382,2093,1690,1472,1124,876,781,774,853,1035,1203,38183
+Americas,Latin America and the Caribbean,El Salvador,Female,0,0,0,0,0,397,447,340,317,592,562,628,322,217,294,574,524,469,386,230,0,57809
+Americas,Latin America and the Caribbean,El Salvador,Male,0,0,0,0,0,3484,3479,3157,2862,3790,3425,3743,2272,2296,3627,6081,4752,3474,2941,2127,0,57809
+Americas,Latin America and the Caribbean,Grenada,Female,0,0,0,0,0,3,3,2,2,3,2,1,5,2,3,2,5,2,1,1,0,158
+Americas,Latin America and the Caribbean,Grenada,Male,0,0,0,0,0,8,9,9,14,4,8,3,9,4,5,4,8,10,11,15,0,158
+Americas,Latin America and the Caribbean,Guadeloupe,Female,0,0,0,0,9,1,6,0,8,5,0,0,0,0,0,0,0,0,0,0,0,137
+Americas,Latin America and the Caribbean,Guadeloupe,Male,0,0,0,0,16,21,17,0,24,30,0,0,0,0,0,0,0,0,0,0,0,137
+Americas,Latin America and the Caribbean,Guatemala,Female,0,0,0,0,497,518,603,590,687,720,695,632,573,654,630,630,0,0,913,621,0,71140
+Americas,Latin America and the Caribbean,Guatemala,Male,0,0,0,0,4010,4820,5282,5191,5605,5778,5265,5049,4582,4599,4368,4368,0,0,0,3260,0,71140
+Americas,Latin America and the Caribbean,Guyana,Female,0,0,0,0,0,28,23,28,38,29,31,34,27,30,0,28,10,21,23,18,39,2059
+Americas,Latin America and the Caribbean,Guyana,Male,0,0,0,0,0,114,130,87,120,88,109,96,112,125,0,121,132,94,88,118,118,2059
+Americas,Latin America and the Caribbean,Haiti,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,70,86,89,79,0,58,0,0,4861
+Americas,Latin America and the Caribbean,Haiti,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,969,894,982,949,0,685,0,0,4861
+Americas,Latin America and the Caribbean,Honduras,Female,0,0,0,0,0,0,209,324,311,364,384,482,606,489,495,478,466,391,376,398,326,74840
+Americas,Latin America and the Caribbean,Honduras,Male,0,0,0,0,0,0,2908,3263,4143,4915,5851,6621,6566,5941,5395,4669,4680,3465,3356,3696,3272,74840
+Americas,Latin America and the Caribbean,Jamaica,Female,0,0,0,0,0,186,152,151,165,156,145,119,127,130,0,116,135,160,129,0,0,19181
+Americas,Latin America and the Caribbean,Jamaica,Male,0,0,0,0,0,1488,1188,1433,1454,1527,1302,1014,972,1071,905,1092,1219,1487,1158,0,0,19181
+Americas,Latin America and the Caribbean,Mexico,Female,1285,1284,1281,1318,1207,1298,1299,1083,1425,1928,2423,2719,2787,2663,2419,2392,2821,3430,3752,3893,3952,412970
+Americas,Latin America and the Caribbean,Mexico,Male,9451,90,8806,8768,8121,8622,9152,7783,12580,17874,23333,24493,23179,20399,17590,18369,21737,28522,32765,32530,32147,412970
+Americas,Latin America and the Caribbean,Nicaragua,Female,0,0,0,0,0,0,0,0,58,94,78,55,64,65,0,66,48,58,63,53,0,6929
+Americas,Latin America and the Caribbean,Nicaragua,Male,0,0,0,0,0,0,0,0,678,707,707,682,608,529,0,458,405,373,618,462,0,6929
+Americas,Latin America and the Caribbean,Panama,Female,28,26,39,35,27,35,19,21,31,40,31,26,34,50,38,49,44,43,37,52,52,9054
+Americas,Latin America and the Caribbean,Panama,Male,270,279,336,301,281,328,202,258,462,522,429,523,602,613,565,421,356,338,355,428,428,9054
+Americas,Latin America and the Caribbean,Paraguay,Female,0,0,0,0,0,0,0,46,59,69,73,62,73,52,69,57,55,57,63,54,69,8525
+Americas,Latin America and the Caribbean,Paraguay,Male,0,0,0,0,0,0,0,737,774,752,668,595,576,552,509,560,614,484,434,0,412,8525
+Americas,Latin America and the Caribbean,Peru,Female,0,0,0,0,0,0,0,0,0,0,0,278,317,310,345,407,517,0,531,531,0,17224
+Americas,Latin America and the Caribbean,Peru,Male,0,0,0,0,0,0,0,0,0,0,0,1338,1650,1702,1730,1839,1917,0,1906,1906,0,17224
+Americas,Latin America and the Caribbean,Puerto Rico,Female,74,69,63,59,68,66,45,50,64,56,64,82,83,53,52,37,56,34,51,38,46,15954
+Americas,Latin America and the Caribbean,Puerto Rico,Male,660,733,757,759,775,759,738,724,810,0,966,1097,932,871,652,577,648,645,590,568,483,15954
+Americas,Latin America and the Caribbean,Saint Kitts and Nevis,Female,0,2,0,0,0,0,0,0,0,3,2,1,0,0,0,0,2,3,4,2,0,19
+Americas,Latin America and the Caribbean,Saint Kitts and Nevis,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19
+Americas,Latin America and the Caribbean,Saint Kitts and Nevis,Female,0,4,5,10,11,0,0,0,0,24,19,33,0,0,0,0,28,20,19,10,0,183
+Americas,Latin America and the Caribbean,Saint Lucia,Female,2,0,6,2,3,0,0,0,0,6,5,7,6,5,0,5,2,4,4,0,0,183
+Americas,Latin America and the Caribbean,Saint Lucia,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,561
+Americas,Latin America and the Caribbean,Saint Lucia,Male,20,0,35,33,33,0,0,0,0,32,38,38,32,28,34,23,28,49,35,46,0,561
+Americas,Latin America and the Caribbean,Saint Vincent and the Grenadines,Female,0,0,0,0,6,7,6,8,3,3,3,0,0,0,0,0,4,5,7,0,0,307
+Americas,Latin America and the Caribbean,Saint Vincent and the Grenadines,Male,0,0,0,0,22,19,13,31,13,19,22,0,0,0,0,0,36,34,27,19,0,307
+Americas,Latin America and the Caribbean,Suriname,Female,0,0,0,0,0,0,0,14,10,0,0,0,0,3,6,11,16,11,7,7,0,321
+Americas,Latin America and the Caribbean,Suriname,Male,0,0,0,0,0,0,0,30,33,0,0,0,0,26,26,23,25,25,31,17,0,321
+Americas,Latin America and the Caribbean,Trinidad and Tobago,Female,0,0,0,0,26,39,34,30,57,40,52,30,45,39,45,29,0,0,0,0,0,4898
+Americas,Latin America and the Caribbean,Trinidad and Tobago,Male,0,0,0,0,234,347,337,361,490,467,420,322,335,368,360,391,0,0,0,0,0,4898
+Americas,Latin America and the Caribbean,Uruguay,Female,0,0,0,0,0,0,43,32,44,45,41,41,38,54,51,50,42,55,57,48,0,3690
+Americas,Latin America and the Caribbean,Uruguay,Male,0,0,0,0,0,0,159,162,177,181,164,158,229,206,217,243,222,228,359,344,0,3690
+Americas,Latin America and the Caribbean,Venezuela (Bolivarian Republic of),Female,520,483,845,689,598,556,669,672,735,761,789,804,940,0,0,731,806,788,0,0,0,200722
+Americas,Latin America and the Caribbean,Venezuela (Bolivarian Republic of),Male,7501,7476,8771,10652,9120,9407,11587,12483,13854,13223,12290,13293,15131,0,0,14606,16280,13662,0,0,0,200722
+Americas,Northern America,Bermuda,Female,0,0,0,0,1,0,0,0,0,1,0,2,0,0,1,0,0,0,0,0,0,56
+Americas,Northern America,Bermuda,Male,0,0,0,0,0,2,0,0,0,5,7,6,6,5,3,4,8,5,0,0,0,56
+Americas,Northern America,Canada,Female,149,162,207,156,0,180,162,166,147,162,154,179,157,151,151,178,152,173,0,155,171,11788
+Americas,Northern America,Canada,Male,397,391,375,392,425,484,446,431,467,448,401,427,391,358,371,432,460,485,0,527,568,11788
+Americas,Northern America,United States of America,Female,3709,4459,3760,3694,3551,3559,3654,3678,3585,3530,3311,3262,3301,3169,3183,3333,3716,3691,3658,0,0,306069
+Americas,Northern America,United States of America,Male,11876,14573,12468,12833,12596,13180,13655,13450,12880,11869,11411,11399,11555,11149,10980,12549,13696,13592,12555,0,0,306069
+Asia,Central Asia,Kazakhstan,Female,0,0,0,0,0,0,0,0,363,416,344,329,276,280,204,251,0,221,0,0,150,11349
+Asia,Central Asia,Kazakhstan,Male,0,0,0,0,0,0,0,0,1444,1355,1043,1091,990,840,0,602,0,694,0,0,456,11349
+Asia,Central Asia,Kyrgyzstan,Female,76,68,79,94,88,106,89,97,87,131,0,0,0,0,0,0,0,0,0,0,0,4253
+Asia,Central Asia,Kyrgyzstan,Male,354,318,332,326,330,385,357,318,330,288,0,0,0,0,0,0,0,0,0,0,0,4253
+Asia,Central Asia,Tajikistan,Female,0,0,0,0,0,0,40,33,38,24,23,17,0,0,0,0,0,0,0,0,10,926
+Asia,Central Asia,Tajikistan,Male,0,0,0,0,0,0,154,99,62,72,158,109,0,0,0,0,0,0,0,0,87,926
+Asia,Central Asia,Uzbekistan,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,216,258,205,176,138,0,2944
+Asia,Central Asia,Uzbekistan,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,510,499,386,298,258,0,2944
+Asia,Eastern Asia,China Macao SAR,Female,0,0,0,0,0,0,0,0,3,3,0,3,1,1,1,1,0,2,1,0,2,31
+Asia,Eastern Asia,China Macao SAR,Male,0,0,0,0,0,0,0,0,1,2,2,1,3,0,0,0,1,0,1,2,0,31
+Asia,Eastern Asia,China Hong Kong SAR,Female,0,0,0,22,20,13,18,11,25,25,19,9,12,37,13,9,11,15,16,13,9,603
+Asia,Eastern Asia,China Hong Kong SAR,Male,0,0,0,30,25,21,17,7,11,22,16,8,15,25,14,13,17,9,32,11,13,603
+Asia,Eastern Asia,Japan,Female,330,315,315,318,333,319,324,282,339,253,237,234,240,191,206,218,197,173,179,181,0,10214
+Asia,Eastern Asia,Japan,Male,348,382,347,379,366,324,295,292,315,253,228,208,189,179,189,145,165,133,155,138,0,10214
+Asia,Eastern Asia,Mongolia,Female,0,0,0,0,0,0,0,66,49,59,67,60,57,56,54,51,39,45,45,40,36,3033
+Asia,Eastern Asia,Mongolia,Male,0,0,0,0,0,0,0,228,163,160,172,206,142,149,159,163,145,146,151,165,160,3033
+Asia,Eastern Asia,Republic of Korea,Female,0,0,0,0,0,0,0,0,0,0,0,217,219,182,193,198,193,153,154,154,138,3496
+Asia,Eastern Asia,Republic of Korea,Male,0,0,0,0,0,0,0,0,0,0,0,185,216,170,184,177,162,147,152,138,164,3496
+Asia,South-eastern Asia,Brunei Darussalam,Female,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4
+Asia,South-eastern Asia,Brunei Darussalam,Male,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4
+Asia,South-eastern Asia,Myanmar,Female,0,0,0,0,0,0,0,0,0,131,151,0,241,208,206,193,45,0,0,0,0,8728
+Asia,South-eastern Asia,Myanmar,Male,0,0,0,0,0,0,0,0,0,748,650,955,1195,1030,1024,959,992,0,0,0,0,8728
+Asia,South-eastern Asia,Philippines,Female,0,0,0,0,0,0,0,951,1196,1574,1212,1018,1086,0,0,0,940,684,492,433,0,76320
+Asia,South-eastern Asia,Philippines,Male,0,0,0,0,0,0,0,5010,4623,7513,7432,7470,7397,0,0,0,10215,7584,5159,4331,0,76320
+Asia,South-eastern Asia,Singapore,Female,0,0,0,0,0,0,5,5,11,7,3,6,6,6,7,3,7,5,7,7,5,233
+Asia,South-eastern Asia,Singapore,Male,0,0,0,0,0,0,12,13,16,13,16,10,5,11,7,11,11,6,2,5,5,233
+Asia,South-eastern Asia,Thailand,Female,901,0,697,952,503,621,580,596,526,491,457,445,474,378,403,0,0,0,0,0,0,57805
+Asia,South-eastern Asia,Thailand,Male,4240,0,3840,5481,3769,4184,4106,3838,3447,3211,3196,2861,2848,2515,2245,0,0,0,0,0,0,57805
+Asia,Southern Asia,Afghanistan,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,93,101,133,153,0,0,10583
+Asia,Southern Asia,Afghanistan,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3274,2217,2291,2321,0,0,10583
+Asia,Southern Asia,Bhutan,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,4,4,2,2,5,70
+Asia,Southern Asia,Bhutan,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,5,9,7,6,14,70
+Asia,Southern Asia,India,Female,15195,14971,14518,14473,15864,15268,15571,16794,16993,17854,17871,18731,18451,17911,18284,17089,17860,17327,17233,17238,16383,914303
+Asia,Southern Asia,India,Male,32971,31448,31217,29858,30626,29827,29389,28568,296,27970,28589,28909,29027,27967,29072,27284,24459,23689,23751,23240,24267,914303
+Asia,Southern Asia,Iran (Islamic Republic of),Female,0,0,0,0,0,0,0,0,0,0,0,0,0,292,224,0,0,0,0,0,0,3971
+Asia,Southern Asia,Iran (Islamic Republic of),Male,0,0,0,0,0,0,0,0,0,0,0,0,0,1744,1711,0,0,0,0,0,0,3971
+Asia,Southern Asia,Maldives,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5,0,0,0,56
+Asia,Southern Asia,Maldives,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,14,29,0,0,0,56
+Asia,Southern Asia,Sri Lanka,Female,0,0,0,0,0,0,0,0,349,203,168,185,171,146,125,111,130,87,103,249,0,8803
+Asia,Southern Asia,Sri Lanka,Male,0,0,0,0,0,0,0,0,1653,896,595,547,505,473,428,376,0,399,411,493,0,8803
+Asia,Western Asia,Armenia,Female,25,18,19,10,22,11,26,13,26,25,10,19,19,19,20,21,14,11,11,10,16,1540
+Asia,Western Asia,Armenia,Male,65,69,49,65,61,47,53,64,70,72,46,52,46,44,52,54,69,59,39,63,36,1540
+Asia,Western Asia,Azerbaijan,Female,0,0,0,0,0,0,0,0,0,0,62,0,58,70,87,73,88,77,66,61,79,2131
+Asia,Western Asia,Azerbaijan,Male,0,0,0,0,0,0,0,0,0,0,144,0,144,151,149,152,120,124,153,122,151,2131
+Asia,Western Asia,Bahrain,Female,0,0,0,0,0,0,0,0,0,0,1,0,1,2,0,0,3,1,0,0,0,66
+Asia,Western Asia,Bahrain,Male,0,0,0,0,0,0,0,0,0,0,1,9,6,5,8,8,9,4,6,2,0,66
+Asia,Western Asia,Cyprus,Female,0,0,0,0,4,2,4,3,2,7,1,6,5,3,5,3,5,0,6,10,4,234
+Asia,Western Asia,Cyprus,Male,0,0,0,0,12,18,11,10,7,12,7,3,17,9,6,12,8,7,9,5,11,234
+Asia,Western Asia,Georgia,Female,0,0,0,0,34,72,45,45,43,33,28,0,0,0,33,0,34,21,19,0,0,2337
+Asia,Western Asia,Georgia,Male,0,0,0,0,263,331,278,285,220,176,159,0,0,0,74,0,5,69,70,0,0,2337
+Asia,Western Asia,Israel,Female,39,38,37,36,31,48,37,27,29,27,34,34,24,35,25,24,23,23,26,0,25,2642
+Asia,Western Asia,Israel,Male,115,155,171,135,128,121,116,108,91,117,115,113,104,92,82,86,81,0,90,0,0,2642
+Asia,Western Asia,Jordan,Female,0,0,0,0,0,0,0,29,30,36,38,28,25,0,0,0,33,33,0,26,22,1129
+Asia,Western Asia,Jordan,Male,0,0,0,0,0,0,0,83,90,66,78,113,136,0,0,0,97,0,0,89,77,1129
+Asia,Western Asia,Kuwait,Female,0,0,0,5,11,16,6,12,11,12,13,11,10,0,0,0,0,0,0,0,0,484
+Asia,Western Asia,Kuwait,Male,0,0,0,24,32,25,39,47,27,37,47,48,51,0,0,0,0,0,0,0,0,484
+Asia,Western Asia,Oman,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,5,4,2,6,0,97
+Asia,Western Asia,Oman,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,12,11,13,11,17,0,97
+Asia,Western Asia,Qatar,Female,0,1,0,0,1,4,1,3,1,2,0,0,1,1,2,0,0,0,0,0,0,83
+Asia,Western Asia,Qatar,Male,0,4,0,0,4,2,4,6,11,6,4,4,6,8,7,0,0,0,0,0,0,83
+Asia,Western Asia,State of Palestine,Female,0,0,0,0,0,0,0,0,0,0,9,3,4,0,0,7,0,5,3,7,14,270
+Asia,Western Asia,State of Palestine,Male,0,0,0,0,0,0,0,0,0,0,22,20,22,0,0,47,0,29,16,28,34,270
+Asia,Western Asia,Syrian Arab Republic,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,747,0,3364
+Asia,Western Asia,Syrian Arab Republic,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2617,0,3364
+Asia,Western Asia,Turkey,Female,0,0,588,605,607,550,615,570,0,634,629,606,0,0,412,441,424,440,474,0,0,40113
+Asia,Western Asia,Turkey,Male,0,0,0,2248,2308,2697,2617,2984,2687,0,2430,2432,2610,0,0,1818,2257,2113,1756,1561,0,40113
+Asia,Western Asia,United Arab Emirates,Female,0,0,0,0,0,0,0,0,0,0,17,14,16,18,16,9,0,0,0,21,0,423
+Asia,Western Asia,United Arab Emirates,Male,0,0,0,0,0,0,0,0,0,0,49,36,52,38,44,50,0,0,0,43,0,423
+Europe,Eastern Europe,Belarus,Female,0,0,0,0,0,0,0,221,183,198,136,117,126,103,116,116,106,94,84,87,0,4798
+Europe,Eastern Europe,Belarus,Male,0,0,0,0,0,0,0,427,369,289,265,256,214,230,224,210,201,146,142,138,0,4798
+Europe,Eastern Europe,Bulgaria,Female,97,61,56,51,57,52,54,38,36,35,27,30,37,34,26,29,22,35,38,23,26,3455
+Europe,Eastern Europe,Bulgaria,Male,234,246,198,195,186,147,132,139,136,115,121,98,104,75,86,97,57,68,54,60,43,3455
+Europe,Eastern Europe,Czechia,Female,49,47,58,58,49,45,54,55,44,38,53,44,48,51,45,49,36,30,0,39,39,2191
+Europe,Eastern Europe,Czechia,Male,142,88,81,105,84,63,76,71,70,56,50,42,57,39,36,39,29,36,0,58,38,2191
+Europe,Eastern Europe,Czechia,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1451
+Europe,Eastern Europe,Hungary,Female,87,85,87,90,88,76,74,63,70,63,61,42,58,71,67,102,82,72,43,31,39,1451
+Europe,Eastern Europe,Hungary,Male,117,168,115,137,121,87,99,91,111,76,77,103,66,83,79,119,120,170,43,33,41,4728
+Europe,Eastern Europe,Poland,Female,228,218,204,205,153,144,140,115,88,112,118,131,110,85,92,112,71,94,83,80,89,4728
+Europe,Eastern Europe,Poland,Male,626,557,511,456,479,410,349,409,237,274,265,290,298,219,194,186,189,193,190,173,178,8107
+Europe,Eastern Europe,Republic of Moldova,Female,120,120,126,107,92,0,76,68,91,71,102,87,63,69,17,47,48,36,41,43,0,8107
+Europe,Eastern Europe,Republic of Moldova,Male,312,290,274,211,184,196,186,149,145,175,163,129,166,160,144,142,152,105,125,114,0,5983
+Europe,Eastern Europe,Romania,Female,140,177,243,238,154,156,110,123,101,88,90,69,83,58,107,95,91,89,82,71,96,5983
+Europe,Eastern Europe,Romania,Male,416,522,413,458,333,277,247,256,201,170,176,136,129,160,218,244,215,166,168,173,185,129904
+Europe,Eastern Europe,Russian Federation,Female,10337,10756,10716,10305,9641,8849,7215,6196,4493,4620,4358,4057,4239,4021,4191,4154,4152,3484,3173,2921,2763,129904
+Europe,Eastern Europe,Russian Federation,Male,30753,32165,33536,31459,29615,26787,21629,19181,13695,13039,12332,12118,128,12012,12325,11710,11709,9809,8782,8278,7928,359564
+Europe,Eastern Europe,Slovakia,Female,34,33,49,47,36,32,15,28,24,32,31,31,18,23,19,14,20,19,26,15,28,359564
+Europe,Eastern Europe,Slovakia,Male,95,85,72,90,72,61,67,54,62,46,51,56,45,48,46,30,37,55,36,54,33,12051
+Europe,Eastern Europe,Ukraine,Female,1308,1485,1315,1265,1109,958,908,0,739,705,603,0,0,0,0,0,0,461,0,0,0,12051
+Europe,Eastern Europe,Ukraine,Male,3109,3368,2980,2775,2377,2071,2049,0,1726,1534,1384,0,0,0,0,0,0,2290,0,0,0,26078
+Europe,Northern Europe,Denmark,Female,32,19,15,28,17,18,11,17,17,14,22,15,16,13,31,23,23,20,20,27,17,26078
+Europe,Northern Europe,Denmark,Male,26,32,33,37,26,35,18,22,36,33,20,31,31,35,43,38,33,51,38,39,38,1067
+Europe,Northern Europe,Estonia,Female,25,29,32,39,15,28,24,19,18,21,16,14,17,18,9,10,9,8,5,6,10,1067
+Europe,Northern Europe,Estonia,Male,117,107,109,107,75,84,66,76,67,48,53,51,46,34,32,34,24,21,23,20,32,1900
+Europe,Northern Europe,Finland,Female,45,47,43,30,33,35,37,48,44,34,28,37,40,24,27,16,22,30,24,30,0,1900
+Europe,Northern Europe,Finland,Male,102,108,88,72,115,84,82,81,89,86,91,73,48,65,61,66,52,37,62,58,0,1529
+Europe,Northern Europe,Iceland,Female,0,0,0,0,0,0,0,0,0,0,0,1,1,0,2,0,1,2,1,0,1,1529
+Europe,Northern Europe,Iceland,Male,0,0,0,0,0,3,0,2,0,1,2,2,0,1,0,3,0,1,2,1,4,187
+Europe,Northern Europe,Ireland,Female,7,7,10,8,5,8,16,11,9,9,7,1,12,7,0,7,2,15,10,8,6,187
+Europe,Northern Europe,Ireland,Male,29,44,41,28,25,43,45,66,41,43,47,40,39,43,0,23,32,24,29,26,28,1051
+Europe,Northern Europe,Latvia,Female,0,0,0,0,0,0,0,0,0,0,0,0,37,24,36,29,34,42,43,42,28,1051
+Europe,Northern Europe,Latvia,Male,0,0,0,0,0,0,0,0,0,0,0,0,33,26,27,37,35,44,41,23,21,1626
+Europe,Northern Europe,Lithuania,Female,101,89,69,103,130,0,75,72,81,64,75,66,53,60,53,49,46,48,54,22,29,1626
+Europe,Northern Europe,Lithuania,Male,268,263,223,240,213,272,213,205,217,188,144,145,149,138,106,123,107,81,74,73,72,3862
+Europe,Northern Europe,Norway,Female,21,14,15,24,12,15,21,17,10,12,15,52,9,20,13,14,11,13,9,16,15,3862
+Europe,Northern Europe,Norway,Male,26,22,30,26,24,17,12,13,24,17,14,59,18,26,16,10,16,15,16,12,16,1048
+Europe,Northern Europe,Sweden,Female,36,29,36,26,40,30,35,31,27,38,26,25,21,26,25,29,29,27,33,25,25,1048
+Europe,Northern Europe,Sweden,Male,59,57,64,58,66,52,55,79,54,54,64,56,46,61,62,83,77,86,75,86,99,1561
+Europe,Southern Europe,Albania,Female,0,0,0,0,0,0,0,0,0,0,0,22,26,24,13,16,17,13,15,13,9,1561
+Europe,Southern Europe,Albania,Female,13,39,39,21,19,21,23,24,19,7,19,0,0,0,0,0,0,0,0,0,0,2286
+Europe,Southern Europe,Albania,Male,118,181,177,145,112,133,72,81,74,78,108,119,131,99,104,48,62,45,51,52,52,2286
+Europe,Southern Europe,Andorra,Female,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,4
+Europe,Southern Europe,Andorra,Male,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,4
+Europe,Southern Europe,Bosnia and Herzegovina,Female,20,29,25,0,0,0,0,0,0,15,10,16,24,14,11,18,15,10,8,10,0,830
+Europe,Southern Europe,Bosnia and Herzegovina,Male,79,53,65,0,0,0,0,0,0,56,46,35,39,32,39,39,30,32,31,29,0,830
+Europe,Southern Europe,Croatia,Female,32,27,31,22,37,27,32,24,24,24,32,21,18,21,17,15,20,18,8,14,19,1194
+Europe,Southern Europe,Croatia,Male,68,53,41,46,46,41,42,38,47,25,30,28,33,25,19,22,24,28,16,19,20,1194
+Europe,Southern Europe,Greece,Female,0,35,23,33,29,44,22,35,33,25,34,32,39,50,27,30,26,23,29,19,17,2427
+Europe,Southern Europe,Greece,Male,0,96,70,89,81,87,88,95,111,127,142,152,127,103,80,63,58,63,70,59,61,2427
+Europe,Southern Europe,Holy See,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Europe,Southern Europe,Holy See,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Europe,Southern Europe,Italy,Female,190,171,182,197,0,136,178,149,147,173,154,166,162,179,147,135,151,132,141,111,116,10695
+Europe,Southern Europe,Italy,Male,575,537,461,521,0,473,446,481,467,417,374,385,367,323,328,333,253,244,218,206,169,10695
+Europe,Southern Europe,Malta,Female,0,0,0,0,4,2,0,1,1,3,1,3,3,0,1,2,2,1,4,3,1,94
+Europe,Southern Europe,Malta,Male,0,0,0,0,3,2,0,3,5,1,3,0,9,7,5,2,3,8,3,2,6,94
+Europe,Southern Europe,Montenegro,Female,0,0,0,0,0,0,0,3,5,6,7,3,3,1,4,3,3,4,2,5,3,254
+Europe,Southern Europe,Montenegro,Male,0,0,0,0,0,0,0,9,19,14,8,18,14,9,16,14,25,11,12,18,15,254
+Europe,Southern Europe,North Macedonia,Female,11,0,8,16,12,9,9,11,9,12,15,4,11,7,10,2,6,4,9,4,0,706
+Europe,Southern Europe,North Macedonia,Male,35,0,51,53,36,34,37,31,26,23,28,26,18,15,25,23,13,27,16,20,0,706
+Europe,Southern Europe,Portugal,Female,35,25,37,33,39,32,42,51,36,37,41,39,41,51,48,0,0,0,0,0,0,1943
+Europe,Southern Europe,Portugal,Male,80,79,81,115,104,102,112,133,87,92,82,74,80,92,43,0,0,0,0,0,0,1943
+Europe,Southern Europe,Serbia,Female,59,75,56,67,51,45,51,55,38,38,42,39,38,47,38,31,41,29,28,29,23,3020
+Europe,Southern Europe,Serbia,Male,168,167,143,108,112,102,105,116,102,116,88,96,73,95,82,73,82,65,80,61,66,3020
+Europe,Southern Europe,Slovenia,Female,0,0,0,0,7,10,3,8,5,7,8,7,6,3,6,11,2,9,5,4,6,259
+Europe,Southern Europe,Slovenia,Male,0,0,0,0,20,10,9,16,5,6,7,9,8,9,10,9,8,10,5,6,5,259
+Europe,Southern Europe,Spain,Female,0,132,134,171,187,129,159,167,127,136,156,127,124,121,127,121,113,113,117,126,119,8126
+Europe,Southern Europe,Spain,Male,0,444,429,415,332,388,316,314,279,275,244,257,239,180,195,181,181,194,172,207,178,8126
+Europe,Western Europe,Austria,Female,53,41,37,23,31,24,29,24,29,28,30,35,38,30,23,17,31,37,44,40,37,1303
+Europe,Western Europe,Austria,Male,28,28,27,26,27,29,31,20,29,22,28,40,41,32,22,29,23,33,42,37,28,1303
+Europe,Western Europe,Belgium,Female,83,102,132,94,126,92,87,87,71,76,69,92,77,98,81,0,0,0,0,0,0,3364
+Europe,Western Europe,Belgium,Male,128,179,186,135,141,128,133,123,131,112,119,121,127,106,128,0,0,0,0,0,0,3364
+Europe,Western Europe,France,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,381,311,279,244,285,0,4248
+Europe,Western Europe,France,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,630,531,517,520,550,0,4248
+Europe,Western Europe,Germany,Female,545,492,474,487,458,448,442,390,367,386,393,338,296,328,339,327,469,380,367,276,357,17919
+Europe,Western Europe,Germany,Male,819,689,698,610,654,596,546,498,464,417,0,0,363,354,377,355,494,433,421,347,425,17919
+Europe,Western Europe,Liechtenstein,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,5
+Europe,Western Europe,Liechtenstein,Male,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,5
+Europe,Western Europe,Luxembourg,Female,0,4,0,0,1,0,2,3,0,0,5,0,0,0,2,0,0,0,0,1,0,53
+Europe,Western Europe,Luxembourg,Male,0,5,0,0,1,0,5,4,0,5,5,4,0,0,2,0,0,0,0,3,1,53
+Europe,Western Europe,Netherlands,Female,60,68,61,73,53,57,49,47,47,50,54,50,50,56,30,42,32,43,36,42,44,3045
+Europe,Western Europe,Netherlands,Male,120,134,134,129,138,117,79,96,103,104,90,93,95,69,93,62,62,89,64,67,63,3045
+Europe,Western Europe,Switzerland,Female,38,36,49,39,38,37,37,26,25,27,26,23,17,32,24,30,25,20,28,26,27,1205
+Europe,Western Europe,Switzerland,Male,30,49,36,33,39,37,22,24,28,24,26,23,28,25,17,27,20,25,22,20,20,1205
+Oceania,Australia and New Zealand,Australia,Female,136,116,121,96,92,94,92,85,101,76,93,90,83,94,94,84,80,63,84,68,74,5495
+Oceania,Australia and New Zealand,Australia,Male,225,230,244,205,170,164,188,169,160,186,137,158,160,151,149,151,147,144,135,156,150,5495
+Oceania,Australia and New Zealand,New Zealand,Female,20,21,26,14,11,26,17,19,23,25,22,15,21,12,13,16,22,13,0,27,0,977
+Oceania,Australia and New Zealand,New Zealand,Male,31,29,33,29,33,34,31,29,28,42,20,24,20,34,29,32,28,22,0,86,0,977
+Oceania,Melanesia,Fiji,Female,0,0,0,0,0,9,12,18,10,8,6,9,7,8,12,0,0,0,0,0,0,211
+Oceania,Melanesia,Fiji,Male,0,0,0,0,0,14,10,3,7,21,14,11,13,11,8,0,0,0,0,0,0,211
+Oceania,Melanesia,Vanuatu,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3
+Oceania,Melanesia,Vanuatu,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,3
+Oceania,Micronesia,Micronesia (Federated States of),Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+Oceania,Micronesia,Micronesia (Federated States of),Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Oceania,Polynesia,Tonga,Female,0,1,1,0,0,0,0,0,1,3,0,0,1,0,0,0,0,0,0,1,0,54
+Oceania,Polynesia,Tonga,Male,1,5,5,6,2,4,8,1,3,5,1,2,0,0,0,0,0,0,0,1,2,54
+(blank),(blank),Aruba,Female,0,2,1,1,0,1,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,56
+(blank),(blank),Aruba,Male,0,2,4,3,2,5,4,3,4,3,4,2,3,5,2,0,0,0,0,0,0,56
+(blank),(blank),British Virgin Islands,Female,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10
+(blank),(blank),British Virgin Islands,Male,0,1,1,1,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10
+(blank),(blank),Curaçao,Female,0,2,6,2,7,6,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,203
+(blank),(blank),Curaçao,Male,0,8,33,41,34,20,15,23,0,0,0,0,0,0,0,0,0,0,0,0,0,203
+(blank),(blank),French Guiana,Female,0,0,0,0,0,0,3,1,1,5,0,0,0,0,0,0,0,0,0,0,0,128
+(blank),(blank),French Guiana,Male,0,0,0,0,0,0,38,26,30,24,0,0,0,0,0,0,0,0,0,0,0,128
+(blank),(blank),Kosovo under UNSCR 1244,Female,0,0,0,0,0,0,0,0,25,11,20,9,11,4,12,10,8,13,9,3,0,735
+(blank),(blank),Kosovo under UNSCR 1244,Male,0,0,0,0,0,0,0,0,87,62,86,53,79,37,43,32,30,35,35,21,0,735
+(blank),(blank),Martinique,Female,0,0,0,0,0,0,5,5,4,3,0,0,0,0,0,0,0,0,0,0,0,72
+(blank),(blank),Martinique,Male,0,0,0,0,0,0,18,17,12,8,0,0,0,0,0,0,0,0,0,0,0,72
+(blank),(blank),Monaco,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),(blank),Monaco,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),(blank),Montserrat,Female,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4
+(blank),(blank),Montserrat,Male,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,4
+(blank),(blank),Réunion,Female,0,0,0,0,10,7,8,8,4,5,0,0,0,0,0,0,0,0,0,0,0,119
+(blank),(blank),Réunion,Male,0,0,0,0,12,17,10,16,13,9,0,0,0,0,0,0,0,0,0,0,0,119
+(blank),(blank),Saint Pierre and Miquelon,Female,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),(blank),Saint Pierre and Miquelon,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),(blank),San Marino,Female,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+(blank),(blank),San Marino,Male,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+(blank),(blank),Turks and Caicos Islands,Female,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,14
+(blank),(blank),Turks and Caicos Islands,Male,0,0,2,0,0,0,0,1,1,2,0,0,0,3,2,0,0,0,0,0,0,14
+(blank),(blank),United States Virgin Islands,Female,3,2,5,3,1,3,4,3,2,2,7,3,2,0,0,0,0,0,0,0,0,532
+(blank),(blank),United States Virgin Islands,Male,20,26,36,28,36,34,39,40,44,48,49,42,50,0,0,0,0,0,0,0,0,532

@@ -34,14 +34,7 @@ optionsWHO =[]
 
 def links():
     #getTableHomicide1()
-    #getTableHomicide2()
-    #getCancerData()
-    #getCardiovasularData()
-    #getChronicRespiratoryData()
-    #getCommunicableData()
-    #getInjuriesData()
-    #getNoncommunicableData()
-    getPopulationData()
+    getTableHomicide2()
 
 def getTableHomicide1():
     nombre = "homicide1.csv"
@@ -54,7 +47,7 @@ def getTableHomicide1():
     lenTable = len(rows)
 
     #print(tableContent.get_attribute('outerHTML'))
-    with open(nombre, "w", newline="") as archivo_csv:
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
         writer = csv.writer(archivo_csv)
 
         for i in range(0,lenTable - 74):
@@ -86,7 +79,7 @@ def getTableHomicide2():
 
 
     #print(tableContent.get_attribute('outerHTML'))
-    with open(nombre, "w", newline="") as archivo_csv:
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
         writer = csv.writer(archivo_csv)
 
         list1 = []
