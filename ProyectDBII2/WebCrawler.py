@@ -34,7 +34,11 @@ optionsWHO =[]
 
 def links():
     #getTableHomicide1()
-    getTableHomicide2()
+    #getTableHomicide2()
+    #getMediaAge()
+    #getAdolescentFertility()
+    #getInfantMortality()
+    getTotalFertility()
 
 def getTableHomicide1():
     nombre = "homicide1.csv"
@@ -154,7 +158,7 @@ def getCardiovasularData():
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_cdd')
     timeSleep(5)
 
-    with open(nombre, "w", newline="") as archivo_csv:
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
             writer = csv.writer(archivo_csv)
 
             for count in range(1,5):
@@ -194,7 +198,7 @@ def getChronicRespiratoryData():
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_chronic')
     timeSleep(5)
 
-    with open(nombre, "w", newline="") as archivo_csv:
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
             writer = csv.writer(archivo_csv)
 
             for count in range(1,5):
@@ -234,7 +238,7 @@ def getCommunicableData():
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_513')
     timeSleep(5)
 
-    with open(nombre, "w", newline="") as archivo_csv:
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
             writer = csv.writer(archivo_csv)
 
             for count in range(1,5):
@@ -274,7 +278,7 @@ def getInjuriesData():
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_162')
     timeSleep(5)
 
-    with open(nombre, "w", newline="") as archivo_csv:
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
             writer = csv.writer(archivo_csv)
 
             for count in range(1,5):
@@ -312,7 +316,7 @@ def getNoncommunicableData():
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_163')
     timeSleep(5)
 
-    with open(nombre, "w", newline="") as archivo_csv:
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
             writer = csv.writer(archivo_csv)
 
             for count in range(1,5):
@@ -350,7 +354,7 @@ def getPopulationData():
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_86')
     timeSleep(5)
 
-    with open(nombre, "w", newline="") as archivo_csv:
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
             writer = csv.writer(archivo_csv)
 
             for count in range(1,91):
@@ -379,6 +383,297 @@ def getPopulationData():
                         writer.writerow(listRow)
 
                 if(count < 90):
+                    clickButton(driver.find_element(By.ID, 'linkNextB'))
+
+    print("Archivo CSV creado exitosamente.")
+
+#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_88'
+def getMediaAge():
+    nombre = "mediaAge.csv"
+    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_88')
+    timeSleep(5)
+
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
+            writer = csv.writer(archivo_csv)
+
+            for count in range(1,5):
+                timeSleep(5)
+                tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+                
+                rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+                lenTable = len(rows)
+
+                for i in range(0,lenTable):
+                    if( i == 0 and count == 1):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'th')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+                    elif(i > 0):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+
+                if(count < 4):
+                    clickButton(driver.find_element(By.ID, 'linkNextB'))
+
+    print("Archivo CSV creado exitosamente.")
+
+#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aasfr1'
+def getAdolescentFertility():
+    nombre = "adolescentFertility.csv"
+    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aasfr1')
+    timeSleep(5)
+
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
+            writer = csv.writer(archivo_csv)
+
+            for count in range(1,22):
+                timeSleep(8)
+                tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+                
+                rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+                lenTable = len(rows)
+
+                for i in range(0,lenTable):
+                    if( i == 0 and count == 1):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'th')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+                    elif(i > 0):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            if (cols[j].text == "" or cols[j].text == " "):
+                                listRow.append("(blank)")
+                            else:
+                                listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+
+                if(count < 21):
+                    clickButton(driver.find_element(By.ID, 'linkNextB'))
+
+    print("Archivo CSV creado exitosamente.")
+
+#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aimr'
+def getInfantMortality():
+    nombre = "infantMortality.csv"
+    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aimr')
+    timeSleep(5)
+
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
+            writer = csv.writer(archivo_csv)
+
+            for count in range(1,36):
+                timeSleep(8)
+                tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+                
+                rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+                lenTable = len(rows)
+
+                for i in range(0,lenTable):
+                    if( i == 0 and count == 1):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'th')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+                    elif(i > 0):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            if (cols[j].text == "" or cols[j].text == " "):
+                                listRow.append("(blank)")
+                            else:
+                                listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+
+                if(count < 35):
+                    clickButton(driver.find_element(By.ID, 'linkNextB'))
+
+    print("Archivo CSV creado exitosamente.")
+
+
+def getTotalFertility():
+    nombre = "totalFertility.csv"
+    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3atfr')
+    timeSleep(5)
+
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
+            writer = csv.writer(archivo_csv)
+
+            for count in range(1,21):
+                timeSleep(8)
+                tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+                
+                rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+                lenTable = len(rows)
+
+                for i in range(0,lenTable):
+                    if( i == 0 and count == 1):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'th')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+                    elif(i > 0):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            if (cols[j].text == "" or cols[j].text == " "):
+                                listRow.append("(blank)")
+                            else:
+                                listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+
+                if(count < 20):
+                    clickButton(driver.find_element(By.ID, 'linkNextB'))
+
+    print("Archivo CSV creado exitosamente.")
+
+#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_120'
+def getExternalResources():
+    nombre = "externalResources.csv"
+    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_120')
+    timeSleep(5)
+
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
+            writer = csv.writer(archivo_csv)
+
+            for count in range(1,63):
+                timeSleep(8)
+                tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+                
+                rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+                lenTable = len(rows)
+
+                for i in range(0,lenTable):
+                    if( i == 0 and count == 1):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'th')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+                    elif(i > 0):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            if (cols[j].text == "" or cols[j].text == " "):
+                                listRow.append("(blank)")
+                            else:
+                                listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+
+                if(count < 62):
+                    clickButton(driver.find_element(By.ID, 'linkNextB'))
+
+    print("Archivo CSV creado exitosamente.")
+
+#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_149'
+def getGeneralExpenditure():
+    nombre = "generalExpenditure.csv"
+    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_149')
+    timeSleep(5)
+
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
+            writer = csv.writer(archivo_csv)
+
+            for count in range(1,70):
+                timeSleep(8)
+                tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+                
+                rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+                lenTable = len(rows)
+
+                for i in range(0,lenTable):
+                    if( i == 0 and count == 1):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'th')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+                    elif(i > 0):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            if (cols[j].text == "" or cols[j].text == " "):
+                                listRow.append("(blank)")
+                            else:
+                                listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+
+                if(count < 69):
+                    clickButton(driver.find_element(By.ID, 'linkNextB'))
+
+    print("Archivo CSV creado exitosamente.")
+
+#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHOSIS_000001'
+def getlifeExpectancy():
+    nombre = "lifeExpectancy.csv"
+    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHOSIS_000001')
+    timeSleep(5)
+
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
+            writer = csv.writer(archivo_csv)
+
+            for count in range(1,36):
+                timeSleep(8)
+                tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+                
+                rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+                lenTable = len(rows)
+
+                for i in range(0,lenTable):
+                    if( i == 0 and count == 1):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'th')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+                    elif(i > 0):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            if (cols[j].text == "" or cols[j].text == " "):
+                                listRow.append("(blank)")
+                            else:
+                                listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+
+                if(count < 35):
                     clickButton(driver.find_element(By.ID, 'linkNextB'))
 
     print("Archivo CSV creado exitosamente.")
