@@ -38,7 +38,20 @@ def links():
     #getMediaAge()
     #getAdolescentFertility()
     #getInfantMortality()
-    getTotalFertility()
+    #getTotalFertility()
+    #getExternalResources()
+    #getGeneralExpenditure()
+    #getlifeExpectancy()
+    #-------------
+    #getCancerData()
+    #getCardiovasularData()
+    #getChronicRespiratoryData()
+    #getCommunicableData()
+    #getInjuriesData()
+    #getNoncommunicableData()
+    #getAllCausesData()
+    getInboundTourism()
+    print("Exit")
 
 def getTableHomicide1():
     nombre = "homicide1.csv"
@@ -110,6 +123,47 @@ def getTableHomicide2():
                     list1.append(cols[j].text)
                 writer.writerow(list1)
 
+
+    print("Archivo CSV creado exitosamente.")
+
+#http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_all
+def getAllCausesData():
+    nombre = "allCauses.csv"
+    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_all')
+    timeSleep(5)
+
+    with open(nombre, "w", newline="") as archivo_csv:
+            writer = csv.writer(archivo_csv)
+
+            for count in range(1,5):
+                timeSleep(5)
+                tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+                
+                rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+                lenTable = len(rows)
+
+                #print(tableContent.get_attribute('outerHTML'))
+
+                for i in range(0,lenTable):
+                    if( i == 0 and count == 1):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'th')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+                    elif(i > 0):
+                        cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                        lenCol = len(cols)
+
+                        listRow = []
+                        for j in range(0, lenCol - 1):
+                            listRow.append(cols[j].text)
+                        writer.writerow(listRow)
+
+                if(count < 4):
+                    clickButton(driver.find_element(By.ID, 'linkNextB'))
 
     print("Archivo CSV creado exitosamente.")
 
@@ -387,7 +441,6 @@ def getPopulationData():
 
     print("Archivo CSV creado exitosamente.")
 
-#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_88'
 def getMediaAge():
     nombre = "mediaAge.csv"
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_88')
@@ -426,7 +479,6 @@ def getMediaAge():
 
     print("Archivo CSV creado exitosamente.")
 
-#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aasfr1'
 def getAdolescentFertility():
     nombre = "adolescentFertility.csv"
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aasfr1')
@@ -468,7 +520,6 @@ def getAdolescentFertility():
 
     print("Archivo CSV creado exitosamente.")
 
-#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aimr'
 def getInfantMortality():
     nombre = "infantMortality.csv"
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aimr')
@@ -509,7 +560,6 @@ def getInfantMortality():
                     clickButton(driver.find_element(By.ID, 'linkNextB'))
 
     print("Archivo CSV creado exitosamente.")
-
 
 def getTotalFertility():
     nombre = "totalFertility.csv"
@@ -552,7 +602,6 @@ def getTotalFertility():
 
     print("Archivo CSV creado exitosamente.")
 
-#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_120'
 def getExternalResources():
     nombre = "externalResources.csv"
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_120')
@@ -594,7 +643,6 @@ def getExternalResources():
 
     print("Archivo CSV creado exitosamente.")
 
-#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_149'
 def getGeneralExpenditure():
     nombre = "generalExpenditure.csv"
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_149')
@@ -636,7 +684,6 @@ def getGeneralExpenditure():
 
     print("Archivo CSV creado exitosamente.")
 
-#'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHOSIS_000001'
 def getlifeExpectancy():
     nombre = "lifeExpectancy.csv"
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHOSIS_000001')
@@ -678,6 +725,97 @@ def getlifeExpectancy():
 
     print("Archivo CSV creado exitosamente.")
 
+def getInboundTourism():
+    nombre = "inboundTourism.csv"
+    driver.get('http://data.un.org/DocumentData.aspx?id=481')
+    timeSleep(20)
+
+    tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
+    
+    rows = tableContent.find_elements(By.TAG_NAME, 'tr')
+    lenTable = len(rows)
+
+    #print(tableContent.get_attribute('outerHTML'))
+    with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
+        writer = csv.writer(archivo_csv)
+
+        filaN = 0
+        for i in range(0,36):#lenTable - 11
+            if (i == 0):
+                cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                lenCol = len(cols)
+
+                listRow = []
+                for j in range(0, lenCol - 1):
+                    if (j != 1 and j != 2 and j != 3 and j != 4):
+                        listRow.append(cols[j].text)
+                    elif (j == 4):
+                        listRow.append("Description")
+                writer.writerow(listRow)
+            else:
+                filaN += 1
+                cols = rows[i].find_elements(By.TAG_NAME, 'td')
+                lenCol = len(cols)
+
+                listRow = []
+                for j in range(0, lenCol):
+                    if (filaN == 1 and j != 1 and j != 2 and j != 3 and j != lenCol and j <= 31 + 3):
+                        if ((j == 4 or j == 5 or j == 6 or j == 7) and cols[j].text == ""):
+                            listRow.append("(blank)")
+                        elif (j >= 8 and (cols[j].text == "" or cols[j].text == "..")):
+                            listRow.append("0")
+                        else:
+                            listRow.append(cols[j].text)
+                    elif (filaN == 2 and j != 2 and j != 3 and j != lenCol and j <= 31 + 2):
+                        if ((j == 0 or j == 4 or j == 5 or j == 6) and cols[j].text == ""):
+                            listRow.append("(blank)")
+                        elif (j >= 7 and (cols[j].text == "" or cols[j].text == "..")):
+                            listRow.append("0")
+                        else:
+                            listRow.append(cols[j].text)
+                    elif (filaN == 3 and j != 1 and j <= 31 + 1):
+                        if ((j==0 or j == 3 or j == 4 or j == 5 ) and cols[j].text == ""):
+                            listRow.append("(blank)")
+                        elif (j >= 6 and (cols[j].text == "" or cols[j].text == "..")):
+                            listRow.append("0")
+                        else:
+                            listRow.append(cols[j].text)
+                    elif ((filaN == 8 or filaN == 18 or filaN == 22 or filaN == 27 or filaN == 30 or filaN == 34 or filaN == 35) and j != 1 and j != 3 and j <= 31 ):
+                        if ((j == 0 or j == 4 or j == 5 or j == 6 ) and cols[j].text == ""):
+                            listRow.append("(blank)")
+                        elif (j >= 6 and (cols[j].text == "" or cols[j].text == "..")):
+                            listRow.append("0")
+                        else:
+                            listRow.append(cols[j].text)
+                    elif ((filaN == 4 or filaN == 5 or filaN == 9 or filaN == 10 or filaN == 11 or filaN == 12 or
+                            filaN == 13 or filaN == 14 or filaN == 15 or filaN == 19 or filaN == 20 or filaN == 23 or
+                              filaN == 24 or filaN == 25 or filaN == 28 or filaN == 29 or filaN == 31 or filaN == 32) and j != 1 and j != 2 and j <= 31 + 2):
+                        if ((j == 0 or j == 4 or j == 5 or j == 6) and cols[j].text == ""):
+                            listRow.append("(blank)")
+                        elif (j >= 7 and (cols[j].text == "" or cols[j].text == "..")):
+                            listRow.append("0")
+                        else:
+                            listRow.append(cols[j].text)
+                    elif ((filaN == 6 or filaN == 16) and j != 1 and j != 2 and j != 3 and j <= 31 + 3):
+                        if ((j==0 or j == 5 or j == 6 or j == 7 ) and cols[j].text == ""):
+                            listRow.append("(blank)")
+                        elif (j >= 8 and (cols[j].text == "" or cols[j].text == "..")):
+                            listRow.append("0")
+                        else:
+                            listRow.append(cols[j].text)
+                    elif ((filaN == 7 or filaN == 17 or filaN == 21 or filaN == 26 or filaN == 33) and j <= 31):
+                        if ((j==0 or j == 2 or j == 3 or j == 4 ) and cols[j].text == ""):
+                            listRow.append("(blank)")
+                        elif (j >= 5 and (cols[j].text == "" or cols[j].text == "..")):
+                            listRow.append("0")
+                        else:
+                            listRow.append(cols[j].text)
+                writer.writerow(listRow)
+                if (filaN == 35):
+                    filaN = 0
+
+
+    print("Archivo CSV creado exitosamente.")
 
 def webCrawler():
     global listHomicideLinks 
@@ -766,7 +904,7 @@ def buttonsWHOMortality():
     clickButton(driver.find_element(By.ID,'ygtvt167').find_element(By.TAG_NAME, 'a'))
 
 
-    buttons = driver.find_element(By.ID,'ygtv167').find_elements(By.TAG_NAME,'a')[6:23]
+    buttons = driver.find_element(By.ID,'ygtv167').find_elements(By.TAG_NAME,'a')[4:23]
 
     buttons = buttons[::3]
 
