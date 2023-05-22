@@ -2,15 +2,16 @@ import pydoop.mapreduce.api as api
 import pydoop.mapreduce.pipes as pipes
 import logging
 
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
 
 VARIABLES = ['Region', 'Subregion', 'Country', 'Gender','2000','2001', '2002', '2003', '2004', '2005', '2006', '2007',
-'2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','Total']
+'2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020']
 
-TOTAL_COUNTRIES = 149
+TOTAL_REGIONS = 6
 
 class Mapper(api.Mapper):
     def __init__(self, context):
@@ -19,17 +20,14 @@ class Mapper(api.Mapper):
 
     def map(self, context):
         data  = self.parse_line(context.value)
-        country = data['Country']
-        gender = data['Gender']
-        totalGender = data['TotalGeneros']
-        context.emit((country,gender),totalGender)
+        for key, value in data.items():
+            if key != 'Country' and key!= 'Region' and key!= 'Subregion' and key!='Gender':
+                context.emit((data['Region'],data['Gender'],key),data[key])
         
 
     def parse_line(self, line):
         parts = line.split(",")
         subset_variables = parts[4:24]
-        int_list = [int(num) for num in subset_variables]
-        subset_list_sum = sum(int_list)
         data = {}
         data['Region'] = parts[0]
         data['Subregion'] = parts[1]
@@ -56,7 +54,6 @@ class Mapper(api.Mapper):
         data['2018'] = int(parts[22])
         data['2019'] = int(parts[23])
         data['2020'] = int(parts[24])
-        data['TotalGeneros'] =  subset_list_sum
         return data
             
             
@@ -68,11 +65,20 @@ class Reducer(api.Reducer):
         context.set_status("Initializing reducer")
 
     def reduce(self, context):
-        country, gender = context.key
+        region, gender, year = context.key
+        total_sum = 0
+        list_result  = []
         for val in context.values:
-            totalGenero = val
-        resultado = float(float(totalGenero)/float(TOTAL_COUNTRIES))
-        context.emit((country,gender), resultado)
+            total_sum+=val   
+            list_result.append(val)
+        mean = float(float(total_sum)/float(TOTAL_REGIONS))
+        maximum = max(list_result)
+        filtered_data = [x for x in list_result if x != 0]
+        if len(filtered_data)==0:
+            minimum = 0
+        else:
+            minimum = min(filtered_data)
+        context.emit((region,gender,year), (mean,maximum,minimum))
 
 def main():
     FACTORY = pipes.Factory(mapper_class=Mapper,
