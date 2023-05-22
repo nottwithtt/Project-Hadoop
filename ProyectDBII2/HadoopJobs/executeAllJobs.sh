@@ -1,0 +1,8 @@
+./job1.sh
+./job2.sh
+./job3.sh
+./job4.sh
+./job5.sh
+./job6.sh
+./job7.sh
+./job8.sh
