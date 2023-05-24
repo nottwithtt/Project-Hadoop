@@ -1,0 +1,1754 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f9943745894, pid=9530, tid=0x00007f99902881c0
+#
+# JRE version: OpenJDK Runtime Environment (8.0_362-b09) (build 1.8.0_362-8u372-ga~us1-0ubuntu1~22.04-b09)
+# Java VM: OpenJDK 64-Bit Server VM (25.362-b09 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# V  [libjvm.so+0x745894]
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000055f3241e5800):  JavaThread "main" [_thread_in_vm, id=9530, stack(0x00007fffd3224000,0x00007fffd3324000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 128 (SI_KERNEL), si_addr: 0x0000000000000000
+
+Registers:
+RAX=0x00007fffd33207c8, RBX=0x00007fffd3320890, RCX=0x000055f32586d930, RDX=0x206e776f6e6b6e55
+RSP=0x00007fffd33206e8, RBP=0x00007fffd3320870, RSI=0x00007fffd3320890, RDI=0x206e776f6e6b6e55
+R8 =0x00007fffd33208c0, R9 =0x000055f3241e5800, R10=0x0000000000000000, R11=0x000000000000003b
+R12=0x000055f3241e5800, R13=0x00007fffd33208c0, R14=0x00007fffd3320809, R15=0x000055f32586d930
+RIP=0x00007f9943745894, EFLAGS=0x0000000000010202, CSGSFS=0x002b000000000033, ERR=0x0000000000000000
+  TRAPNO=0x000000000000000d
+
+Top of Stack: (sp=0x00007fffd33206e8)
+0x00007fffd33206e8:   00007f994371a950 00007f998ef50d38
+0x00007fffd33206f8:   00007f998f1734e0 00007f998f1734f8
+0x00007fffd3320708:   00007f9990081a09 000055f3fbad8001
+0x00007fffd3320718:   000055f3241e5a60 00007fffd33207c8
+0x00007fffd3320728:   00007fffd3320809 00007f998f0c09c0
+0x00007fffd3320738:   000055f322c3e0a0 00007f998f1734b0
+0x00007fffd3320748:   000055f3227e4972 00007f994a656fbb
+0x00007fffd3320758:   000055f322c397c0 00037f998f172e40
+0x00007fffd3320768:   00007f9943650020 000055f300000000
+0x00007fffd3320778:   0000000c00000000 000020f322c69a20
+0x00007fffd3320788:   000055f32423a400 000055f32424c1a0
+0x00007fffd3320798:   00000007c00d4000 00007f992a6629d8
+0x00007fffd33207a8:   b0a14daec1959100 00007fffd33207e0
+0x00007fffd33207b8:   000055f323ddec60 000055f32423a400
+0x00007fffd33207c8:   000055f32424c1a0 00007fffd3320810
+0x00007fffd33207d8:   00007fffd3320820 00007fffd3320870
+0x00007fffd33207e8:   00007f994371d467 000000000000000d
+0x00007fffd33207f8:   00000007c00d4000 00007f992a662cd0
+0x00007fffd3320808:   000055f32586d930 00007f992a662cd0
+0x00007fffd3320818:   000055f3241e5800 00007f992a662cd0
+0x00007fffd3320828:   000055f3241e5800 0000003000000020
+0x00007fffd3320838:   b0a14daec1959100 00007fffd3320850
+0x00007fffd3320848:   00007fffd3320970 000055f3241e5800
+0x00007fffd3320858:   000055f3241e5a60 000055f32586d930
+0x00007fffd3320868:   206e776f6e6b6e55 00007fffd3320940
+0x00007fffd3320878:   00007f994371d15b 000055f3241e5800
+0x00007fffd3320888:   00007fffd33208c0 000055f30000000e
+0x00007fffd3320898:   00007f994a64fa00 000055f3241e5800
+0x00007fffd33208a8:   0000000000000000 000055f3241e5a60
+0x00007fffd33208b8:   00007f994a6543ed 00007f9943d1e338
+0x00007fffd33208c8:   000055f32423a400 000000004a6546bc
+0x00007fffd33208d8:   000055f300000063 0000000000000000 
+
+Instructions: (pc=0x00007f9943745894)
+0x00007f9943745874:   89 45 f8 e8 74 9a e7 ff 48 8b 45 f8 c9 c3 66 0f
+0x00007f9943745884:   1f 44 00 00 31 c0 c3 0f 1f 44 00 00 f3 0f 1e fa
+0x00007f9943745894:   48 8b 47 ff 48 85 c0 74 0c 48 8d 15 9e 47 69 00
+0x00007f99437458a4:   80 3a 00 75 07 c3 66 0f 1f 44 00 00 55 48 89 c7 
+
+Register to memory mapping:
+
+RAX=0x00007fffd33207c8 is pointing into the stack for thread: 0x000055f3241e5800
+RBX=0x00007fffd3320890 is pointing into the stack for thread: 0x000055f3241e5800
+RCX=0x000055f32586d930 is an unknown value
+RDX=0x206e776f6e6b6e55 is an unknown value
+RSP=0x00007fffd33206e8 is pointing into the stack for thread: 0x000055f3241e5800
+RBP=0x00007fffd3320870 is pointing into the stack for thread: 0x000055f3241e5800
+RSI=0x00007fffd3320890 is pointing into the stack for thread: 0x000055f3241e5800
+RDI=0x206e776f6e6b6e55 is an unknown value
+R8 =0x00007fffd33208c0 is pointing into the stack for thread: 0x000055f3241e5800
+R9 =0x000055f3241e5800 is a thread
+R10=0x0000000000000000 is an unknown value
+R11=0x000000000000003b is an unknown value
+R12=0x000055f3241e5800 is a thread
+R13=0x00007fffd33208c0 is pointing into the stack for thread: 0x000055f3241e5800
+R14=0x00007fffd3320809 is pointing into the stack for thread: 0x000055f3241e5800
+R15=0x000055f32586d930 is an unknown value
+
+
+Stack: [0x00007fffd3224000,0x00007fffd3324000],  sp=0x00007fffd33206e8,  free space=1009k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x745894]
+V  [libjvm.so+0x71d15b]
+C  [native_core_hdfs.cpython-310-x86_64-linux-gnu.so+0xcf0b]  invokeMethod+0x31b
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000055f325897800 JavaThread "LeaseRenewer:jeffreyleiva@localhost:9000" daemon [_thread_blocked, id=9604, stack(0x00007f9922159000,0x00007f9922259000)]
+  0x000055f3256ef000 JavaThread "org.apache.hadoop.fs.FileSystem$Statistics$StatisticsDataReferenceCleaner" daemon [_thread_blocked, id=9598, stack(0x00007f9922f71000,0x00007f9923071000)]
+  0x000055f325641000 JavaThread "process reaper" daemon [_thread_blocked, id=9596, stack(0x00007f9923071000,0x00007f99230aa000)]
+  0x000055f324515800 JavaThread "Service Thread" daemon [_thread_blocked, id=9593, stack(0x00007f99239fc000,0x00007f9923afc000)]
+  0x000055f32450a000 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=9592, stack(0x00007f9923afd000,0x00007f9923bfd000)]
+  0x000055f324508000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=9591, stack(0x00007f9923bfe000,0x00007f9923cfe000)]
+  0x000055f324506000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=9590, stack(0x00007f9923cff000,0x00007f9923dff000)]
+  0x000055f324503000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=9589, stack(0x00007f9923e00000,0x00007f9923f00000)]
+  0x000055f3244fb800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=9588, stack(0x00007f9923f00000,0x00007f9924000000)]
+  0x000055f3244ce800 JavaThread "Finalizer" daemon [_thread_blocked, id=9587, stack(0x00007f992803c000,0x00007f992813c000)]
+  0x000055f3244ca000 JavaThread "Reference Handler" daemon [_thread_blocked, id=9586, stack(0x00007f992813c000,0x00007f992823c000)]
+=>0x000055f3241e5800 JavaThread "main" [_thread_in_vm, id=9530, stack(0x00007fffd3224000,0x00007fffd3324000)]
+
+Other Threads:
+  0x000055f3244c0800 VMThread [stack: 0x00007f992823d000,0x00007f992833d000] [id=9585]
+  0x000055f324517800 WatcherThread [stack: 0x00007f99238fc000,0x00007f99239fc000] [id=9594]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000006cac00000, size: 3924 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 73728K, used 59640K [0x000000076e400000, 0x0000000777400000, 0x00000007c0000000)
+  eden space 63488K, 83% used [0x000000076e400000,0x00000007717e6380,0x0000000772200000)
+  from space 10240K, 63% used [0x0000000772200000,0x0000000772857ff8,0x0000000772c00000)
+  to   space 10240K, 0% used [0x0000000776a00000,0x0000000776a00000,0x0000000777400000)
+ ParOldGen       total 167936K, used 32K [0x00000006cac00000, 0x00000006d5000000, 0x000000076e400000)
+  object space 167936K, 0% used [0x00000006cac00000,0x00000006cac08000,0x00000006d5000000)
+ Metaspace       used 20269K, capacity 20512K, committed 20864K, reserved 1067008K
+  class space    used 2288K, capacity 2382K, committed 2432K, reserved 1048576K
+
+Card table byte_map: [0x00007f9933495000,0x00007f9933c40000] byte_map_base: 0x00007f992fe3f000
+
+Marking Bits: (ParMarkBitMap*) 0x00007f9943de6720
+ Begin Bits: [0x00007f992afd4000, 0x00007f992ed24000)
+ End Bits:   [0x00007f992ed24000, 0x00007f9932a74000)
+
+Polling page: 0x00007f999040d000
+
+CodeCache: size=245760Kb used=4462Kb max_used=4470Kb free=241298Kb
+ bounds [0x00007f9934000000, 0x00007f9934470000, 0x00007f9943000000]
+ total_blobs=1543 nmethods=1109 adapters=348
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 1,102 Thread 0x000055f324506000 nmethod 1101 0x00007f993445b410 code [0x00007f993445b580, 0x00007f993445bb28]
+Event: 1,105 Thread 0x000055f32450a000 1107   !   3       java.io.BufferedReader::readLine (304 bytes)
+Event: 1,106 Thread 0x000055f32450a000 nmethod 1107 0x00007f993445ef90 code [0x00007f993445f220, 0x00007f9934460628]
+Event: 1,106 Thread 0x000055f32450a000 1110       3       java.nio.ByteBuffer::arrayOffset (35 bytes)
+Event: 1,106 Thread 0x000055f324508000 nmethod 1105 0x00007f993445ac50 code [0x00007f993445adc0, 0x00007f993445b178]
+Event: 1,106 Thread 0x000055f32450a000 nmethod 1110 0x00007f993445a650 code [0x00007f993445a7e0, 0x00007f993445aaf8]
+Event: 1,106 Thread 0x000055f32450a000 1108       3       java.io.BufferedReader::ensureOpen (18 bytes)
+Event: 1,107 Thread 0x000055f32450a000 nmethod 1108 0x00007f993445eb10 code [0x00007f993445ec80, 0x00007f993445eec8]
+Event: 1,107 Thread 0x000055f32450a000 1109       3       java.nio.charset.CoderResult::isUnderflow (13 bytes)
+Event: 1,107 Thread 0x000055f32450a000 nmethod 1109 0x00007f993445e790 code [0x00007f993445e900, 0x00007f993445eab0]
+
+GC Heap History (6 events):
+Event: 0,612 GC heap before
+{Heap before GC invocations=1 (full 0):
+ PSYoungGen      total 73728K, used 63488K [0x000000076e400000, 0x0000000773600000, 0x00000007c0000000)
+  eden space 63488K, 100% used [0x000000076e400000,0x0000000772200000,0x0000000772200000)
+  from space 10240K, 0% used [0x0000000772c00000,0x0000000772c00000,0x0000000773600000)
+  to   space 10240K, 0% used [0x0000000772200000,0x0000000772200000,0x0000000772c00000)
+ ParOldGen       total 167936K, used 0K [0x00000006cac00000, 0x00000006d5000000, 0x000000076e400000)
+  object space 167936K, 0% used [0x00000006cac00000,0x00000006cac00000,0x00000006d5000000)
+ Metaspace       used 10345K, capacity 10536K, committed 10752K, reserved 1058816K
+  class space    used 1173K, capacity 1254K, committed 1280K, reserved 1048576K
+Event: 0,616 GC heap after
+Heap after GC invocations=1 (full 0):
+ PSYoungGen      total 73728K, used 7251K [0x000000076e400000, 0x0000000773600000, 0x00000007c0000000)
+  eden space 63488K, 0% used [0x000000076e400000,0x000000076e400000,0x0000000772200000)
+  from space 10240K, 70% used [0x0000000772200000,0x0000000772914c78,0x0000000772c00000)
+  to   space 10240K, 0% used [0x0000000772c00000,0x0000000772c00000,0x0000000773600000)
+ ParOldGen       total 167936K, used 16K [0x00000006cac00000, 0x00000006d5000000, 0x000000076e400000)
+  object space 167936K, 0% used [0x00000006cac00000,0x00000006cac04000,0x00000006d5000000)
+ Metaspace       used 10345K, capacity 10536K, committed 10752K, reserved 1058816K
+  class space    used 1173K, capacity 1254K, committed 1280K, reserved 1048576K
+}
+Event: 0,751 GC heap before
+{Heap before GC invocations=2 (full 0):
+ PSYoungGen      total 73728K, used 70739K [0x000000076e400000, 0x0000000773600000, 0x00000007c0000000)
+  eden space 63488K, 100% used [0x000000076e400000,0x0000000772200000,0x0000000772200000)
+  from space 10240K, 70% used [0x0000000772200000,0x0000000772914c78,0x0000000772c00000)
+  to   space 10240K, 0% used [0x0000000772c00000,0x0000000772c00000,0x0000000773600000)
+ ParOldGen       total 167936K, used 16K [0x00000006cac00000, 0x00000006d5000000, 0x000000076e400000)
+  object space 167936K, 0% used [0x00000006cac00000,0x00000006cac04000,0x00000006d5000000)
+ Metaspace       used 13751K, capacity 13960K, committed 14208K, reserved 1062912K
+  class space    used 1534K, capacity 1606K, committed 1664K, reserved 1048576K
+Event: 0,756 GC heap after
+Heap after GC invocations=2 (full 0):
+ PSYoungGen      total 73728K, used 7108K [0x000000076e400000, 0x0000000777400000, 0x00000007c0000000)
+  eden space 63488K, 0% used [0x000000076e400000,0x000000076e400000,0x0000000772200000)
+  from space 10240K, 69% used [0x0000000772c00000,0x00000007732f10f0,0x0000000773600000)
+  to   space 10240K, 0% used [0x0000000772200000,0x0000000772200000,0x0000000772c00000)
+ ParOldGen       total 167936K, used 24K [0x00000006cac00000, 0x00000006d5000000, 0x000000076e400000)
+  object space 167936K, 0% used [0x00000006cac00000,0x00000006cac06000,0x00000006d5000000)
+ Metaspace       used 13751K, capacity 13960K, committed 14208K, reserved 1062912K
+  class space    used 1534K, capacity 1606K, committed 1664K, reserved 1048576K
+}
+Event: 0,876 GC heap before
+{Heap before GC invocations=3 (full 0):
+ PSYoungGen      total 73728K, used 70596K [0x000000076e400000, 0x0000000777400000, 0x00000007c0000000)
+  eden space 63488K, 100% used [0x000000076e400000,0x0000000772200000,0x0000000772200000)
+  from space 10240K, 69% used [0x0000000772c00000,0x00000007732f10f0,0x0000000773600000)
+  to   space 10240K, 0% used [0x0000000772200000,0x0000000772200000,0x0000000772c00000)
+ ParOldGen       total 167936K, used 24K [0x00000006cac00000, 0x00000006d5000000, 0x000000076e400000)
+  object space 167936K, 0% used [0x00000006cac00000,0x00000006cac06000,0x00000006d5000000)
+ Metaspace       used 16194K, capacity 16360K, committed 16512K, reserved 1064960K
+  class space    used 1832K, capacity 1894K, committed 1920K, reserved 1048576K
+Event: 0,880 GC heap after
+Heap after GC invocations=3 (full 0):
+ PSYoungGen      total 73728K, used 6495K [0x000000076e400000, 0x0000000777400000, 0x00000007c0000000)
+  eden space 63488K, 0% used [0x000000076e400000,0x000000076e400000,0x0000000772200000)
+  from space 10240K, 63% used [0x0000000772200000,0x0000000772857ff8,0x0000000772c00000)
+  to   space 10240K, 0% used [0x0000000776a00000,0x0000000776a00000,0x0000000777400000)
+ ParOldGen       total 167936K, used 32K [0x00000006cac00000, 0x00000006d5000000, 0x000000076e400000)
+  object space 167936K, 0% used [0x00000006cac00000,0x00000006cac08000,0x00000006d5000000)
+ Metaspace       used 16194K, capacity 16360K, committed 16512K, reserved 1064960K
+  class space    used 1832K, capacity 1894K, committed 1920K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 0,524 Thread 0x000055f3241e5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9934343ce8 method=com.ctc.wstx.io.UTF8Reader.read([CII)I @ 269
+Event: 0,526 Thread 0x000055f3241e5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9934333b1c method=com.ctc.wstx.io.UTF8Reader.read([CII)I @ 269
+Event: 0,577 Thread 0x000055f3241e5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f993437ffc4 method=java.lang.String.trim()Ljava/lang/String; @ 23
+Event: 0,580 Thread 0x000055f3241e5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f99343791a0 method=com.ctc.wstx.sr.BasicStreamReader.readIndentation(CI)I @ 72
+Event: 0,585 Thread 0x000055f3241e5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f99343385b4 method=com.ctc.wstx.sr.BasicStreamReader.readEndElem()V @ 384
+Event: 0,624 Thread 0x000055f3241e5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f99343bacfc method=com.ctc.wstx.sr.BasicStreamReader.readTextPrimary(C)Z @ 24
+Event: 0,980 Thread 0x000055f3241e5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f99344381b0 method=java.io.DataOutputStream.write(I)V @ 5
+Event: 0,980 Thread 0x000055f3241e5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f99344381b0 method=java.io.DataOutputStream.write(I)V @ 5
+Event: 0,980 Thread 0x000055f3241e5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f99344381b0 method=java.io.DataOutputStream.write(I)V @ 5
+Event: 1,107 Thread 0x000055f3241e5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f99342fd768 method=java.util.HashMap.hash(Ljava/lang/Object;)I @ 1
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0,239 Thread 0x000055f3241e5800 Exception <a 'java/lang/ClassNotFoundException': org/apache/log4j/AppenderSkeletonCustomizer> (0x000000076f4e7188) thrown at [./src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 217]
+Event: 0,241 Thread 0x000055f3241e5800 Exception <a 'java/lang/ClassNotFoundException': org/apache/log4j/WriterAppenderCustomizer> (0x000000076f53c810) thrown at [./src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 217]
+Event: 0,243 Thread 0x000055f3241e5800 Exception <a 'java/lang/ClassNotFoundException': org/apache/log4j/ConsoleAppenderCustomizer> (0x000000076f5881f8) thrown at [./src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 217]
+Event: 0,250 Thread 0x000055f3241e5800 Implicit null exception at 0x00007f99341f36f6 to 0x00007f99341f3ab1
+Event: 0,299 Thread 0x000055f3241e5800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x000000076f924428) thrown at [./src/hotspot/src/share/vm/prims/methodHandles.cpp, line 1194]
+Event: 0,300 Thread 0x000055f3241e5800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x000000076f931748) thrown at [./src/hotspot/src/share/vm/prims/methodHandles.cpp, line 1194]
+Event: 1,098 Thread 0x000055f32589f000 Exception <a 'java/lang/reflect/InvocationTargetException'> (0x00000007716158f8) thrown at [./src/hotspot/src/share/vm/runtime/reflection.cpp, line 1090]
+Event: 1,107 Thread 0x000055f3241e5800 Exception <a 'java/lang/NoClassDefFoundError': org/apache/commons/lang/exception/ExceptionUtils> (0x00000007711433f8) thrown at [./src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 206]
+Event: 1,107 Thread 0x000055f3241e5800 Implicit null exception at 0x00007f99342fd6ef to 0x00007f99342fd759
+Event: 1,107 Thread 0x000055f324b55800 Exception <a 'java/lang/InterruptedException'> (0x0000000771587930) thrown at [./src/hotspot/src/share/vm/runtime/objectMonitor.cpp, line 1692]
+
+Events (10 events):
+Event: 1,107 loading class java/util/TreeMap$KeyIterator done
+Event: 1,107 Thread 0x000055f3241e5800 Uncommon trap: trap_request=0xffffff65 fr.pc=0x00007f99342fd768
+Event: 1,107 Thread 0x000055f3241e5800 DEOPT PACKING pc=0x00007f99342fd768 sp=0x00007fffd331fed0
+Event: 1,107 Thread 0x000055f3241e5800 DEOPT UNPACKING pc=0x00007f993404547a sp=0x00007fffd331fe90 mode 2
+Event: 1,108 loading class java/util/IdentityHashMap$KeyIterator
+Event: 1,108 loading class java/util/IdentityHashMap$IdentityHashMapIterator
+Event: 1,108 loading class java/util/IdentityHashMap$IdentityHashMapIterator done
+Event: 1,108 loading class java/util/IdentityHashMap$KeyIterator done
+Event: 1,108 Thread 0x000055f324b55800 Thread exited: 0x000055f324b55800
+Event: 1,108 Thread 0x000055f324b58000 Thread exited: 0x000055f324b58000
+
+
+Dynamic libraries:
+6cac00000-6d5000000 rw-p 00000000 00:00 0 
+6d5000000-76e400000 ---p 00000000 00:00 0 
+76e400000-777400000 rw-p 00000000 00:00 0 
+777400000-7c0000000 ---p 00000000 00:00 0 
+7c0000000-7c0260000 rw-p 00000000 00:00 0 
+7c0260000-800000000 ---p 00000000 00:00 0 
+55f3226c6000-55f322733000 r--p 00000000 103:05 2493618                   /usr/bin/python3.10
+55f322733000-55f3229e6000 r-xp 0006d000 103:05 2493618                   /usr/bin/python3.10
+55f3229e6000-55f322c24000 r--p 00320000 103:05 2493618                   /usr/bin/python3.10
+55f322c24000-55f322c2b000 r--p 0055d000 103:05 2493618                   /usr/bin/python3.10
+55f322c2b000-55f322c6a000 rw-p 00564000 103:05 2493618                   /usr/bin/python3.10
+55f322c6a000-55f322cb0000 rw-p 00000000 00:00 0 
+55f323509000-55f3259a0000 rw-p 00000000 00:00 0                          [heap]
+7f98b4000000-7f98b4034000 rw-p 00000000 00:00 0 
+7f98b4034000-7f98b8000000 ---p 00000000 00:00 0 
+7f98b8000000-7f98b8021000 rw-p 00000000 00:00 0 
+7f98b8021000-7f98bc000000 ---p 00000000 00:00 0 
+7f98bc000000-7f98bc021000 rw-p 00000000 00:00 0 
+7f98bc021000-7f98c0000000 ---p 00000000 00:00 0 
+7f98c0000000-7f98c0021000 rw-p 00000000 00:00 0 
+7f98c0021000-7f98c4000000 ---p 00000000 00:00 0 
+7f98c4000000-7f98c4021000 rw-p 00000000 00:00 0 
+7f98c4021000-7f98c8000000 ---p 00000000 00:00 0 
+7f98c8000000-7f98c8021000 rw-p 00000000 00:00 0 
+7f98c8021000-7f98cc000000 ---p 00000000 00:00 0 
+7f98cc000000-7f98cc021000 rw-p 00000000 00:00 0 
+7f98cc021000-7f98d0000000 ---p 00000000 00:00 0 
+7f98d0000000-7f98d0021000 rw-p 00000000 00:00 0 
+7f98d0021000-7f98d4000000 ---p 00000000 00:00 0 
+7f98d4000000-7f98d4303000 rw-p 00000000 00:00 0 
+7f98d4303000-7f98d8000000 ---p 00000000 00:00 0 
+7f98dc000000-7f98dc5db000 rw-p 00000000 00:00 0 
+7f98dc5db000-7f98e0000000 ---p 00000000 00:00 0 
+7f98e0000000-7f98e050c000 rw-p 00000000 00:00 0 
+7f98e050c000-7f98e4000000 ---p 00000000 00:00 0 
+7f98e4000000-7f98e4021000 rw-p 00000000 00:00 0 
+7f98e4021000-7f98e8000000 ---p 00000000 00:00 0 
+7f98e8000000-7f98e8021000 rw-p 00000000 00:00 0 
+7f98e8021000-7f98ec000000 ---p 00000000 00:00 0 
+7f98ec000000-7f98ec021000 rw-p 00000000 00:00 0 
+7f98ec021000-7f98f0000000 ---p 00000000 00:00 0 
+7f98f0000000-7f98f0021000 rw-p 00000000 00:00 0 
+7f98f0021000-7f98f4000000 ---p 00000000 00:00 0 
+7f98f4000000-7f98f4021000 rw-p 00000000 00:00 0 
+7f98f4021000-7f98f8000000 ---p 00000000 00:00 0 
+7f98fc000000-7f98fc021000 rw-p 00000000 00:00 0 
+7f98fc021000-7f9900000000 ---p 00000000 00:00 0 
+7f9904000000-7f9904021000 rw-p 00000000 00:00 0 
+7f9904021000-7f9908000000 ---p 00000000 00:00 0 
+7f9908000000-7f9908021000 rw-p 00000000 00:00 0 
+7f9908021000-7f990c000000 ---p 00000000 00:00 0 
+7f990c000000-7f990c021000 rw-p 00000000 00:00 0 
+7f990c021000-7f9910000000 ---p 00000000 00:00 0 
+7f9914000000-7f9914021000 rw-p 00000000 00:00 0 
+7f9914021000-7f9918000000 ---p 00000000 00:00 0 
+7f9918000000-7f991830a000 rw-p 00000000 00:00 0 
+7f991830a000-7f991c000000 ---p 00000000 00:00 0 
+7f991c000000-7f991c021000 rw-p 00000000 00:00 0 
+7f991c021000-7f9920000000 ---p 00000000 00:00 0 
+7f9921837000-7f99219eb000 rw-p 00000000 00:00 0 
+7f99219eb000-7f9921a09000 r--p 00000000 103:05 2496581                   /usr/lib/x86_64-linux-gnu/libssl.so.3
+7f9921a09000-7f9921a64000 r-xp 0001e000 103:05 2496581                   /usr/lib/x86_64-linux-gnu/libssl.so.3
+7f9921a64000-7f9921a81000 r--p 00079000 103:05 2496581                   /usr/lib/x86_64-linux-gnu/libssl.so.3
+7f9921a81000-7f9921a8b000 r--p 00095000 103:05 2496581                   /usr/lib/x86_64-linux-gnu/libssl.so.3
+7f9921a8b000-7f9921a8f000 rw-p 0009f000 103:05 2496581                   /usr/lib/x86_64-linux-gnu/libssl.so.3
+7f9921a8f000-7f9921aa1000 r--p 00000000 103:05 2493819                   /usr/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7f9921aa1000-7f9921aad000 r-xp 00012000 103:05 2493819                   /usr/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7f9921aad000-7f9921abb000 r--p 0001e000 103:05 2493819                   /usr/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7f9921abb000-7f9921abc000 r--p 0002b000 103:05 2493819                   /usr/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7f9921abc000-7f9921ac5000 rw-p 0002c000 103:05 2493819                   /usr/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7f9921ac5000-7f9921bc5000 rw-p 00000000 00:00 0 
+7f9921bc5000-7f9921bc9000 r--p 00000000 103:05 2498332                   /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1
+7f9921bc9000-7f9921bdf000 r-xp 00004000 103:05 2498332                   /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1
+7f9921bdf000-7f9921be9000 r--p 0001a000 103:05 2498332                   /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1
+7f9921be9000-7f9921bea000 r--p 00023000 103:05 2498332                   /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1
+7f9921bea000-7f9921beb000 rw-p 00024000 103:05 2498332                   /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1
+7f9921beb000-7f9921bee000 r--p 00000000 103:05 2497961                   /usr/lib/x86_64-linux-gnu/libcap.so.2.44
+7f9921bee000-7f9921bf2000 r-xp 00003000 103:05 2497961                   /usr/lib/x86_64-linux-gnu/libcap.so.2.44
+7f9921bf2000-7f9921bf4000 r--p 00007000 103:05 2497961                   /usr/lib/x86_64-linux-gnu/libcap.so.2.44
+7f9921bf4000-7f9921bf5000 r--p 00008000 103:05 2497961                   /usr/lib/x86_64-linux-gnu/libcap.so.2.44
+7f9921bf5000-7f9921bf6000 rw-p 00009000 103:05 2497961                   /usr/lib/x86_64-linux-gnu/libcap.so.2.44
+7f9921bf6000-7f9921bf8000 r--p 00000000 103:05 2499284                   /usr/lib/x86_64-linux-gnu/libxxhash.so.0.8.1
+7f9921bf8000-7f9921c07000 r-xp 00002000 103:05 2499284                   /usr/lib/x86_64-linux-gnu/libxxhash.so.0.8.1
+7f9921c07000-7f9921c09000 r--p 00011000 103:05 2499284                   /usr/lib/x86_64-linux-gnu/libxxhash.so.0.8.1
+7f9921c09000-7f9921c0a000 r--p 00012000 103:05 2499284                   /usr/lib/x86_64-linux-gnu/libxxhash.so.0.8.1
+7f9921c0a000-7f9921c0b000 rw-p 00013000 103:05 2499284                   /usr/lib/x86_64-linux-gnu/libxxhash.so.0.8.1
+7f9921c0b000-7f9921c1a000 r--p 00000000 103:05 2498250                   /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4
+7f9921c1a000-7f9921d00000 r-xp 0000f000 103:05 2498250                   /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4
+7f9921d00000-7f9921d3e000 r--p 000f5000 103:05 2498250                   /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4
+7f9921d3e000-7f9921d3f000 ---p 00133000 103:05 2498250                   /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4
+7f9921d3f000-7f9921d42000 r--p 00133000 103:05 2498250                   /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4
+7f9921d42000-7f9921d48000 rw-p 00136000 103:05 2498250                   /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4
+7f9921d48000-7f9921d49000 rw-p 00000000 00:00 0 
+7f9921d49000-7f9921d5c000 r--p 00000000 103:05 2490668                   /usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0
+7f9921d5c000-7f9921ddb000 r-xp 00013000 103:05 2490668                   /usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0
+7f9921ddb000-7f9921e06000 r--p 00092000 103:05 2490668                   /usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0
+7f9921e06000-7f9921e07000 ---p 000bd000 103:05 2490668                   /usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0
+7f9921e07000-7f9921e0e000 r--p 000bd000 103:05 2490668                   /usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0
+7f9921e0e000-7f9921e0f000 rw-p 000c4000 103:05 2490668                   /usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0
+7f9921e0f000-7f9921e10000 rw-p 00000000 00:00 0 
+7f9921e10000-7f9921e14000 r--p 00000000 103:05 2491184                   /usr/lib/x86_64-linux-gnu/libudev.so.1.7.2
+7f9921e14000-7f9921e2e000 r-xp 00004000 103:05 2491184                   /usr/lib/x86_64-linux-gnu/libudev.so.1.7.2
+7f9921e2e000-7f9921e37000 r--p 0001e000 103:05 2491184                   /usr/lib/x86_64-linux-gnu/libudev.so.1.7.2
+7f9921e37000-7f9921e38000 ---p 00027000 103:05 2491184                   /usr/lib/x86_64-linux-gnu/libudev.so.1.7.2
+7f9921e38000-7f9921e39000 r--p 00027000 103:05 2491184                   /usr/lib/x86_64-linux-gnu/libudev.so.1.7.2
+7f9921e39000-7f9921e3a000 rw-p 00028000 103:05 2491184                   /usr/lib/x86_64-linux-gnu/libudev.so.1.7.2
+7f9921e3a000-7f9921e44000 r--p 00000000 103:05 2499300                   /usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8
+7f9921e44000-7f9921ef6000 r-xp 0000a000 103:05 2499300                   /usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8
+7f9921ef6000-7f9921f07000 r--p 000bc000 103:05 2499300                   /usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8
+7f9921f07000-7f9921f08000 r--p 000cc000 103:05 2499300                   /usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8
+7f9921f08000-7f9921f09000 rw-p 000cd000 103:05 2499300                   /usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8
+7f9921f09000-7f9921f0b000 r--p 00000000 103:05 2498584                   /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3
+7f9921f0b000-7f9921f24000 r-xp 00002000 103:05 2498584                   /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3
+7f9921f24000-7f9921f26000 r--p 0001b000 103:05 2498584                   /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3
+7f9921f26000-7f9921f27000 ---p 0001d000 103:05 2498584                   /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3
+7f9921f27000-7f9921f28000 r--p 0001d000 103:05 2498584                   /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3
+7f9921f28000-7f9921f29000 rw-p 0001e000 103:05 2498584                   /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3
+7f9921f29000-7f9921f5f000 r--p 00000000 103:05 2490896                   /usr/lib/x86_64-linux-gnu/libapt-pkg.so.6.0.0
+7f9921f5f000-7f992209c000 r-xp 00036000 103:05 2490896                   /usr/lib/x86_64-linux-gnu/libapt-pkg.so.6.0.0
+7f992209c000-7f99220e4000 r--p 00173000 103:05 2490896                   /usr/lib/x86_64-linux-gnu/libapt-pkg.so.6.0.0
+7f99220e4000-7f99220eb000 r--p 001ba000 103:05 2490896                   /usr/lib/x86_64-linux-gnu/libapt-pkg.so.6.0.0
+7f99220eb000-7f99220ec000 rw-p 001c1000 103:05 2490896                   /usr/lib/x86_64-linux-gnu/libapt-pkg.so.6.0.0
+7f9922103000-7f9922118000 r--p 00000000 103:05 20995                     /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so
+7f9922118000-7f9922137000 r-xp 00015000 103:05 20995                     /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so
+7f9922137000-7f992214e000 r--p 00034000 103:05 20995                     /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so
+7f992214e000-7f9922150000 r--p 0004a000 103:05 20995                     /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so
+7f9922150000-7f9922159000 rw-p 0004c000 103:05 20995                     /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so
+7f9922159000-7f992215c000 ---p 00000000 00:00 0 
+7f992215c000-7f9922259000 rw-p 00000000 00:00 0 
+7f9922259000-7f992225c000 ---p 00000000 00:00 0 
+7f992225c000-7f9922359000 rw-p 00000000 00:00 0 
+7f9922359000-7f992235c000 ---p 00000000 00:00 0 
+7f992235c000-7f9922659000 rw-p 00000000 00:00 0 
+7f9922659000-7f992265c000 ---p 00000000 00:00 0 
+7f992265c000-7f9922959000 rw-p 00000000 00:00 0 
+7f9922959000-7f9922b59000 rw-p 00000000 00:00 0 
+7f9922b59000-7f9922d59000 rw-p 00000000 00:00 0 
+7f9922d59000-7f9922d5b000 r--s 00016000 103:05 771                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar
+7f9922d5b000-7f9922d6c000 r--s 001c5000 103:05 776                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar
+7f9922d6c000-7f9922d6d000 r--p 00000000 103:05 721                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjaas_unix.so
+7f9922d6d000-7f9922d6e000 r-xp 00001000 103:05 721                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjaas_unix.so
+7f9922d6e000-7f9922d6f000 r--p 00002000 103:05 721                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjaas_unix.so
+7f9922d6f000-7f9922d70000 r--p 00002000 103:05 721                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjaas_unix.so
+7f9922d70000-7f9922d71000 rw-p 00003000 103:05 721                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjaas_unix.so
+7f9922d71000-7f9922f71000 rw-p 00000000 00:00 0 
+7f9922f71000-7f9922f74000 ---p 00000000 00:00 0 
+7f9922f74000-7f9923071000 rw-p 00000000 00:00 0 
+7f9923071000-7f9923074000 ---p 00000000 00:00 0 
+7f9923074000-7f99230aa000 rw-p 00000000 00:00 0 
+7f99230aa000-7f99230ae000 r--p 00000000 103:05 731                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f99230ae000-7f99230b2000 r-xp 00004000 103:05 731                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f99230b2000-7f99230b4000 r--p 00008000 103:05 731                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f99230b4000-7f99230b5000 r--p 00009000 103:05 731                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f99230b5000-7f99230b6000 rw-p 0000a000 103:05 731                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f99230b6000-7f99230b8000 r--s 00012000 103:05 1854025                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.3.4.jar
+7f99230b8000-7f99230ba000 r--s 00006000 103:05 1854160                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-applications-mawo-core-3.3.4.jar
+7f99230ba000-7f99230bc000 r--s 0000c000 103:05 1854123                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.3.4.jar
+7f99230bc000-7f99230c6000 r--s 00091000 103:05 1854026                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-services-core-3.3.4.jar
+7f99230c6000-7f99230c7000 r--s 00001000 103:05 1853836                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-registry-3.3.4.jar
+7f99230c7000-7f99230c9000 r--s 0000d000 103:05 1853906                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.3.4.jar
+7f99230c9000-7f99230cb000 r--s 00001000 103:05 1853913                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-tests-3.3.4.jar
+7f99230cb000-7f99230cd000 r--s 0000d000 103:05 1853957                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.3.4.jar
+7f99230cd000-7f99230eb000 r--s 00195000 103:05 1854159                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.3.4.jar
+7f99230eb000-7f99230ec000 r--s 00004000 103:05 1853908                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.3.4.jar
+7f99230ec000-7f992311c000 r--s 0034c000 103:05 1854121                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-api-3.3.4.jar
+7f992311c000-7f992311f000 r--s 0001c000 103:05 1853888                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-router-3.3.4.jar
+7f992311f000-7f9923146000 r--s 0023a000 103:05 1854119                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.3.4.jar
+7f9923146000-7f992315e000 r--s 00148000 103:05 1853907                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-common-3.3.4.jar
+7f992315e000-7f9923183000 r--s 002af000 103:05 1854163                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-common-3.3.4.jar
+7f9923183000-7f9923188000 r--s 00042000 103:05 1853909                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-client-3.3.4.jar
+7f9923188000-7f992318d000 r--s 0003b000 103:05 1854122                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.3.4.jar
+7f992318d000-7f992318f000 r--s 00010000 103:05 1854120                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/hadoop-yarn-services-api-3.3.4.jar
+7f992318f000-7f9923191000 r--s 0000c000 103:05 1853848                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/objenesis-2.6.jar
+7f9923191000-7f9923193000 r--s 00007000 103:05 1853852                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/asm-analysis-9.1.jar
+7f9923193000-7f99231b9000 r--s 00180000 103:05 1853871                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/ehcache-3.3.1.jar
+7f99231b9000-7f99231bc000 r--s 00013000 103:05 1853843                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jetty-annotations-9.4.43.v20210629.jar
+7f99231bc000-7f99231be000 r--s 00006000 103:05 1853846                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/websocket-servlet-9.4.43.v20210629.jar
+7f99231be000-7f99231c0000 r--s 0000d000 103:05 1853841                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/java-util-1.9.0.jar
+7f99231c0000-7f99231ce000 r--s 00096000 103:05 1853882                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/guice-4.0.jar
+7f99231ce000-7f99231d0000 r--s 0000b000 103:05 1853849                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/asm-tree-9.1.jar
+7f99231d0000-7f99231d5000 r--s 00030000 103:05 1853857                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/websocket-common-9.4.43.v20210629.jar
+7f99231d5000-7f99231d9000 r--s 00019000 103:05 1853885                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jakarta.xml.bind-api-2.3.2.jar
+7f99231d9000-7f99231db000 r--s 0000f000 103:05 1853839                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jetty-plus-9.4.43.v20210629.jar
+7f99231db000-7f99231e2000 r--s 00049000 103:05 1853860                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jetty-client-9.4.43.v20210629.jar
+7f99231e2000-7f99231e4000 r--s 00011000 103:05 1853887                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/guice-servlet-4.0.jar
+7f99231e4000-7f99231f7000 r--s 000b0000 103:05 1853847                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar
+7f99231f7000-7f99231f8000 r--s 00003000 103:05 1853880                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar
+7f99231f8000-7f99231fb000 r--s 0001e000 103:05 1853861                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jersey-client-1.19.jar
+7f99231fb000-7f99231fd000 r--s 0000a000 103:05 1853881                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/websocket-client-9.4.43.v20210629.jar
+7f99231fd000-7f9923255000 r--s 003a7000 103:05 1853864                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar
+7f9923255000-7f9923258000 r--s 0001e000 103:05 1853876                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar
+7f9923258000-7f9923261000 r--s 000a4000 103:05 1853886                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jline-3.9.0.jar
+7f9923261000-7f9923262000 r--s 00000000 103:05 1853862                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/javax.inject-1.jar
+7f9923262000-7f9923264000 r--s 0000a000 103:05 1853840                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jetty-jndi-9.4.43.v20210629.jar
+7f9923264000-7f9923266000 r--s 0000b000 103:05 1853859                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/websocket-api-9.4.43.v20210629.jar
+7f9923266000-7f992326a000 r--s 0001e000 103:05 1853850                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/metrics-core-3.2.4.jar
+7f992326a000-7f992326c000 r--s 00005000 103:05 1853844                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/javax.websocket-client-api-1.0.jar
+7f992326c000-7f992326e000 r--s 00003000 103:05 1853866                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.12.7.jar
+7f992326e000-7f9923270000 r--s 00011000 103:05 1853884                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/json-io-2.5.1.jar
+7f9923270000-7f9923273000 r--s 0000b000 103:05 1853865                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar
+7f9923273000-7f992327a000 r--s 00045000 103:05 1853842                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/snakeyaml-1.26.jar
+7f992327a000-7f992327c000 r--s 00010000 103:05 1853875                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/asm-commons-9.1.jar
+7f992327c000-7f9923285000 r--s 000b9000 103:05 1853856                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar
+7f9923285000-7f9923289000 r--s 00168000 103:05 1853877                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jna-5.2.0.jar
+7f9923289000-7f992328a000 r--s 00003000 103:05 1853855                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jersey-guice-1.19.jar
+7f992328a000-7f992328c000 r--s 00000000 103:05 1853851                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/aopalliance-1.0.jar
+7f992328c000-7f992328e000 r--s 00007000 103:05 1853872                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jackson-jaxrs-base-2.12.7.jar
+7f992328e000-7f9923290000 r--s 00007000 103:05 1853853                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/javax.websocket-api-1.0.jar
+7f9923290000-7f9923291000 r--s 00008000 103:05 1853858                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.12.7.jar
+7f9923291000-7f9923292000 r--s 0000a000 103:05 1853863                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/websocket-server-9.4.43.v20210629.jar
+7f9923292000-7f9923297000 r--s 00025000 103:05 1853854                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/javax-websocket-client-impl-9.4.43.v20210629.jar
+7f9923297000-7f992329e000 r--s 00058000 103:05 1853845                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/fst-2.50.jar
+7f992329e000-7f99232a0000 r--s 0000a000 103:05 1853883                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/yarn/lib/javax-websocket-server-impl-9.4.43.v20210629.jar
+7f99232a0000-7f99232ba000 r--s 00176000 103:05 1853769                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.3.4.jar
+7f99232ba000-7f99232c7000 r--s 000b8000 103:05 1853772                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.3.4.jar
+7f99232c7000-7f99232c9000 r--s 0000e000 103:05 1853830                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.3.4.jar
+7f99232c9000-7f99232d4000 r--s 00086000 103:05 1853833                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.3.4.jar
+7f99232d4000-7f99232d6000 r--s 0000b000 103:05 1853771                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.4.jar
+7f99232d6000-7f99232d7000 r--s 00005000 103:05 1853809                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.3.4.jar
+7f99232d7000-7f99232dc000 r--s 00040000 103:05 1853770                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.4.jar
+7f99232dc000-7f99232dd000 r--s 00002000 103:05 1853773                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.3.4.jar
+7f99232dd000-7f99232e0000 r--s 00014000 103:05 1853829                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.3.4.jar
+7f99232e0000-7f99232e4000 r--s 00029000 103:05 1853806                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.3.4.jar
+7f99232e4000-7f99232fc000 r--s 0017e000 103:05 1853834                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.4-tests.jar
+7f99232fc000-7f9923334000 r--s 00595000 103:05 1853764                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-3.3.4-tests.jar
+7f9923334000-7f9923336000 r--s 0001b000 103:05 1853569                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-nfs-3.3.4.jar
+7f9923336000-7f992333c000 r--s 00066000 103:05 1853570                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.4-tests.jar
+7f992333c000-7f992334e000 r--s 000ff000 103:05 1853383                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.4.jar
+7f992334e000-7f9923398000 r--s 005b1000 103:05 1853574                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-3.3.4.jar
+7f9923398000-7f99233e0000 r--s 004f8000 103:05 1853578                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-client-3.3.4.jar
+7f99233e0000-7f99233e1000 r--s 00002000 103:05 1853766                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.4-tests.jar
+7f99233e1000-7f99233e7000 r--s 00038000 103:05 1853573                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.3.4.jar
+7f99233e7000-7f99233ea000 r--s 0001d000 103:05 1853765                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-client-3.3.4-tests.jar
+7f99233ea000-7f99233eb000 r--s 00002000 103:05 1853382                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.4.jar
+7f99233eb000-7f99233ee000 r--s 00012000 103:05 1853543                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar
+7f99233ee000-7f99233f7000 r--s 00062000 103:05 1853460                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/avro-1.7.7.jar
+7f99233f7000-7f99233fa000 r--s 00020000 103:05 1853432                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-webapp-9.4.43.v20210629.jar
+7f99233fa000-7f99233fd000 r--s 00021000 103:05 1853405                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-servlet-9.4.43.v20210629.jar
+7f99233fd000-7f9923403000 r--s 00040000 103:05 1853535                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-io-2.8.0.jar
+7f9923403000-7f9923406000 r--s 00019000 103:05 1853461                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar
+7f9923406000-7f9923408000 r--s 0001b000 103:05 1853433                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-security-9.4.43.v20210629.jar
+7f9923408000-7f9923411000 r--s 000b9000 103:05 1853389                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/okhttp-4.9.3.jar
+7f9923411000-7f9923415000 r--s 00019000 103:05 1853488                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar
+7f9923415000-7f9923416000 r--s 00004000 103:05 1853475                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar
+7f9923416000-7f9923417000 r--s 00007000 103:05 1853473                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-udt-4.1.77.Final.jar
+7f9923417000-7f992341e000 r--s 0004c000 103:05 1853507                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-4.1.77.Final.jar
+7f992341e000-7f9923421000 r--s 00034000 103:05 1853465                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-http-9.4.43.v20210629.jar
+7f9923421000-7f9923423000 r--s 00009000 103:05 1853467                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-cli-1.2.jar
+7f9923423000-7f9923429000 r--s 00046000 103:05 1853392                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-net-3.6.jar
+7f9923429000-7f992342e000 r--s 00019000 103:05 1853552                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-socks-4.1.77.Final.jar
+7f992342e000-7f992342f000 r--s 00009000 103:05 1853541                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar
+7f992342f000-7f9923433000 r--s 0002c000 103:05 1853439                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/stax2-api-4.2.1.jar
+7f9923433000-7f9923436000 r--s 00015000 103:05 1853567                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar
+7f9923436000-7f9923468000 r--s 0026d000 103:05 1853425                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/guava-27.0-jre.jar
+7f9923468000-7f992346a000 r--s 0000f000 103:05 1853510                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jettison-1.1.jar
+7f992346a000-7f992346c000 r--s 00006000 103:05 1853462                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar
+7f992346c000-7f9923489000 r--s 0016a000 103:05 1853426                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar
+7f9923489000-7f992349a000 r--s 000e8000 103:05 1853424                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-compress-1.21.jar
+7f992349a000-7f992349c000 r--s 0001e000 103:05 1853555                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/re2j-1.1.jar
+7f992349c000-7f99234a6000 r--s 0006c000 103:05 1853441                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-4.1.77.Final.jar
+7f99234a6000-7f99234b6000 r--s 0009c000 103:05 1853428                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jersey-server-1.19.jar
+7f99234b6000-7f99234b8000 r--s 0000e000 103:05 1853554                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.43.v20210629.jar
+7f99234b8000-7f9923509000 r--s 002e4000 103:05 1853464                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/hadoop-shaded-guava-1.1.1.jar
+7f9923509000-7f992350b000 r--s 00006000 103:05 1853401                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-stomp-4.1.77.Final.jar
+7f992350b000-7f9923518000 r--s 00083000 103:05 1853540                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar
+7f9923518000-7f992351c000 r--s 0003a000 103:05 1853517                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/zookeeper-jute-3.5.6.jar
+7f992351c000-7f992351d000 r--s 00004000 103:05 1853463                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/token-provider-1.0.1.jar
+7f992351d000-7f9923530000 r--s 00156000 103:05 1853421                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar
+7f9923530000-7f9923534000 r--s 0001a000 103:05 1853486                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/json-smart-2.4.7.jar
+7f9923534000-7f992353c000 r--s 00049000 103:05 1853476                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/httpcore-4.4.13.jar
+7f992353c000-7f992353f000 r--s 00010000 103:05 1853559                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jackson-annotations-2.12.7.jar
+7f992353f000-7f992354d000 r--s 00092000 103:05 1853562                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-common-4.1.77.Final.jar
+7f992354d000-7f992354e000 r--s 00004000 103:05 1853521                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-smtp-4.1.77.Final.jar
+7f992354e000-7f9923552000 r--s 0001c000 103:05 1853402                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar
+7f9923552000-7f9923556000 r--s 00035000 103:05 1853500                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar
+7f9923556000-7f992355f000 r--s 00084000 103:05 1853539                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-util-9.4.43.v20210629.jar
+7f992355f000-7f9923560000 r--s 00005000 103:05 1853542                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-handler-proxy-4.1.77.Final.jar
+7f9923560000-7f9923564000 r--s 00029000 103:05 1853508                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-text-1.4.jar
+7f9923564000-7f9923566000 r--s 00001000 103:05 1853395                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar
+7f9923566000-7f9923579000 r--s 000c7000 103:05 1853410                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar
+7f9923579000-7f992357a000 r--s 00000000 103:05 1853553                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/failureaccess-1.0.jar
+7f992357a000-7f992357c000 r--s 00005000 103:05 1853511                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-native-kqueue-4.1.77.Final-osx-aarch_64.jar
+7f992357c000-7f992357f000 r--s 00016000 103:05 1853440                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar
+7f992357f000-7f9923581000 r--s 00003000 103:05 1853400                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-rxtx-4.1.77.Final.jar
+7f9923581000-7f9923583000 r--s 00009000 103:05 1853449                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-native-unix-common-4.1.77.Final.jar
+7f9923583000-7f9923585000 r--s 0000c000 103:05 1853485                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/asm-5.0.4.jar
+7f9923585000-7f9923587000 r--s 0000a000 103:05 1853409                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar
+7f9923587000-7f992358a000 r--s 00011000 103:05 1853427                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar
+7f992358a000-7f992358b000 r--s 00004000 103:05 1853558                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-resolver-dns-native-macos-4.1.77.Final-osx-x86_64.jar
+7f992358b000-7f992358f000 r--s 00025000 103:05 1853458                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jersey-json-1.19.jar
+7f992358f000-7f99235d0000 r--s 00298000 103:05 1853536                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/curator-client-4.2.0.jar
+7f99235d0000-7f99235d3000 r--s 00017000 103:05 1853497                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/hadoop-auth-3.3.4.jar
+7f99235d3000-7f99235d9000 r--s 0003a000 103:05 1853450                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/gson-2.8.9.jar
+7f99235d9000-7f99235da000 r--s 00005000 103:05 1853563                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar
+7f99235da000-7f99235e1000 r--s 0004b000 103:05 1853423                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/reload4j-1.2.22.jar
+7f99235e1000-7f99235e3000 r--s 00006000 103:05 1853494                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar
+7f99235e3000-7f99235e5000 r--s 0000e000 103:05 1853568                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar
+7f99235e5000-7f99235e9000 r--s 00023000 103:05 1853506                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-resolver-dns-4.1.77.Final.jar
+7f99235e9000-7f99235f1000 r--s 0007b000 103:05 1853550                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar
+7f99235f1000-7f99235f3000 r--s 00000000 103:05 1853454                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-all-4.1.77.Final.jar
+7f99235f3000-7f99235f6000 r--s 001de000 103:05 1853387                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/snappy-java-1.1.8.2.jar
+7f99235f6000-7f99235f9000 r--s 00020000 103:05 1853447                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-classes-epoll-4.1.77.Final.jar
+7f99235f9000-7f99235fb000 r--s 00006000 103:05 1853434                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/paranamer-2.3.jar
+7f99235fb000-7f99235fd000 r--s 00008000 103:05 1853561                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-resolver-4.1.77.Final.jar
+7f99235fd000-7f9923607000 r--s 00077000 103:05 1853469                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-handler-4.1.77.Final.jar
+7f9923607000-7f992360e000 r--s 00031000 103:05 1853455                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar
+7f992360e000-7f9923610000 r--s 0003a000 103:05 1853502                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/okio-2.8.0.jar
+7f9923610000-7f9923614000 r--s 00041000 103:05 1853514                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jsch-0.1.55.jar
+7f9923614000-7f9923617000 r--s 00018000 103:05 1853505                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-classes-kqueue-4.1.77.Final.jar
+7f9923617000-7f992361a000 r--s 000fd000 103:05 1853522                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar
+7f992361a000-7f9923621000 r--s 0002b000 103:05 1853499                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar
+7f9923621000-7f9923623000 r--s 0000e000 103:05 1853391                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar
+7f9923623000-7f9923624000 r--s 00004000 103:05 1853471                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-resolver-dns-native-macos-4.1.77.Final-osx-aarch_64.jar
+7f9923624000-7f992363d000 r--s 00123000 103:05 1853399                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar
+7f992363d000-7f992363f000 r--s 00009000 103:05 1853503                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jakarta.activation-api-1.2.1.jar
+7f992363f000-7f9923648000 r--s 00047000 103:05 1853396                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/curator-framework-4.2.0.jar
+7f9923648000-7f9923651000 r--s 00064000 103:05 1853390                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/nimbus-jose-jwt-9.8.1.jar
+7f9923651000-7f992365e000 r--s 000b2000 103:05 1853566                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/httpclient-4.5.13.jar
+7f992365e000-7f992365f000 r--s 00004000 103:05 1853520                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar
+7f992365f000-7f9923666000 r--s 00050000 103:05 1853556                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-codec-1.15.jar
+7f9923666000-7f9923668000 r--s 0000b000 103:05 1853512                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-sctp-4.1.77.Final.jar
+7f9923668000-7f9923669000 r--s 00006000 103:05 1853446                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar
+7f9923669000-7f992366b000 r--s 00000000 103:05 1853560                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar
+7f992366b000-7f992366c000 r--s 00009000 103:05 1853451                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-native-epoll-4.1.77.Final-linux-aarch_64.jar
+7f992366c000-7f992366d000 r--s 00004000 103:05 1853525                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar
+7f992366d000-7f992366e000 r--s 00004000 103:05 1853404                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar
+7f992366e000-7f9923670000 r--s 0000e000 103:05 1853438                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-dns-4.1.77.Final.jar
+7f9923670000-7f992367c000 r--s 0008b000 103:05 1853557                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar
+7f992367c000-7f9923686000 r--s 00061000 103:05 1853564                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jersey-core-1.19.jar
+7f9923686000-7f9923687000 r--s 00008000 103:05 1853487                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-haproxy-4.1.77.Final.jar
+7f9923687000-7f992368f000 r--s 00027000 103:05 1853493                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kotlin-stdlib-common-1.4.10.jar
+7f992368f000-7f99236a4000 r--s 00157000 103:05 1853443                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kotlin-stdlib-1.4.10.jar
+7f99236a4000-7f99236aa000 r--s 0007a000 103:05 1853509                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/woodstox-core-5.3.0.jar
+7f99236aa000-7f99236b6000 r--s 00091000 103:05 1853406                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-http-4.1.77.Final.jar
+7f99236b6000-7f99236b7000 r--s 00008000 103:05 1853414                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar
+7f99236b7000-7f99236c2000 r--s 000a5000 103:05 1853436                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-server-9.4.43.v20210629.jar
+7f99236c2000-7f99236d0000 r--s 000b1000 103:05 1853448                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar
+7f99236d0000-7f99236d1000 r--s 00006000 103:05 1853468                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-native-kqueue-4.1.77.Final-osx-x86_64.jar
+7f99236d1000-7f99236d9000 r--s 00041000 103:05 1853492                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/curator-recipes-4.2.0.jar
+7f99236d9000-7f99236da000 r--s 00005000 103:05 1853457                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/json-simple-1.1.1.jar
+7f99236da000-7f99236e9000 r--s 000e2000 103:05 1853545                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/zookeeper-3.5.6.jar
+7f99236e9000-7f99236ee000 r--s 00046000 103:05 1853444                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-buffer-4.1.77.Final.jar
+7f99236ee000-7f99236f0000 r--s 00009000 103:05 1853453                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-memcache-4.1.77.Final.jar
+7f99236f0000-7f99236f2000 r--s 00003000 103:05 1853442                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-xml-4.1.77.Final.jar
+7f99236f2000-7f99236f7000 r--s 00038000 103:05 1853435                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar
+7f99236f7000-7f99236f8000 r--s 00000000 103:05 1853513                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar
+7f99236f8000-7f992370f000 r--s 0015c000 103:05 1853445                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jackson-databind-2.12.7.jar
+7f992370f000-7f9923711000 r--s 00017000 103:05 1853456                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar
+7f9923711000-7f9923713000 r--s 00003000 103:05 1853388                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jsr305-3.0.2.jar
+7f9923713000-7f9923715000 r--s 00008000 103:05 1853459                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-transport-native-epoll-4.1.77.Final-linux-x86_64.jar
+7f9923715000-7f9923717000 r--s 00009000 103:05 1853549                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-redis-4.1.77.Final.jar
+7f9923717000-7f992371c000 r--s 00055000 103:05 1853474                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jackson-core-2.12.7.jar
+7f992371c000-7f9923726000 r--s 00026000 103:05 1853466                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar
+7f9923726000-7f9923728000 r--s 00005000 103:05 1853534                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/hadoop-annotations-3.3.4.jar
+7f9923728000-7f9923729000 r--s 00000000 103:05 1853437                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+7f9923729000-7f9923732000 r--s 0006b000 103:05 1853565                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-http2-4.1.77.Final.jar
+7f9923732000-7f9923734000 r--s 00006000 103:05 1853394                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/accessors-smart-2.4.7.jar
+7f9923734000-7f9923738000 r--s 00028000 103:05 1853495                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-io-9.4.43.v20210629.jar
+7f9923738000-7f992373a000 r--s 00001000 103:05 1853416                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-resolver-dns-classes-macos-4.1.77.Final.jar
+7f992373a000-7f9923744000 r--s 00086000 103:05 1853501                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/commons-lang3-3.12.0.jar
+7f9923744000-7f9923749000 r--s 00047000 103:05 1853413                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar
+7f9923749000-7f992374b000 r--s 0000f000 103:05 1853417                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/jetty-xml-9.4.43.v20210629.jar
+7f992374b000-7f992374e000 r--s 00016000 103:05 1853403                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/hdfs/lib/netty-codec-mqtt-4.1.77.Final.jar
+7f992374e000-7f9923752000 r--s 0002b000 103:05 1854338                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/hadoop-registry-3.3.4.jar
+7f9923752000-7f9923783000 r--s 0030a000 103:05 1854333                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/hadoop-common-3.3.4-tests.jar
+7f9923783000-7f9923787000 r--s 00025000 103:05 1854295                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/hadoop-nfs-3.3.4.jar
+7f9923787000-7f992378a000 r--s 00015000 103:05 1854294                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/hadoop-kms-3.3.4.jar
+7f992378a000-7f992378f000 r--p 00000000 103:05 733                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f992378f000-7f99237a0000 r-xp 00005000 103:05 733                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f99237a0000-7f99237a4000 r--p 00016000 103:05 733                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f99237a4000-7f99237a5000 r--p 00019000 103:05 733                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f99237a5000-7f99237a6000 rw-p 0001a000 103:05 733                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f99237a6000-7f99237ad000 r--p 00000000 103:05 734                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f99237ad000-7f99237b6000 r-xp 00007000 103:05 734                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f99237b6000-7f99237b9000 r--p 00010000 103:05 734                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f99237b9000-7f99237ba000 r--p 00012000 103:05 734                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f99237ba000-7f99237bb000 rw-p 00013000 103:05 734                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f99237bb000-7f99237ff000 r--s 00400000 103:05 1854332                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/hadoop-common-3.3.4.jar
+7f99237ff000-7f9923802000 r--s 00012000 103:05 1854276                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-server-1.0.1.jar
+7f9923802000-7f992380b000 r--s 00062000 103:05 1854236                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/avro-1.7.7.jar
+7f992380b000-7f992380e000 r--s 00020000 103:05 1854218                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-webapp-9.4.43.v20210629.jar
+7f992380e000-7f9923811000 r--s 00021000 103:05 1854205                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-servlet-9.4.43.v20210629.jar
+7f9923811000-7f9923817000 r--s 00040000 103:05 1854271                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-io-2.8.0.jar
+7f9923817000-7f992381a000 r--s 00019000 103:05 1854237                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-client-1.0.1.jar
+7f992381a000-7f992381c000 r--s 0001b000 103:05 1854219                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-security-9.4.43.v20210629.jar
+7f992381c000-7f9923820000 r--s 00019000 103:05 1854250                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-crypto-1.0.1.jar
+7f9923820000-7f9923821000 r--s 00004000 103:05 1854245                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-identity-1.0.1.jar
+7f9923821000-7f9923823000 r--s 00009000 103:05 1854248                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/slf4j-api-1.7.36.jar
+7f9923823000-7f9923826000 r--s 00034000 103:05 1854241                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-http-9.4.43.v20210629.jar
+7f9923826000-7f9923828000 r--s 00009000 103:05 1854243                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-cli-1.2.jar
+7f9923828000-7f992382e000 r--s 00046000 103:05 1854197                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-net-3.6.jar
+7f992382e000-7f992382f000 r--s 00009000 103:05 1854275                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerby-util-1.0.1.jar
+7f992382f000-7f9923833000 r--s 0002c000 103:05 1854224                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/stax2-api-4.2.1.jar
+7f9923833000-7f9923836000 r--s 00015000 103:05 1854292                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar
+7f9923836000-7f9923868000 r--s 0026d000 103:05 1854214                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/guava-27.0-jre.jar
+7f9923868000-7f992386a000 r--s 0000f000 103:05 1854261                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jettison-1.1.jar
+7f992386a000-7f992386c000 r--s 00006000 103:05 1854238                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerby-xdr-1.0.1.jar
+7f992386c000-7f9923889000 r--s 0016a000 103:05 1854215                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-math3-3.1.1.jar
+7f9923889000-7f992389a000 r--s 000e8000 103:05 1854213                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-compress-1.21.jar
+7f992389a000-7f99238aa000 r--s 0009c000 103:05 1854217                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jersey-server-1.19.jar
+7f99238aa000-7f99238fb000 r--s 002e4000 103:05 1854240                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/hadoop-shaded-guava-1.1.1.jar
+7f99238fb000-7f99238fc000 ---p 00000000 00:00 0 
+7f99238fc000-7f99239fc000 rw-p 00000000 00:00 0 
+7f99239fc000-7f99239ff000 ---p 00000000 00:00 0 
+7f99239ff000-7f9923afc000 rw-p 00000000 00:00 0 
+7f9923afc000-7f9923afd000 ---p 00000000 00:00 0 
+7f9923afd000-7f9923b00000 ---p 00000000 00:00 0 
+7f9923b00000-7f9923bfd000 rw-p 00000000 00:00 0 
+7f9923bfd000-7f9923bfe000 ---p 00000000 00:00 0 
+7f9923bfe000-7f9923c01000 ---p 00000000 00:00 0 
+7f9923c01000-7f9923cfe000 rw-p 00000000 00:00 0 
+7f9923cfe000-7f9923cff000 ---p 00000000 00:00 0 
+7f9923cff000-7f9923d02000 ---p 00000000 00:00 0 
+7f9923d02000-7f9923dff000 rw-p 00000000 00:00 0 
+7f9923dff000-7f9923e00000 ---p 00000000 00:00 0 
+7f9923e00000-7f9923e03000 ---p 00000000 00:00 0 
+7f9923e03000-7f9923f00000 rw-p 00000000 00:00 0 
+7f9923f00000-7f9923f03000 ---p 00000000 00:00 0 
+7f9923f03000-7f9924000000 rw-p 00000000 00:00 0 
+7f9924000000-7f9924021000 rw-p 00000000 00:00 0 
+7f9924021000-7f9928000000 ---p 00000000 00:00 0 
+7f9928000000-7f9928002000 r--s 0001e000 103:05 1854284                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/re2j-1.1.jar
+7f9928002000-7f9928004000 r--s 0000e000 103:05 1854283                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-util-ajax-9.4.43.v20210629.jar
+7f9928004000-7f9928011000 r--s 00083000 103:05 1854274                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-collections-3.2.2.jar
+7f9928011000-7f9928015000 r--s 0003a000 103:05 1854264                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/zookeeper-jute-3.5.6.jar
+7f9928015000-7f9928016000 r--s 00004000 103:05 1854239                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/token-provider-1.0.1.jar
+7f9928016000-7f9928029000 r--s 00156000 103:05 1854211                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar
+7f9928029000-7f992802d000 r--s 0001a000 103:05 1854249                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/json-smart-2.4.7.jar
+7f992802d000-7f9928035000 r--s 00049000 103:05 1854246                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/httpcore-4.4.13.jar
+7f9928035000-7f9928038000 r--s 00010000 103:05 1854287                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jackson-annotations-2.12.7.jar
+7f9928038000-7f992803c000 r--s 0001c000 103:05 1854202                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jersey-servlet-1.19.jar
+7f992803c000-7f992803f000 ---p 00000000 00:00 0 
+7f992803f000-7f992813c000 rw-p 00000000 00:00 0 
+7f992813c000-7f992813f000 ---p 00000000 00:00 0 
+7f992813f000-7f992823c000 rw-p 00000000 00:00 0 
+7f992823c000-7f992823d000 ---p 00000000 00:00 0 
+7f992823d000-7f9929e58000 rw-p 00000000 00:00 0 
+7f9929e58000-7f992a02a000 r--s 03cc5000 103:05 781                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+7f992a02a000-7f9932a74000 rw-p 00000000 00:00 0 
+7f9932a74000-7f9932a75000 ---p 00000000 00:00 0 
+7f9932a75000-7f9932b75000 rw-p 00000000 00:00 0 
+7f9932b75000-7f9932b76000 ---p 00000000 00:00 0 
+7f9932b76000-7f9932c76000 rw-p 00000000 00:00 0 
+7f9932c76000-7f9932c77000 ---p 00000000 00:00 0 
+7f9932c77000-7f9932d77000 rw-p 00000000 00:00 0 
+7f9932d77000-7f9932d78000 ---p 00000000 00:00 0 
+7f9932d78000-7f9932e78000 rw-p 00000000 00:00 0 
+7f9932e78000-7f9932e79000 ---p 00000000 00:00 0 
+7f9932e79000-7f9932fcb000 rw-p 00000000 00:00 0 
+7f9932fcb000-7f9933495000 ---p 00000000 00:00 0 
+7f9933495000-7f99334e7000 rw-p 00000000 00:00 0 
+7f99334e7000-7f99339b1000 ---p 00000000 00:00 0 
+7f99339b1000-7f99339f9000 rw-p 00000000 00:00 0 
+7f99339f9000-7f9933c3f000 ---p 00000000 00:00 0 
+7f9933c3f000-7f9933c52000 rw-p 00000000 00:00 0 
+7f9933c52000-7f9934000000 ---p 00000000 00:00 0 
+7f9934000000-7f9934470000 rwxp 00000000 00:00 0 
+7f9934470000-7f9943000000 ---p 00000000 00:00 0 
+7f9943000000-7f99431f5000 r--p 00000000 103:05 743                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f99431f5000-7f9943b65000 r-xp 001f5000 103:05 743                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f9943b65000-7f9943d10000 r--p 00b65000 103:05 743                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f9943d10000-7f9943d11000 ---p 00d10000 103:05 743                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f9943d11000-7f9943da7000 r--p 00d10000 103:05 743                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f9943da7000-7f9943dd0000 rw-p 00da6000 103:05 743                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f9943dd0000-7f9943e03000 rw-p 00000000 00:00 0 
+7f9943e03000-7f9943e07000 r--s 00035000 103:05 1854256                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar
+7f9943e07000-7f9943e10000 r--s 00084000 103:05 1854273                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-util-9.4.43.v20210629.jar
+7f9943e10000-7f9943e14000 r--s 00029000 103:05 1854259                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-text-1.4.jar
+7f9943e14000-7f9943e16000 r--s 00000000 103:05 1854266                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jul-to-slf4j-1.7.36.jar
+7f9943e16000-7f9943e18000 r--s 00001000 103:05 1854199                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/j2objc-annotations-1.1.jar
+7f9943e18000-7f9943e2b000 r--s 000c7000 103:05 1854207                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar
+7f9943e2b000-7f9943e2c000 r--s 00000000 103:05 1854282                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/failureaccess-1.0.jar
+7f9943e2c000-7f9943e2f000 r--s 00016000 103:05 1854225                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jaxb-api-2.2.11.jar
+7f9943e2f000-7f9943e30000 r--s 00002000 103:05 1854192                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar
+7f9943e30000-7f9943e32000 r--s 0000c000 103:05 1854247                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/asm-5.0.4.jar
+7f9943e32000-7f9943e34000 r--s 0000a000 103:05 1854206                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jsr311-api-1.1.1.jar
+7f9943e34000-7f9943e37000 r--s 00011000 103:05 1854216                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-admin-1.0.1.jar
+7f9943e37000-7f9943e3b000 r--s 00025000 103:05 1854235                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jersey-json-1.19.jar
+7f9943e3b000-7f9943e7c000 r--s 00298000 103:05 1854272                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/curator-client-4.2.0.jar
+7f9943e7c000-7f9943e7f000 r--s 00017000 103:05 1854254                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/hadoop-auth-3.3.4.jar
+7f9943e7f000-7f9943e85000 r--s 0003a000 103:05 1854231                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/gson-2.8.9.jar
+7f9943e85000-7f9943e86000 r--s 00005000 103:05 1854289                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-daemon-1.0.13.jar
+7f9943e86000-7f9943e8a000 r--s 0001e000 103:05 1854226                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/metrics-core-3.2.4.jar
+7f9943e8a000-7f9943e91000 r--s 0004b000 103:05 1854212                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/reload4j-1.2.22.jar
+7f9943e91000-7f9943e93000 r--s 00006000 103:05 1854252                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerby-config-1.0.1.jar
+7f9943e93000-7f9943e95000 r--s 0000e000 103:05 1854293                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-logging-1.1.3.jar
+7f9943e95000-7f9943e9d000 r--s 0007b000 103:05 1854281                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/protobuf-java-2.5.0.jar
+7f9943e9d000-7f9943ea0000 r--s 00016000 103:05 1854234                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jsp-api-2.1.jar
+7f9943ea0000-7f9943ea3000 r--s 001de000 103:05 1854193                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/snappy-java-1.1.8.2.jar
+7f9943ea3000-7f9943ea5000 r--s 00006000 103:05 1854220                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/paranamer-2.3.jar
+7f9943ea5000-7f9943eac000 r--s 00031000 103:05 1854232                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-core-1.0.1.jar
+7f9943eac000-7f9943eb0000 r--s 00041000 103:05 1854263                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jsch-0.1.55.jar
+7f9943eb0000-7f9943eb7000 r--s 0002b000 103:05 1854255                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerby-pkix-1.0.1.jar
+7f9943eb7000-7f9943eb9000 r--s 0000e000 103:05 1854196                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-common-1.0.1.jar
+7f9943eb9000-7f9943ed2000 r--s 00123000 103:05 1854201                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/netty-3.10.6.Final.jar
+7f9943ed2000-7f9943ed4000 r--s 00009000 103:05 1854258                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jakarta.activation-api-1.2.1.jar
+7f9943ed4000-7f9943edd000 r--s 00047000 103:05 1854200                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/curator-framework-4.2.0.jar
+7f9943edd000-7f9943ee6000 r--s 00064000 103:05 1854195                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/nimbus-jose-jwt-9.8.1.jar
+7f9943ee6000-7f9943ef3000 r--s 000b2000 103:05 1854291                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/httpclient-4.5.13.jar
+7f9943ef3000-7f9943eff000 r--s 0008b000 103:05 1854286                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-configuration2-2.1.1.jar
+7f9943eff000-7f9943f00000 ---p 00000000 00:00 0 
+7f9943f00000-7f9944000000 rw-p 00000000 00:00 0 
+7f9944000000-7f9944021000 rw-p 00000000 00:00 0 
+7f9944021000-7f9948000000 ---p 00000000 00:00 0 
+7f9948000000-7f9948001000 r--s 00004000 103:05 1854265                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar
+7f9948001000-7f994800b000 r--s 00061000 103:05 1854290                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jersey-core-1.19.jar
+7f994800b000-7f994810b000 rw-p 00000000 00:00 0 
+7f994810b000-7f9948112000 r--s 00050000 103:05 1854285                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-codec-1.15.jar
+7f9948112000-7f9948114000 r--s 00000000 103:05 1854288                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jcip-annotations-1.0-1.jar
+7f9948114000-7f994811a000 r--s 0007a000 103:05 1854260                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/woodstox-core-5.3.0.jar
+7f994811a000-7f9948125000 r--s 000a5000 103:05 1854222                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-server-9.4.43.v20210629.jar
+7f9948125000-7f9948133000 r--s 000b1000 103:05 1854230                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar
+7f9948133000-7f994813b000 r--s 00041000 103:05 1854251                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/curator-recipes-4.2.0.jar
+7f994813b000-7f994814a000 r--s 000e2000 103:05 1854277                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/zookeeper-3.5.6.jar
+7f994814a000-7f994814f000 r--s 00038000 103:05 1854221                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-beanutils-1.9.4.jar
+7f994814f000-7f9948166000 r--s 0015c000 103:05 1854227                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jackson-databind-2.12.7.jar
+7f9948166000-7f994816b000 r--s 00055000 103:05 1854244                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jackson-core-2.12.7.jar
+7f994816b000-7f9948175000 r--s 00026000 103:05 1854242                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/checker-qual-2.5.2.jar
+7f9948175000-7f9948191000 r--s 00394000 103:05 752                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar
+7f9948191000-7f99481de000 rw-p 00000000 00:00 0 
+7f99481de000-7f99481df000 ---p 00000000 00:00 0 
+7f99481df000-7f99482df000 rw-p 00000000 00:00 0 
+7f99482df000-7f99482e0000 ---p 00000000 00:00 0 
+7f99482e0000-7f99483e0000 rw-p 00000000 00:00 0 
+7f99483e0000-7f99483ed000 r--p 00000000 103:05 722                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f99483ed000-7f9948405000 r-xp 0000d000 103:05 722                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f9948405000-7f994840c000 r--p 00025000 103:05 722                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f994840c000-7f994840d000 r--p 0002b000 103:05 722                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f994840d000-7f994840f000 rw-p 0002c000 103:05 722                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f994840f000-7f994860f000 rw-p 00000000 00:00 0 
+7f994860f000-7f9948621000 r--p 00000000 103:05 1887861                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+7f9948621000-7f99487c9000 r-xp 00012000 103:05 1887861                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+7f99487c9000-7f99487ee000 r--p 001ba000 103:05 1887861                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+7f99487ee000-7f99487ef000 r--p 001de000 103:05 1887861                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+7f99487ef000-7f99487fd000 rw-p 001df000 103:05 1887861                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+7f99487fd000-7f9948a00000 rw-p 00000000 00:00 0 
+7f9948a00000-7f9948a0e000 r--p 00000000 103:05 1887891                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+7f9948a0e000-7f9948c38000 r-xp 0000e000 103:05 1887891                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+7f9948c38000-7f9948c4d000 r--p 00238000 103:05 1887891                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+7f9948c4d000-7f9948c4e000 ---p 0024d000 103:05 1887891                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+7f9948c4e000-7f9948c4f000 r--p 0024d000 103:05 1887891                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+7f9948c4f000-7f9948c57000 rw-p 0024e000 103:05 1887891                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+7f9948c57000-7f9948c5a000 rw-p 00000000 00:00 0 
+7f9948c5a000-7f9948c5b000 r--s 00006000 103:05 1854228                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jackson-xc-1.9.13.jar
+7f9948c5b000-7f9948c5d000 r--s 00017000 103:05 1854233                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerby-asn1-1.0.1.jar
+7f9948c5d000-7f9948c67000 r--s 00086000 103:05 1854257                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/commons-lang3-3.12.0.jar
+7f9948c67000-7f9948c82000 r--s 001d6000 103:05 757                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar
+7f9948c82000-7f9948c8d000 r--p 00000000 103:05 1887878                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+7f9948c8d000-7f9948cf7000 r-xp 0000b000 103:05 1887878                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+7f9948cf7000-7f9948d03000 r--p 00075000 103:05 1887878                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+7f9948d03000-7f9948d04000 ---p 00081000 103:05 1887878                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+7f9948d04000-7f9948d05000 r--p 00081000 103:05 1887878                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+7f9948d05000-7f9948d0c000 rw-p 00082000 103:05 1887878                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+7f9948d0c000-7f9948d0e000 rw-p 00000000 00:00 0 
+7f9948d0e000-7f9948d15000 r--p 00000000 103:05 1887894                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+7f9948d15000-7f9948d44000 r-xp 00007000 103:05 1887894                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+7f9948d44000-7f9948d4c000 r--p 00036000 103:05 1887894                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+7f9948d4c000-7f9948d4d000 r--p 0003d000 103:05 1887894                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+7f9948d4d000-7f9948d51000 rw-p 0003e000 103:05 1887894                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+7f9948d51000-7f9948e52000 rw-p 00000000 00:00 0 
+7f9948e52000-7f9948e5e000 r--p 00000000 103:05 1887933                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+7f9948e5e000-7f9948f07000 r-xp 0000c000 103:05 1887933                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+7f9948f07000-7f9948f1b000 r--p 000b5000 103:05 1887933                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+7f9948f1b000-7f9948f1c000 r--p 000c8000 103:05 1887933                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+7f9948f1c000-7f9948f27000 rw-p 000c9000 103:05 1887933                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+7f9948f27000-7f9949029000 rw-p 00000000 00:00 0 
+7f9949029000-7f9949032000 r--p 00000000 103:05 1887883                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+7f9949032000-7f99490e9000 r-xp 00009000 103:05 1887883                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+7f99490e9000-7f99490f7000 r--p 000c0000 103:05 1887883                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+7f99490f7000-7f99490f8000 r--p 000cd000 103:05 1887883                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+7f99490f8000-7f99490fe000 rw-p 000ce000 103:05 1887883                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+7f99490fe000-7f99493ff000 rw-p 00000000 00:00 0 
+7f99493ff000-7f9949400000 ---p 00000000 00:00 0 
+7f9949400000-7f9949c00000 rw-p 00000000 00:00 0 
+7f9949c00000-7f994a400000 rw-p 00000000 00:00 0 
+7f994a400000-7f994a49a000 r--p 00000000 103:05 2490432                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f994a49a000-7f994a5aa000 r-xp 0009a000 103:05 2490432                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f994a5aa000-7f994a619000 r--p 001aa000 103:05 2490432                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f994a619000-7f994a624000 r--p 00218000 103:05 2490432                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f994a624000-7f994a627000 rw-p 00223000 103:05 2490432                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7f994a627000-7f994a62a000 rw-p 00000000 00:00 0 
+7f994a62a000-7f994a62b000 r--s 00004000 103:05 1854267                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar
+7f994a62b000-7f994a62d000 r--s 00003000 103:05 1854194                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jsr305-3.0.2.jar
+7f994a62d000-7f994a62f000 r--s 00005000 103:05 1854269                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/hadoop-annotations-3.3.4.jar
+7f994a62f000-7f994a633000 r--s 00028000 103:05 1854253                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-io-9.4.43.v20210629.jar
+7f994a633000-7f994a639000 r--s 0003e000 103:05 759                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar
+7f994a639000-7f994a643000 r--s 00117000 103:05 756                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar
+7f994a643000-7f994a648000 r--p 00000000 103:05 1966634                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pydoop/native_core_hdfs.cpython-310-x86_64-linux-gnu.so
+7f994a648000-7f994a654000 r-xp 00005000 103:05 1966634                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pydoop/native_core_hdfs.cpython-310-x86_64-linux-gnu.so
+7f994a654000-7f994a65b000 r--p 00011000 103:05 1966634                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pydoop/native_core_hdfs.cpython-310-x86_64-linux-gnu.so
+7f994a65b000-7f994a65c000 r--p 00017000 103:05 1966634                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pydoop/native_core_hdfs.cpython-310-x86_64-linux-gnu.so
+7f994a65c000-7f994a65d000 rw-p 00018000 103:05 1966634                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pydoop/native_core_hdfs.cpython-310-x86_64-linux-gnu.so
+7f994a65d000-7f994a666000 r--p 00000000 103:05 1888015                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7f994a666000-7f994a6ad000 r-xp 00009000 103:05 1888015                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7f994a6ad000-7f994a6b6000 r--p 00050000 103:05 1888015                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7f994a6b6000-7f994a6b7000 ---p 00059000 103:05 1888015                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7f994a6b7000-7f994a6b8000 r--p 00059000 103:05 1888015                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7f994a6b8000-7f994a6bd000 rw-p 0005a000 103:05 1888015                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7f994a6bd000-7f994a800000 rw-p 00000000 00:00 0 
+7f994a800000-7f994ac76000 r--p 00000000 103:05 1885368                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow.so.1200
+7f994ac76000-7f994c774000 r-xp 00476000 103:05 1885368                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow.so.1200
+7f994c774000-7f994cf52000 r--p 01f74000 103:05 1885368                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow.so.1200
+7f994cf52000-7f994d03d000 r--p 02751000 103:05 1885368                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow.so.1200
+7f994d03d000-7f994d06c000 rw-p 0283c000 103:05 1885368                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow.so.1200
+7f994d06c000-7f994d2ed000 rw-p 00000000 00:00 0 
+7f994d2ed000-7f994d2f2000 r--s 00047000 103:05 1854208                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/dnsjava-2.1.7.jar
+7f994d2f2000-7f994d2f7000 r--p 00000000 103:05 740                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f994d2f7000-7f994d300000 r-xp 00005000 103:05 740                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f994d300000-7f994d302000 r--p 0000e000 103:05 740                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f994d302000-7f994d304000 r--p 0000f000 103:05 740                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f994d304000-7f994d305000 rw-p 00011000 103:05 740                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f994d305000-7f994d30a000 r--p 00000000 103:05 1887927                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+7f994d30a000-7f994d317000 r-xp 00005000 103:05 1887927                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+7f994d317000-7f994d31c000 r--p 00012000 103:05 1887927                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+7f994d31c000-7f994d31d000 r--p 00016000 103:05 1887927                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+7f994d31d000-7f994d31e000 rw-p 00017000 103:05 1887927                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+7f994d31e000-7f994d352000 r--p 00000000 103:05 1885382                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_compute.cpython-310-x86_64-linux-gnu.so
+7f994d352000-7f994d3c4000 r-xp 00034000 103:05 1885382                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_compute.cpython-310-x86_64-linux-gnu.so
+7f994d3c4000-7f994d3e2000 r--p 000a6000 103:05 1885382                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_compute.cpython-310-x86_64-linux-gnu.so
+7f994d3e2000-7f994d3e3000 ---p 000c4000 103:05 1885382                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_compute.cpython-310-x86_64-linux-gnu.so
+7f994d3e3000-7f994d3e5000 r--p 000c4000 103:05 1885382                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_compute.cpython-310-x86_64-linux-gnu.so
+7f994d3e5000-7f994d3fd000 rw-p 000c6000 103:05 1885382                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_compute.cpython-310-x86_64-linux-gnu.so
+7f994d3fd000-7f994d400000 rw-p 00000000 00:00 0 
+7f994d400000-7f994d5a2000 r--p 00000000 103:05 1885412                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libparquet.so.1200
+7f994d5a2000-7f994d9b7000 r-xp 001a2000 103:05 1885412                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libparquet.so.1200
+7f994d9b7000-7f994db05000 r--p 005b7000 103:05 1885412                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libparquet.so.1200
+7f994db05000-7f994db79000 r--p 00704000 103:05 1885412                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libparquet.so.1200
+7f994db79000-7f994db86000 rw-p 00778000 103:05 1885412                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libparquet.so.1200
+7f994db86000-7f994db89000 rw-p 00000000 00:00 0 
+7f994db89000-7f994db8a000 r--s 00004000 103:05 1854203                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/audience-annotations-0.5.0.jar
+7f994db8a000-7f994db8d000 r--p 00000000 103:05 741                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f994db8d000-7f994db92000 r-xp 00003000 103:05 741                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f994db92000-7f994db94000 r--p 00008000 103:05 741                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f994db94000-7f994db95000 r--p 00009000 103:05 741                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f994db95000-7f994db96000 rw-p 0000a000 103:05 741                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f994db96000-7f994db9b000 r--p 00000000 103:05 1888010                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+7f994db9b000-7f994dbba000 r-xp 00005000 103:05 1888010                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+7f994dbba000-7f994dbc0000 r--p 00024000 103:05 1888010                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+7f994dbc0000-7f994dbc1000 r--p 00029000 103:05 1888010                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+7f994dbc1000-7f994dbc4000 rw-p 0002a000 103:05 1888010                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+7f994dbc4000-7f994dcc4000 rw-p 00000000 00:00 0 
+7f994dcc4000-7f994dd28000 r--p 00000000 103:05 1885388                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_acero.so.1200
+7f994dd28000-7f994de07000 r-xp 00064000 103:05 1885388                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_acero.so.1200
+7f994de07000-7f994de42000 r--p 00143000 103:05 1885388                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_acero.so.1200
+7f994de42000-7f994de48000 r--p 0017d000 103:05 1885388                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_acero.so.1200
+7f994de48000-7f994de4b000 rw-p 00183000 103:05 1885388                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_acero.so.1200
+7f994de4b000-7f994defa000 r--p 00000000 103:05 1885439                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_dataset.so.1200
+7f994defa000-7f994dfc9000 r-xp 000af000 103:05 1885439                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_dataset.so.1200
+7f994dfc9000-7f994e00e000 r--p 0017e000 103:05 1885439                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_dataset.so.1200
+7f994e00e000-7f994e00f000 ---p 001c3000 103:05 1885439                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_dataset.so.1200
+7f994e00f000-7f994e017000 r--p 001c3000 103:05 1885439                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_dataset.so.1200
+7f994e017000-7f994e01a000 rw-p 001cb000 103:05 1885439                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_dataset.so.1200
+7f994e01a000-7f994e0a5000 r--p 00000000 103:05 1885445                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_python.so
+7f994e0a5000-7f994e1b1000 r-xp 0008b000 103:05 1885445                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_python.so
+7f994e1b1000-7f994e1f1000 r--p 00197000 103:05 1885445                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_python.so
+7f994e1f1000-7f994e1fd000 r--p 001d6000 103:05 1885445                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_python.so
+7f994e1fd000-7f994e200000 rw-p 001e2000 103:05 1885445                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/libarrow_python.so
+7f994e200000-7f994e256000 r--p 00000000 103:05 1885425                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/lib.cpython-310-x86_64-linux-gnu.so
+7f994e256000-7f994e408000 r-xp 00056000 103:05 1885425                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/lib.cpython-310-x86_64-linux-gnu.so
+7f994e408000-7f994e487000 r--p 00208000 103:05 1885425                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/lib.cpython-310-x86_64-linux-gnu.so
+7f994e487000-7f994e489000 r--p 00286000 103:05 1885425                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/lib.cpython-310-x86_64-linux-gnu.so
+7f994e489000-7f994e501000 rw-p 00288000 103:05 1885425                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/lib.cpython-310-x86_64-linux-gnu.so
+7f994e501000-7f994e50b000 rw-p 00000000 00:00 0 
+7f994e50b000-7f994e50c000 r--s 00008000 103:05 1854209                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/kerb-util-1.0.1.jar
+7f994e50c000-7f994e513000 r--s 000d3000 103:05 775                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar
+7f994e513000-7f994e51b000 rw-s 00000000 103:05 1717739                   /tmp/hsperfdata_jeffreyleiva/9530
+7f994e51b000-7f994e51f000 r--p 00000000 103:05 1887920                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+7f994e51f000-7f994e52f000 r-xp 00004000 103:05 1887920                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+7f994e52f000-7f994e531000 r--p 00014000 103:05 1887920                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+7f994e531000-7f994e532000 r--p 00015000 103:05 1887920                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+7f994e532000-7f994e534000 rw-p 00016000 103:05 1887920                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+7f994e534000-7f994e53b000 r--p 00000000 103:05 1887888                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+7f994e53b000-7f994e55f000 r-xp 00007000 103:05 1887888                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+7f994e55f000-7f994e566000 r--p 0002b000 103:05 1887888                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+7f994e566000-7f994e567000 r--p 00031000 103:05 1887888                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+7f994e567000-7f994e56b000 rw-p 00032000 103:05 1887888                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+7f994e56b000-7f994e571000 r--p 00000000 103:05 1887896                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+7f994e571000-7f994e59c000 r-xp 00006000 103:05 1887896                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+7f994e59c000-7f994e5a3000 r--p 00031000 103:05 1887896                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+7f994e5a3000-7f994e5a4000 r--p 00037000 103:05 1887896                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+7f994e5a4000-7f994e5a8000 rw-p 00038000 103:05 1887896                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+7f994e5a8000-7f994e5b0000 r--p 00000000 103:05 1887912                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7f994e5b0000-7f994e5e5000 r-xp 00008000 103:05 1887912                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7f994e5e5000-7f994e5ee000 r--p 0003d000 103:05 1887912                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7f994e5ee000-7f994e5ef000 r--p 00045000 103:05 1887912                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7f994e5ef000-7f994e5f4000 rw-p 00046000 103:05 1887912                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7f994e5f4000-7f994e5fa000 r--p 00000000 103:05 1885372                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_hdfsio.cpython-310-x86_64-linux-gnu.so
+7f994e5fa000-7f994e60f000 r-xp 00006000 103:05 1885372                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_hdfsio.cpython-310-x86_64-linux-gnu.so
+7f994e60f000-7f994e613000 r--p 0001b000 103:05 1885372                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_hdfsio.cpython-310-x86_64-linux-gnu.so
+7f994e613000-7f994e614000 r--p 0001e000 103:05 1885372                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_hdfsio.cpython-310-x86_64-linux-gnu.so
+7f994e614000-7f994e617000 rw-p 0001f000 103:05 1885372                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pyarrow/_hdfsio.cpython-310-x86_64-linux-gnu.so
+7f994e617000-7f994e718000 rw-p 00000000 00:00 0 
+7f994e718000-7f994e71e000 r--p 00000000 103:05 1887866                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+7f994e71e000-7f994e73e000 r-xp 00006000 103:05 1887866                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+7f994e73e000-7f994e744000 r--p 00026000 103:05 1887866                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+7f994e744000-7f994e745000 r--p 0002b000 103:05 1887866                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+7f994e745000-7f994e748000 rw-p 0002c000 103:05 1887866                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+7f994e748000-7f994e756000 r--p 00000000 103:05 1887886                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+7f994e756000-7f994e7d4000 r-xp 0000e000 103:05 1887886                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+7f994e7d4000-7f994e7e6000 r--p 0008c000 103:05 1887886                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+7f994e7e6000-7f994e7e7000 r--p 0009d000 103:05 1887886                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+7f994e7e7000-7f994e7f5000 rw-p 0009e000 103:05 1887886                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+7f994e7f5000-7f994e7f7000 rw-p 00000000 00:00 0 
+7f994e7f7000-7f994e80a000 r--p 00000000 103:05 1887865                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+7f994e80a000-7f994e9ba000 r-xp 00013000 103:05 1887865                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+7f994e9ba000-7f994e9dd000 r--p 001c3000 103:05 1887865                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+7f994e9dd000-7f994e9de000 r--p 001e5000 103:05 1887865                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+7f994e9de000-7f994e9eb000 rw-p 001e6000 103:05 1887865                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+7f994e9eb000-7f994e9ef000 rw-p 00000000 00:00 0 
+7f994e9ef000-7f994e9f5000 r--p 00000000 103:05 1887980                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+7f994e9f5000-7f994ea1c000 r-xp 00006000 103:05 1887980                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+7f994ea1c000-7f994ea24000 r--p 0002d000 103:05 1887980                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+7f994ea24000-7f994ea25000 r--p 00034000 103:05 1887980                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+7f994ea25000-7f994ea29000 rw-p 00035000 103:05 1887980                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+7f994ea29000-7f994ea34000 r--p 00000000 103:05 1887999                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+7f994ea34000-7f994ea7e000 r-xp 0000b000 103:05 1887999                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+7f994ea7e000-7f994ea92000 r--p 00055000 103:05 1887999                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+7f994ea92000-7f994ea93000 r--p 00068000 103:05 1887999                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+7f994ea93000-7f994ea9c000 rw-p 00069000 103:05 1887999                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+7f994ea9c000-7f994ea9d000 rw-p 00000000 00:00 0 
+7f994ea9d000-7f994eaa6000 r--p 00000000 103:05 1887953                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+7f994eaa6000-7f994eae2000 r-xp 00009000 103:05 1887953                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+7f994eae2000-7f994eaec000 r--p 00045000 103:05 1887953                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+7f994eaec000-7f994eaed000 r--p 0004e000 103:05 1887953                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+7f994eaed000-7f994eaf2000 rw-p 0004f000 103:05 1887953                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+7f994eaf2000-7f994eaf3000 rw-p 00000000 00:00 0 
+7f994eaf3000-7f994eaf8000 r--p 00000000 103:05 2498627                   /usr/lib/x86_64-linux-gnu/libmpdec.so.2.5.1
+7f994eaf8000-7f994eb19000 r-xp 00005000 103:05 2498627                   /usr/lib/x86_64-linux-gnu/libmpdec.so.2.5.1
+7f994eb19000-7f994eb20000 r--p 00026000 103:05 2498627                   /usr/lib/x86_64-linux-gnu/libmpdec.so.2.5.1
+7f994eb20000-7f994eb21000 r--p 0002c000 103:05 2498627                   /usr/lib/x86_64-linux-gnu/libmpdec.so.2.5.1
+7f994eb21000-7f994eb22000 rw-p 0002d000 103:05 2498627                   /usr/lib/x86_64-linux-gnu/libmpdec.so.2.5.1
+7f994eb22000-7f994eb24000 r--p 00000000 103:05 2502210                   /usr/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7f994eb24000-7f994eb26000 r-xp 00002000 103:05 2502210                   /usr/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7f994eb26000-7f994eb27000 r--p 00004000 103:05 2502210                   /usr/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7f994eb27000-7f994eb28000 r--p 00004000 103:05 2502210                   /usr/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7f994eb28000-7f994eb29000 rw-p 00005000 103:05 2502210                   /usr/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7f994eb29000-7f994eb2d000 r--p 00000000 103:05 1887889                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+7f994eb2d000-7f994eb34000 r-xp 00004000 103:05 1887889                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+7f994eb34000-7f994eb36000 r--p 0000b000 103:05 1887889                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+7f994eb36000-7f994eb37000 r--p 0000c000 103:05 1887889                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+7f994eb37000-7f994eb39000 rw-p 0000d000 103:05 1887889                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+7f994eb39000-7f994eb41000 r--p 00000000 103:05 2497384                   /usr/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7f994eb41000-7f994eb56000 r-xp 00008000 103:05 2497384                   /usr/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7f994eb56000-7f994eb62000 r--p 0001d000 103:05 2497384                   /usr/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7f994eb62000-7f994eb63000 r--p 00028000 103:05 2497384                   /usr/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7f994eb63000-7f994eb66000 rw-p 00029000 103:05 2497384                   /usr/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7f994eb66000-7f994eb71000 r--p 00000000 103:05 1887996                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+7f994eb71000-7f994ebbd000 r-xp 0000b000 103:05 1887996                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+7f994ebbd000-7f994ebc9000 r--p 00057000 103:05 1887996                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+7f994ebc9000-7f994ebca000 r--p 00062000 103:05 1887996                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+7f994ebca000-7f994ebd1000 rw-p 00063000 103:05 1887996                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+7f994ebd1000-7f994ebd2000 rw-p 00000000 00:00 0 
+7f994ebd2000-7f994ebd5000 r--p 00000000 103:05 1887913                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+7f994ebd5000-7f994ebde000 r-xp 00003000 103:05 1887913                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+7f994ebde000-7f994ebe0000 r--p 0000c000 103:05 1887913                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+7f994ebe0000-7f994ebe1000 r--p 0000d000 103:05 1887913                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+7f994ebe1000-7f994ebe3000 rw-p 0000e000 103:05 1887913                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+7f994ebe3000-7f994ebea000 r--p 00000000 103:05 1887952                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7f994ebea000-7f994ec24000 r-xp 00007000 103:05 1887952                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7f994ec24000-7f994ec2d000 r--p 00041000 103:05 1887952                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7f994ec2d000-7f994ec2e000 r--p 00049000 103:05 1887952                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7f994ec2e000-7f994ec32000 rw-p 0004a000 103:05 1887952                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7f994ec32000-7f994ed33000 rw-p 00000000 00:00 0 
+7f994ed33000-7f994ed3c000 r--p 00000000 103:05 1887979                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7f994ed3c000-7f994ed77000 r-xp 00009000 103:05 1887979                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7f994ed77000-7f994ed80000 r--p 00044000 103:05 1887979                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7f994ed80000-7f994ed81000 ---p 0004d000 103:05 1887979                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7f994ed81000-7f994ed82000 r--p 0004d000 103:05 1887979                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7f994ed82000-7f994ed87000 rw-p 0004e000 103:05 1887979                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7f994ed87000-7f994ed88000 rw-p 00000000 00:00 0 
+7f994ed88000-7f994ed8f000 r--p 00000000 103:05 1887981                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+7f994ed8f000-7f994edbc000 r-xp 00007000 103:05 1887981                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+7f994edbc000-7f994edc4000 r--p 00034000 103:05 1887981                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+7f994edc4000-7f994edc5000 r--p 0003b000 103:05 1887981                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+7f994edc5000-7f994edc9000 rw-p 0003c000 103:05 1887981                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+7f994edc9000-7f994edca000 rw-p 00000000 00:00 0 
+7f994edca000-7f994edd7000 r--p 00000000 103:05 1887971                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7f994edd7000-7f994ee40000 r-xp 0000d000 103:05 1887971                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7f994ee40000-7f994ee51000 r--p 00076000 103:05 1887971                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7f994ee51000-7f994ee52000 r--p 00086000 103:05 1887971                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7f994ee52000-7f994ee5b000 rw-p 00087000 103:05 1887971                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7f994ee5b000-7f994ee5d000 rw-p 00000000 00:00 0 
+7f994ee5d000-7f994ee64000 r--p 00000000 103:05 1887994                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7f994ee64000-7f994ee7f000 r-xp 00007000 103:05 1887994                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7f994ee7f000-7f994ee8a000 r--p 00022000 103:05 1887994                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7f994ee8a000-7f994ee8b000 r--p 0002c000 103:05 1887994                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7f994ee8b000-7f994ee90000 rw-p 0002d000 103:05 1887994                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7f994ee90000-7f994ee91000 rw-p 00000000 00:00 0 
+7f994ee91000-7f994ee9e000 r--p 00000000 103:05 1887982                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+7f994ee9e000-7f994eefa000 r-xp 0000d000 103:05 1887982                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+7f994eefa000-7f994ef12000 r--p 00069000 103:05 1887982                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+7f994ef12000-7f994ef13000 r--p 00080000 103:05 1887982                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+7f994ef13000-7f994ef21000 rw-p 00081000 103:05 1887982                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+7f994ef21000-7f994ef22000 rw-p 00000000 00:00 0 
+7f994ef22000-7f994ef33000 r--p 00000000 103:05 1887961                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+7f994ef33000-7f994efdf000 r-xp 00011000 103:05 1887961                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+7f994efdf000-7f994eff9000 r--p 000bd000 103:05 1887961                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+7f994eff9000-7f994effa000 r--p 000d6000 103:05 1887961                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+7f994effa000-7f994f00c000 rw-p 000d7000 103:05 1887961                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+7f994f00c000-7f994f00e000 rw-p 00000000 00:00 0 
+7f994f00e000-7f994f015000 r--p 00000000 103:05 1887962                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7f994f015000-7f994f041000 r-xp 00007000 103:05 1887962                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7f994f041000-7f994f049000 r--p 00033000 103:05 1887962                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7f994f049000-7f994f04a000 r--p 0003a000 103:05 1887962                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7f994f04a000-7f994f04e000 rw-p 0003b000 103:05 1887962                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7f994f04e000-7f994f053000 r--p 00000000 103:05 1887975                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+7f994f053000-7f994f06b000 r-xp 00005000 103:05 1887975                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+7f994f06b000-7f994f06f000 r--p 0001d000 103:05 1887975                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+7f994f06f000-7f994f070000 ---p 00021000 103:05 1887975                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+7f994f070000-7f994f071000 r--p 00021000 103:05 1887975                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+7f994f071000-7f994f073000 rw-p 00022000 103:05 1887975                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+7f994f073000-7f994f079000 r--p 00000000 103:05 1887991                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+7f994f079000-7f994f08f000 r-xp 00006000 103:05 1887991                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+7f994f08f000-7f994f094000 r--p 0001c000 103:05 1887991                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+7f994f094000-7f994f095000 r--p 00020000 103:05 1887991                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+7f994f095000-7f994f099000 rw-p 00021000 103:05 1887991                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+7f994f099000-7f994f0a0000 r--p 00000000 103:05 1887922                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7f994f0a0000-7f994f0be000 r-xp 00007000 103:05 1887922                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7f994f0be000-7f994f0c4000 r--p 00025000 103:05 1887922                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7f994f0c4000-7f994f0c5000 r--p 0002a000 103:05 1887922                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7f994f0c5000-7f994f0c9000 rw-p 0002b000 103:05 1887922                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7f994f0c9000-7f994f0ca000 rw-p 00000000 00:00 0 
+7f994f0ca000-7f994f0df000 r--p 00000000 103:05 1887890                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7f994f0df000-7f994f240000 r-xp 00015000 103:05 1887890                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7f994f240000-7f994f264000 r--p 00176000 103:05 1887890                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7f994f264000-7f994f265000 r--p 00199000 103:05 1887890                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7f994f265000-7f994f287000 rw-p 0019a000 103:05 1887890                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7f994f287000-7f994f38d000 rw-p 00000000 00:00 0 
+7f994f38d000-7f994f39c000 r--p 00000000 103:05 1887887                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7f994f39c000-7f994f4b0000 r-xp 0000f000 103:05 1887887                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7f994f4b0000-7f994f4d1000 r--p 00123000 103:05 1887887                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7f994f4d1000-7f994f4d2000 r--p 00143000 103:05 1887887                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7f994f4d2000-7f994f4de000 rw-p 00144000 103:05 1887887                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7f994f4de000-7f994f4e0000 rw-p 00000000 00:00 0 
+7f994f4e0000-7f994f4e3000 r--p 00000000 103:05 2498586                   /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7f994f4e3000-7f994f4fe000 r-xp 00003000 103:05 2498586                   /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7f994f4fe000-7f994f509000 r--p 0001e000 103:05 2498586                   /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7f994f509000-7f994f50a000 r--p 00028000 103:05 2498586                   /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7f994f50a000-7f994f50b000 rw-p 00029000 103:05 2498586                   /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7f994f50b000-7f994f50d000 r--p 00000000 103:05 2497937                   /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7f994f50d000-7f994f51a000 r-xp 00002000 103:05 2497937                   /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7f994f51a000-7f994f51c000 r--p 0000f000 103:05 2497937                   /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7f994f51c000-7f994f51d000 r--p 00010000 103:05 2497937                   /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7f994f51d000-7f994f51e000 rw-p 00011000 103:05 2497937                   /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7f994f51e000-7f994f520000 r--s 00006000 103:05 1854198                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/accessors-smart-2.4.7.jar
+7f994f520000-7f994f522000 r--s 0000f000 103:05 1854210                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/jetty-xml-9.4.43.v20210629.jar
+7f994f522000-7f994f525000 r--p 00000000 103:05 1888005                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+7f994f525000-7f994f530000 r-xp 00003000 103:05 1888005                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+7f994f530000-7f994f532000 r--p 0000e000 103:05 1888005                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+7f994f532000-7f994f533000 r--p 0000f000 103:05 1888005                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+7f994f533000-7f994f535000 rw-p 00010000 103:05 1888005                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+7f994f535000-7f994f735000 rw-p 00000000 00:00 0 
+7f994f735000-7f994f745000 r--p 00000000 103:05 262191                    /usr/lib/python3/dist-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+7f994f745000-7f994f7a7000 r-xp 00010000 103:05 262191                    /usr/lib/python3/dist-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+7f994f7a7000-7f994f7d8000 r--p 00072000 103:05 262191                    /usr/lib/python3/dist-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+7f994f7d8000-7f994f7d9000 r--p 000a2000 103:05 262191                    /usr/lib/python3/dist-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+7f994f7d9000-7f994f7ff000 rw-p 000a3000 103:05 262191                    /usr/lib/python3/dist-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+7f994f7ff000-7f994f800000 rw-p 00000000 00:00 0 
+7f994f800000-7f994f8b2000 r--p 00000000 103:05 2496575                   /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+7f994f8b2000-7f994fb10000 r-xp 000b2000 103:05 2496575                   /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+7f994fb10000-7f994fbe2000 r--p 00310000 103:05 2496575                   /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+7f994fbe2000-7f994fc3d000 r--p 003e1000 103:05 2496575                   /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+7f994fc3d000-7f994fc40000 rw-p 0043c000 103:05 2496575                   /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+7f994fc40000-7f994fc43000 rw-p 00000000 00:00 0 
+7f994fc43000-7f994fc46000 r--s 00042000 103:05 760                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar
+7f994fc46000-7f994fc48000 r--s 00008000 103:05 758                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar
+7f994fc48000-7f994fc4b000 r--p 00000000 103:05 1887966                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+7f994fc4b000-7f994fc50000 r-xp 00003000 103:05 1887966                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+7f994fc50000-7f994fc52000 r--p 00008000 103:05 1887966                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+7f994fc52000-7f994fc53000 r--p 00009000 103:05 1887966                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+7f994fc53000-7f994fc54000 rw-p 0000a000 103:05 1887966                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+7f994fc54000-7f994fc62000 r--p 00000000 103:05 262973                    /usr/lib/python3/dist-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+7f994fc62000-7f994fca9000 r-xp 0000e000 103:05 262973                    /usr/lib/python3/dist-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+7f994fca9000-7f994fcd6000 r--p 00055000 103:05 262973                    /usr/lib/python3/dist-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+7f994fcd6000-7f994fcd7000 ---p 00082000 103:05 262973                    /usr/lib/python3/dist-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+7f994fcd7000-7f994fcd8000 r--p 00082000 103:05 262973                    /usr/lib/python3/dist-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+7f994fcd8000-7f994fcfe000 rw-p 00083000 103:05 262973                    /usr/lib/python3/dist-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+7f994fcfe000-7f994fe00000 rw-p 00000000 00:00 0 
+7f994fe00000-7f994fe23000 r--p 00000000 103:05 22581                     /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+7f994fe23000-7f9950417000 r-xp 00023000 103:05 22581                     /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+7f9950417000-7f99504be000 r--p 00617000 103:05 22581                     /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+7f99504be000-7f99504bf000 ---p 006be000 103:05 22581                     /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+7f99504bf000-7f99504c0000 r--p 006be000 103:05 22581                     /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+7f99504c0000-7f99504c5000 rw-p 006bf000 103:05 22581                     /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+7f99504c5000-7f99504c7000 r--s 0000c000 103:05 403658                    /usr/share/java/java-atk-wrapper.jar
+7f99504c7000-7f99504ca000 r--s 0000f000 103:05 754                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar
+7f99504ca000-7f99504cd000 r--p 00000000 103:05 2497408                   /usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7f99504cd000-7f99504d1000 r-xp 00003000 103:05 2497408                   /usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7f99504d1000-7f99504d4000 r--p 00007000 103:05 2497408                   /usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7f99504d4000-7f99504d5000 r--p 00009000 103:05 2497408                   /usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7f99504d5000-7f99504d6000 rw-p 0000a000 103:05 2497408                   /usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7f99504d6000-7f99504d8000 r--p 00000000 103:05 2518594                   /usr/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+7f99504d8000-7f99504de000 r-xp 00002000 103:05 2518594                   /usr/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+7f99504de000-7f99504e0000 r--p 00008000 103:05 2518594                   /usr/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+7f99504e0000-7f99504e1000 r--p 00009000 103:05 2518594                   /usr/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+7f99504e1000-7f99504e2000 rw-p 0000a000 103:05 2518594                   /usr/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+7f99504e2000-7f99504e6000 r--p 00000000 103:05 262195                    /usr/lib/python3/dist-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+7f99504e6000-7f99504f3000 r-xp 00004000 103:05 262195                    /usr/lib/python3/dist-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+7f99504f3000-7f99504f7000 r--p 00011000 103:05 262195                    /usr/lib/python3/dist-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+7f99504f7000-7f99504f8000 r--p 00014000 103:05 262195                    /usr/lib/python3/dist-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+7f99504f8000-7f99504fb000 rw-p 00015000 103:05 262195                    /usr/lib/python3/dist-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+7f99504fb000-7f99504ff000 r--p 00000000 103:05 262197                    /usr/lib/python3/dist-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+7f99504ff000-7f9950509000 r-xp 00004000 103:05 262197                    /usr/lib/python3/dist-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+7f9950509000-7f995050d000 r--p 0000e000 103:05 262197                    /usr/lib/python3/dist-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+7f995050d000-7f995050e000 r--p 00011000 103:05 262197                    /usr/lib/python3/dist-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+7f995050e000-7f9950510000 rw-p 00012000 103:05 262197                    /usr/lib/python3/dist-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+7f9950510000-7f9950518000 r--p 00000000 103:05 262187                    /usr/lib/python3/dist-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7f9950518000-7f995055a000 r-xp 00008000 103:05 262187                    /usr/lib/python3/dist-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7f995055a000-7f9950564000 r--p 0004a000 103:05 262187                    /usr/lib/python3/dist-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7f9950564000-7f9950565000 r--p 00053000 103:05 262187                    /usr/lib/python3/dist-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7f9950565000-7f9950567000 rw-p 00054000 103:05 262187                    /usr/lib/python3/dist-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7f9950567000-7f9950568000 rw-p 00000000 00:00 0 
+7f9950568000-7f9950569000 r--s 00000000 103:05 1854262                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar
+7f9950569000-7f995056b000 r--p 00000000 103:05 2518596                   /usr/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7f995056b000-7f995056e000 r-xp 00002000 103:05 2518596                   /usr/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7f995056e000-7f9950570000 r--p 00005000 103:05 2518596                   /usr/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7f9950570000-7f9950571000 r--p 00006000 103:05 2518596                   /usr/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7f9950571000-7f9950572000 rw-p 00007000 103:05 2518596                   /usr/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7f9950572000-7f995057a000 r--p 00000000 103:05 1887929                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+7f995057a000-7f99505b9000 r-xp 00008000 103:05 1887929                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+7f99505b9000-7f99505c4000 r--p 00047000 103:05 1887929                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+7f99505c4000-7f99505c5000 r--p 00051000 103:05 1887929                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+7f99505c5000-7f99505cb000 rw-p 00052000 103:05 1887929                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+7f99505cb000-7f99505cc000 rw-p 00000000 00:00 0 
+7f99505cc000-7f99505cf000 r--p 00000000 103:05 1887939                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+7f99505cf000-7f99505d5000 r-xp 00003000 103:05 1887939                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+7f99505d5000-7f99505d7000 r--p 00009000 103:05 1887939                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+7f99505d7000-7f99505d8000 r--p 0000a000 103:05 1887939                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+7f99505d8000-7f99505d9000 rw-p 0000b000 103:05 1887939                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+7f99505d9000-7f99505db000 r--p 00000000 103:05 1887867                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reduction.cpython-310-x86_64-linux-gnu.so
+7f99505db000-7f99505de000 r-xp 00002000 103:05 1887867                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reduction.cpython-310-x86_64-linux-gnu.so
+7f99505de000-7f99505df000 r--p 00005000 103:05 1887867                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reduction.cpython-310-x86_64-linux-gnu.so
+7f99505df000-7f99505e0000 r--p 00005000 103:05 1887867                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reduction.cpython-310-x86_64-linux-gnu.so
+7f99505e0000-7f99505e1000 rw-p 00006000 103:05 1887867                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/reduction.cpython-310-x86_64-linux-gnu.so
+7f99505e1000-7f99505e5000 r--p 00000000 103:05 1887859                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7f99505e5000-7f99505f3000 r-xp 00004000 103:05 1887859                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7f99505f3000-7f99505f6000 r--p 00012000 103:05 1887859                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7f99505f6000-7f99505f7000 r--p 00014000 103:05 1887859                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7f99505f7000-7f99505f9000 rw-p 00015000 103:05 1887859                   /home/jeffreyleiva/.local/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7f99505f9000-7f99507f9000 rw-p 00000000 00:00 0 
+7f99507f9000-7f99607f9000 rw-p 00000000 00:00 0 
+7f99607f9000-7f99607fa000 ---p 00000000 00:00 0 
+7f99607fa000-7f9960ffa000 rw-p 00000000 00:00 0 
+7f9960ffa000-7f9988ffa000 rw-p 00000000 00:00 0 
+7f9988ffa000-7f9988ffb000 ---p 00000000 00:00 0 
+7f9988ffb000-7f99897fb000 rw-p 00000000 00:00 0 
+7f99897fb000-7f99897fc000 ---p 00000000 00:00 0 
+7f99897fc000-7f9989ffc000 rw-p 00000000 00:00 0 
+7f9989ffc000-7f9989ffd000 ---p 00000000 00:00 0 
+7f9989ffd000-7f998a7fd000 rw-p 00000000 00:00 0 
+7f998a7fd000-7f998a7fe000 ---p 00000000 00:00 0 
+7f998a7fe000-7f998affe000 rw-p 00000000 00:00 0 
+7f998affe000-7f998afff000 ---p 00000000 00:00 0 
+7f998afff000-7f998b7ff000 rw-p 00000000 00:00 0 
+7f998b7ff000-7f998b800000 ---p 00000000 00:00 0 
+7f998b800000-7f998c000000 rw-p 00000000 00:00 0 
+7f998c000000-7f998c01d000 r--p 00000000 103:05 2500542                   /usr/lib/x86_64-linux-gnu/libgfortran.so.5.0.0
+7f998c01d000-7f998c2a6000 r-xp 0001d000 103:05 2500542                   /usr/lib/x86_64-linux-gnu/libgfortran.so.5.0.0
+7f998c2a6000-7f998c2d8000 r--p 002a6000 103:05 2500542                   /usr/lib/x86_64-linux-gnu/libgfortran.so.5.0.0
+7f998c2d8000-7f998c2d9000 r--p 002d7000 103:05 2500542                   /usr/lib/x86_64-linux-gnu/libgfortran.so.5.0.0
+7f998c2d9000-7f998c2db000 rw-p 002d8000 103:05 2500542                   /usr/lib/x86_64-linux-gnu/libgfortran.so.5.0.0
+7f998c2db000-7f998c2dd000 r--p 00000000 103:05 2493559                   /usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7f998c2dd000-7f998c2e0000 r-xp 00002000 103:05 2493559                   /usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7f998c2e0000-7f998c2e2000 r--p 00005000 103:05 2493559                   /usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7f998c2e2000-7f998c2e3000 r--p 00006000 103:05 2493559                   /usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7f998c2e3000-7f998c2e4000 rw-p 00007000 103:05 2493559                   /usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7f998c2e4000-7f998c2e8000 r--p 00000000 103:05 262193                    /usr/lib/python3/dist-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7f998c2e8000-7f998c2f4000 r-xp 00004000 103:05 262193                    /usr/lib/python3/dist-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7f998c2f4000-7f998c2f8000 r--p 00010000 103:05 262193                    /usr/lib/python3/dist-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7f998c2f8000-7f998c2f9000 ---p 00014000 103:05 262193                    /usr/lib/python3/dist-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7f998c2f9000-7f998c2fa000 r--p 00014000 103:05 262193                    /usr/lib/python3/dist-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7f998c2fa000-7f998c2fc000 rw-p 00015000 103:05 262193                    /usr/lib/python3/dist-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7f998c2fc000-7f998c301000 r--p 00000000 103:05 262189                    /usr/lib/python3/dist-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7f998c301000-7f998c32e000 r-xp 00005000 103:05 262189                    /usr/lib/python3/dist-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7f998c32e000-7f998c332000 r--p 00032000 103:05 262189                    /usr/lib/python3/dist-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7f998c332000-7f998c333000 r--p 00035000 103:05 262189                    /usr/lib/python3/dist-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7f998c333000-7f998c335000 rw-p 00036000 103:05 262189                    /usr/lib/python3/dist-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7f998c335000-7f998c336000 rw-p 00000000 00:00 0 
+7f998c336000-7f998c33c000 r--p 00000000 103:05 262969                    /usr/lib/python3/dist-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7f998c33c000-7f998c353000 r-xp 00006000 103:05 262969                    /usr/lib/python3/dist-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7f998c353000-7f998c35a000 r--p 0001d000 103:05 262969                    /usr/lib/python3/dist-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7f998c35a000-7f998c35b000 ---p 00024000 103:05 262969                    /usr/lib/python3/dist-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7f998c35b000-7f998c35c000 r--p 00024000 103:05 262969                    /usr/lib/python3/dist-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7f998c35c000-7f998c361000 rw-p 00025000 103:05 262969                    /usr/lib/python3/dist-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7f998c361000-7f998c363000 r--p 00000000 103:05 2498174                   /usr/lib/x86_64-linux-gnu/libffi.so.8.1.0
+7f998c363000-7f998c36a000 r-xp 00002000 103:05 2498174                   /usr/lib/x86_64-linux-gnu/libffi.so.8.1.0
+7f998c36a000-7f998c36b000 r--p 00009000 103:05 2498174                   /usr/lib/x86_64-linux-gnu/libffi.so.8.1.0
+7f998c36b000-7f998c36c000 ---p 0000a000 103:05 2498174                   /usr/lib/x86_64-linux-gnu/libffi.so.8.1.0
+7f998c36c000-7f998c36d000 r--p 0000a000 103:05 2498174                   /usr/lib/x86_64-linux-gnu/libffi.so.8.1.0
+7f998c36d000-7f998c36e000 rw-p 0000b000 103:05 2498174                   /usr/lib/x86_64-linux-gnu/libffi.so.8.1.0
+7f998c36e000-7f998c374000 r--p 00000000 103:05 2496131                   /usr/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7f998c374000-7f998c385000 r-xp 00006000 103:05 2496131                   /usr/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7f998c385000-7f998c38b000 r--p 00017000 103:05 2496131                   /usr/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7f998c38b000-7f998c38c000 r--p 0001c000 103:05 2496131                   /usr/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7f998c38c000-7f998c390000 rw-p 0001d000 103:05 2496131                   /usr/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7f998c390000-7f998c398000 r--p 00000000 103:05 404698                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7f998c398000-7f998c3a8000 r-xp 00008000 103:05 404698                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7f998c3a8000-7f998c3ad000 r--p 00018000 103:05 404698                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7f998c3ad000-7f998c3ae000 r--p 0001c000 103:05 404698                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7f998c3ae000-7f998c3b0000 rw-p 0001d000 103:05 404698                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7f998c3b0000-7f998c4d4000 r--p 00000000 103:05 22582                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so
+7f998c4d4000-7f998c4dc000 r-xp 00124000 103:05 22582                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so
+7f998c4dc000-7f998c4e0000 ---p 0012c000 103:05 22582                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so
+7f998c4e0000-7f998e61e000 r-xp 00130000 103:05 22582                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so
+7f998e61e000-7f998e7cf000 r--p 0226e000 103:05 22582                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so
+7f998e7cf000-7f998e7d5000 r--p 0241f000 103:05 22582                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so
+7f998e7d5000-7f998e7f2000 rw-p 02425000 103:05 22582                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so
+7f998e7f2000-7f998e7fe000 rw-p 00000000 00:00 0 
+7f998e7fe000-7f998e800000 r--s 00001000 103:05 753                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar
+7f998e800000-7f998e825000 r--p 00000000 103:05 409142                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+7f998e825000-7f998eaf1000 r-xp 00025000 103:05 409142                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+7f998eaf1000-7f998eb7f000 r--p 002f1000 103:05 409142                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+7f998eb7f000-7f998eb80000 ---p 0037f000 103:05 409142                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+7f998eb80000-7f998eb82000 r--p 0037f000 103:05 409142                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+7f998eb82000-7f998eba2000 rw-p 00381000 103:05 409142                    /usr/lib/python3/dist-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+7f998eba2000-7f998ebc2000 rw-p 00000000 00:00 0 
+7f998ebc2000-7f998ebc3000 r--p 00000000 103:05 2490918                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f998ebc3000-7f998ebc4000 r-xp 00001000 103:05 2490918                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f998ebc4000-7f998ebc5000 r--p 00002000 103:05 2490918                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f998ebc5000-7f998ebc6000 r--p 00002000 103:05 2490918                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f998ebc6000-7f998ebc7000 rw-p 00003000 103:05 2490918                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+7f998ebc7000-7f998ebca000 r--p 00000000 103:05 2496484                   /usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0
+7f998ebca000-7f998ebf6000 r-xp 00003000 103:05 2496484                   /usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0
+7f998ebf6000-7f998ec0d000 r--p 0002f000 103:05 2496484                   /usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0
+7f998ec0d000-7f998ec0e000 r--p 00045000 103:05 2496484                   /usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0
+7f998ec0e000-7f998ec0f000 rw-p 00046000 103:05 2496484                   /usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0
+7f998ec0f000-7f998ec2d000 r--p 00000000 103:05 22580                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+7f998ec2d000-7f998ec62000 r-xp 0001e000 103:05 22580                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+7f998ec62000-7f998ec6a000 r--p 00053000 103:05 22580                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+7f998ec6a000-7f998ec6b000 ---p 0005b000 103:05 22580                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+7f998ec6b000-7f998ec70000 r--p 0005b000 103:05 22580                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+7f998ec70000-7f998ec71000 rw-p 00060000 103:05 22580                     /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+7f998ec71000-7f998ed71000 rw-p 00000000 00:00 0 
+7f998ed71000-7f998ed72000 r--p 00000000 103:05 2491786                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f998ed72000-7f998ed73000 r-xp 00001000 103:05 2491786                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f998ed73000-7f998ed74000 r--p 00002000 103:05 2491786                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f998ed74000-7f998ed75000 r--p 00002000 103:05 2491786                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f998ed75000-7f998ed76000 rw-p 00003000 103:05 2491786                   /usr/lib/x86_64-linux-gnu/librt.so.1
+7f998ed76000-7f998ed79000 r--p 00000000 103:05 262967                    /usr/lib/python3/dist-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7f998ed79000-7f998ed7f000 r-xp 00003000 103:05 262967                    /usr/lib/python3/dist-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7f998ed7f000-7f998ed81000 r--p 00009000 103:05 262967                    /usr/lib/python3/dist-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7f998ed81000-7f998ed82000 ---p 0000b000 103:05 262967                    /usr/lib/python3/dist-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7f998ed82000-7f998ed83000 r--p 0000b000 103:05 262967                    /usr/lib/python3/dist-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7f998ed83000-7f998ed84000 rw-p 0000c000 103:05 262967                    /usr/lib/python3/dist-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7f998ed84000-7f998ed88000 r--p 00000000 103:05 2493817                   /usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7f998ed88000-7f998ed8e000 r-xp 00004000 103:05 2493817                   /usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7f998ed8e000-7f998ed92000 r--p 0000a000 103:05 2493817                   /usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7f998ed92000-7f998ed93000 r--p 0000d000 103:05 2493817                   /usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7f998ed93000-7f998ed95000 rw-p 0000e000 103:05 2493817                   /usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7f998ed95000-7f998ed9c000 r--p 00000000 103:05 1064235                   /usr/lib/python3/dist-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7f998ed9c000-7f998edb3000 r-xp 00007000 103:05 1064235                   /usr/lib/python3/dist-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7f998edb3000-7f998edb8000 r--p 0001e000 103:05 1064235                   /usr/lib/python3/dist-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7f998edb8000-7f998edb9000 r--p 00022000 103:05 1064235                   /usr/lib/python3/dist-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7f998edb9000-7f998edba000 rw-p 00023000 103:05 1064235                   /usr/lib/python3/dist-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7f998edba000-7f998efba000 rw-p 00000000 00:00 0 
+7f998efba000-7f998efbb000 r--p 00000000 103:05 2491634                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f998efbb000-7f998efbc000 r-xp 00001000 103:05 2491634                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f998efbc000-7f998efbd000 r--p 00002000 103:05 2491634                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f998efbd000-7f998efbe000 r--p 00002000 103:05 2491634                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f998efbe000-7f998efbf000 rw-p 00003000 103:05 2491634                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7f998efbf000-7f998efc2000 r--p 00000000 103:05 2496278                   /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f998efc2000-7f998efd9000 r-xp 00003000 103:05 2496278                   /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f998efd9000-7f998efdd000 r--p 0001a000 103:05 2496278                   /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f998efdd000-7f998efde000 r--p 0001d000 103:05 2496278                   /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f998efde000-7f998efdf000 rw-p 0001e000 103:05 2496278                   /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7f998efdf000-7f998f200000 rw-p 00000000 00:00 0 
+7f998f200000-7f998ffe7000 r--p 00000000 103:05 2496039                   /usr/lib/locale/locale-archive
+7f998ffe7000-7f998ffe8000 r--s 00000000 103:05 1854223                   /home/jeffreyleiva/hadoop-3.3.4/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+7f998ffe8000-7f998ffe9000 r--p 00000000 103:05 2493818                   /usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7f998ffe9000-7f998ffea000 r-xp 00001000 103:05 2493818                   /usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7f998ffea000-7f998ffeb000 r--p 00002000 103:05 2493818                   /usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7f998ffeb000-7f998ffec000 r--p 00002000 103:05 2493818                   /usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7f998ffec000-7f998ffed000 rw-p 00003000 103:05 2493818                   /usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7f998ffed000-7f998ffee000 r--p 00000000 103:05 1064151                   /usr/lib/python3/dist-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7f998ffee000-7f998fffc000 r-xp 00001000 103:05 1064151                   /usr/lib/python3/dist-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7f998fffc000-7f998fffe000 r--p 0000f000 103:05 1064151                   /usr/lib/python3/dist-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7f998fffe000-7f998ffff000 r--p 00010000 103:05 1064151                   /usr/lib/python3/dist-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7f998ffff000-7f9990000000 rw-p 00011000 103:05 1064151                   /usr/lib/python3/dist-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7f9990000000-7f9990028000 r--p 00000000 103:05 2490745                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f9990028000-7f99901bd000 r-xp 00028000 103:05 2490745                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f99901bd000-7f9990215000 r--p 001bd000 103:05 2490745                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f9990215000-7f9990219000 r--p 00214000 103:05 2490745                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f9990219000-7f999021b000 rw-p 00218000 103:05 2490745                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7f999021b000-7f9990228000 rw-p 00000000 00:00 0 
+7f9990228000-7f999022a000 r--s 00010000 103:05 761                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar
+7f999022a000-7f999022b000 r--p 00000000 103:05 1064236                   /usr/lib/python3/dist-packages/numpy/linalg/lapack_lite.cpython-310-x86_64-linux-gnu.so
+7f999022b000-7f999022d000 r-xp 00001000 103:05 1064236                   /usr/lib/python3/dist-packages/numpy/linalg/lapack_lite.cpython-310-x86_64-linux-gnu.so
+7f999022d000-7f999022e000 r--p 00003000 103:05 1064236                   /usr/lib/python3/dist-packages/numpy/linalg/lapack_lite.cpython-310-x86_64-linux-gnu.so
+7f999022e000-7f999022f000 r--p 00003000 103:05 1064236                   /usr/lib/python3/dist-packages/numpy/linalg/lapack_lite.cpython-310-x86_64-linux-gnu.so
+7f999022f000-7f9990230000 rw-p 00004000 103:05 1064236                   /usr/lib/python3/dist-packages/numpy/linalg/lapack_lite.cpython-310-x86_64-linux-gnu.so
+7f9990230000-7f9990232000 r--p 00000000 103:05 2497392                   /usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7f9990232000-7f9990239000 r-xp 00002000 103:05 2497392                   /usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7f9990239000-7f999023b000 r--p 00009000 103:05 2497392                   /usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7f999023b000-7f999023c000 r--p 0000a000 103:05 2497392                   /usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7f999023c000-7f999023d000 rw-p 0000b000 103:05 2497392                   /usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7f999023d000-7f9990240000 r--p 00000000 103:05 2518601                   /usr/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7f9990240000-7f9990241000 r-xp 00003000 103:05 2518601                   /usr/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7f9990241000-7f9990243000 r--p 00004000 103:05 2518601                   /usr/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7f9990243000-7f9990244000 r--p 00005000 103:05 2518601                   /usr/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7f9990244000-7f9990246000 rw-p 00006000 103:05 2518601                   /usr/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7f9990246000-7f9990289000 rw-p 00000000 00:00 0 
+7f9990289000-7f999028b000 r--p 00000000 103:05 2491787                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f999028b000-7f999029c000 r-xp 00002000 103:05 2491787                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f999029c000-7f99902a2000 r--p 00013000 103:05 2491787                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f99902a2000-7f99902a3000 ---p 00019000 103:05 2491787                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f99902a3000-7f99902a4000 r--p 00019000 103:05 2491787                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f99902a4000-7f99902a5000 rw-p 0001a000 103:05 2491787                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7f99902a5000-7f99902a9000 r--p 00000000 103:05 2493359                   /usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7
+7f99902a9000-7f99902c8000 r-xp 00004000 103:05 2493359                   /usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7
+7f99902c8000-7f99902d2000 r--p 00023000 103:05 2493359                   /usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7
+7f99902d2000-7f99902d3000 ---p 0002d000 103:05 2493359                   /usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7
+7f99902d3000-7f99902d5000 r--p 0002d000 103:05 2493359                   /usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7
+7f99902d5000-7f99902d6000 rw-p 0002f000 103:05 2493359                   /usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7
+7f99902d6000-7f99902e4000 r--p 00000000 103:05 2491165                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f99902e4000-7f9990360000 r-xp 0000e000 103:05 2491165                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f9990360000-7f99903bb000 r--p 0008a000 103:05 2491165                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f99903bb000-7f99903bc000 r--p 000e4000 103:05 2491165                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f99903bc000-7f99903bd000 rw-p 000e5000 103:05 2491165                   /usr/lib/x86_64-linux-gnu/libm.so.6
+7f99903bd000-7f99903be000 r--s 0000a000 103:05 755                       /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar
+7f99903be000-7f99903bf000 rw-p 00000000 00:00 0 
+7f99903bf000-7f99903c1000 r--p 00000000 103:05 2499133                   /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f99903c1000-7f99903c5000 r-xp 00002000 103:05 2499133                   /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f99903c5000-7f99903c6000 r--p 00006000 103:05 2499133                   /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f99903c6000-7f99903c7000 r--p 00006000 103:05 2499133                   /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f99903c7000-7f99903c8000 rw-p 00007000 103:05 2499133                   /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f99903c8000-7f99903c9000 r--p 00000000 103:05 2518591                   /usr/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7f99903c9000-7f99903ca000 r-xp 00001000 103:05 2518591                   /usr/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7f99903ca000-7f99903cb000 r--p 00002000 103:05 2518591                   /usr/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7f99903cb000-7f99903cc000 r--p 00002000 103:05 2518591                   /usr/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7f99903cc000-7f99903cd000 rw-p 00003000 103:05 2518591                   /usr/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7f99903cd000-7f99903d4000 r--s 00000000 103:05 266674                    /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7f99903d4000-7f99903d6000 rw-p 00000000 00:00 0 
+7f99903d6000-7f99903d8000 r--p 00000000 103:05 2490417                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f99903d8000-7f9990402000 r-xp 00002000 103:05 2490417                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f9990402000-7f999040d000 r--p 0002c000 103:05 2490417                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f999040d000-7f999040e000 r--p 00000000 00:00 0 
+7f999040e000-7f9990410000 r--p 00037000 103:05 2490417                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7f9990410000-7f9990412000 rw-p 00039000 103:05 2490417                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7fffd3224000-7fffd3227000 ---p 00000000 00:00 0 
+7fffd3227000-7fffd3324000 rw-p 00000000 00:00 0                          [stack]
+7fffd33a7000-7fffd33ab000 r--p 00000000 00:00 0                          [vvar]
+7fffd33ab000-7fffd33ad000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): /home/jeffreyleiva/hadoop-3.3.4/etc/hadoop:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/jetty-xml-9.4.43.v20210629.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/dnsjava-2.1.7.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/commons-lang3-3.12.0.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/jetty-io-9.4.43.v20210629.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/accessors-smart-2.4.7.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/hadoop-annotations-3.3.4.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/checker-qual-2.5.2.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/jackson-core-2.12.7.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/jsr305-3.0.2.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/jackson-databind-2.12.7.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/zookeeper-3.5.6.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/curator-recipes-4.2.0.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/jetty-server-9.4.43.v20210629.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/kerb-util-1.0.1.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/woodstox-core-5.3.0.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/jersey-core-1.19.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/home/jeffreyleiva/hadoop-3.3.4//share/hadoop/common/lib/audience-a
+Launcher Type: generic
+
+Environment Variables:
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+PATH=/home/jeffreyleiva/.local/bin:/home/jeffreyleiva/.cargo/bin:/home/jeffreyleiva/hadoop-3.3.4/bin:/home/jeffreyleiva/hadoop-3.3.4/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/home/jeffreyleiva/hadoop-3.3.4/bin:/home/jeffreyleiva/hadoop-3.3.4/sbin
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xb3e4a0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xb3e4a0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x97cdf0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x97cdf0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x97cdf0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x97cdf0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x97d120], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x97d070], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_ONSTACK
+SIGTERM: [libjvm.so+0x97d070], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x97d070], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=22.04
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Ubuntu 22.04.2 LTS"
+
+uname:Linux 5.19.0-42-generic #43~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Apr 21 16:51:08 UTC 2 x86_64
+libc:glibc 2.35 NPTL 2.35 
+rlimit: STACK 8192k, CORE 0k, NPROC 62435, NOFILE 1048576, AS infinity
+load average:0,89 0,69 0,40
+
+/proc/meminfo:
+MemTotal:       16067516 kB
+MemFree:         8679072 kB
+MemAvailable:   11435580 kB
+Buffers:           99444 kB
+Cached:          3274592 kB
+SwapCached:            0 kB
+Active:          1126128 kB
+Inactive:        5416924 kB
+Active(anon):       4336 kB
+Inactive(anon):  3586840 kB
+Active(file):    1121792 kB
+Inactive(file):  1830084 kB
+Unevictable:      325856 kB
+Mlocked:              16 kB
+SwapTotal:      16520188 kB
+SwapFree:       16520188 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               556 kB
+Writeback:             0 kB
+AnonPages:       3495040 kB
+Mapped:           857672 kB
+Shmem:            429852 kB
+KReclaimable:     123532 kB
+Slab:             321904 kB
+SReclaimable:     123532 kB
+SUnreclaim:       198372 kB
+KernelStack:       26352 kB
+PageTables:        43652 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    24553944 kB
+Committed_AS:   13571944 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       85088 kB
+VmallocChunk:          0 kB
+Percpu:             9472 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      283744 kB
+DirectMap2M:     7786496 kB
+DirectMap1G:     8388608 kB
+
+container (cgroup) information:
+container_type: cgroupv2
+cpu_cpuset_cpus: failed
+cpu_memory_nodes: failed
+active_processor_count: 8
+cpu_quota: -2
+cpu_period: -2
+cpu_shares: -2
+memory_limit_in_bytes: -1
+memory_and_swap_limit_in_bytes: -1
+memory_soft_limit_in_bytes: 0
+memory_usage_in_bytes: 364318720
+memory_max_usage_in_bytes: -2
+
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 126 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 126
+model name	: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+stepping	: 5
+microcode	: 0xb8
+cpu MHz		: 3244.612
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb
+bogomips	: 2380.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 126
+model name	: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+stepping	: 5
+microcode	: 0xb8
+cpu MHz		: 3195.503
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb
+bogomips	: 2380.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 126
+model name	: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+stepping	: 5
+microcode	: 0xb8
+cpu MHz		: 1848.425
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb
+bogomips	: 2380.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 126
+model name	: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+stepping	: 5
+microcode	: 0xb8
+cpu MHz		: 3014.077
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb
+bogomips	: 2380.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 126
+model name	: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+stepping	: 5
+microcode	: 0xb8
+cpu MHz		: 3195.498
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb
+bogomips	: 2380.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 126
+model name	: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+stepping	: 5
+microcode	: 0xb8
+cpu MHz		: 3298.503
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb
+bogomips	: 2380.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 126
+model name	: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+stepping	: 5
+microcode	: 0xb8
+cpu MHz		: 519.780
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb
+bogomips	: 2380.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 126
+model name	: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+stepping	: 5
+microcode	: 0xb8
+cpu MHz		: 3235.551
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb
+bogomips	: 2380.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 16067516k(8679072k free), swap 16520188k(16520188k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.362-b09) for linux-amd64 JRE (1.8.0_362-8u372-ga~us1-0ubuntu1~22.04-b09), built on May  6 2023 10:53:54 by "buildd" with gcc 11.3.0
+
+time: Tue May 23 22:19:33 2023
+timezone: CST
+elapsed time: 1.161084 seconds (0d 0h 0m 1s)
+

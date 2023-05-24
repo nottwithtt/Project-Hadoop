@@ -3,10 +3,10 @@
 dir=$(dirname $(realpath $0))
 
 
-hdfs dfs -rm -r /resultadoPromedioMinMaxRegionSexoDecada
+hdfs dfs -rm -r /resultadoJob7
 
 
-pydoop submit --upload-file-to-cache Job7.py  Job7  --num-reducers 1 --entry-point main  /VictimasDeHomicidioPorSexo   /resultadoPromedioMinMaxRegionSexoDecada
+pydoop submit --upload-file-to-cache Job7.py  Job7  --num-reducers 1 --entry-point main  /VictimasDeHomicidioPorSexo   /resultadoJob7
 
 
 
