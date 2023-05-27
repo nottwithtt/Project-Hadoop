@@ -77,7 +77,9 @@ class Reducer(api.Reducer):
             minimum = min(filtered_data)
         mean = total_sum/TOTAL_REGIONS
         #Promedio,maximo y minimo de homicidios por region por ano
-        context.emit((region,year), (mean,maximum,minimum))
+        finalStringKey = str(region)+","+str(year)+","
+        finalStringValue = str(mean)+","+str(maximum)+","+str(minimum)
+        context.emit(finalStringKey, finalStringValue)
 
 def main():
     FACTORY = pipes.Factory(mapper_class=Mapper,

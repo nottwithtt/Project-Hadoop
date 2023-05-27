@@ -67,7 +67,8 @@ class Reducer(api.Reducer):
         country_homicides = sum(context.values)
         resultado = country_homicides/NUMBER_COUNTRYS
         #Pais y media de homicidios
-        context.emit(country, resultado)
+        finalCountry = str(country)+","
+        context.emit(finalCountry, resultado)
 
 def main():
     FACTORY = pipes.Factory(mapper_class=Mapper,

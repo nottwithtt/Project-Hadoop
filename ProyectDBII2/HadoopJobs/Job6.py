@@ -77,7 +77,9 @@ class Reducer(api.Reducer):
             minimum = 0
         else:
             minimum = min(filtered_data)
-        context.emit((region,gender,year), (mean,maximum,minimum))
+        finalStringKey = str(region)+","+str(gender)+","+str(year)+","
+        finalStringValue = str(mean)+","+str(maximum)+","+str(minimum)
+        context.emit(finalStringKey, finalStringValue)
 
 def main():
     FACTORY = pipes.Factory(mapper_class=Mapper,

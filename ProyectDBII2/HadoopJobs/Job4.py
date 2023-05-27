@@ -72,7 +72,9 @@ class Reducer(api.Reducer):
         for val in context.values:
             totalGenero = val
         resultado = float(float(totalGenero)/float(TOTAL_COUNTRIES))
-        context.emit((country,gender), resultado)
+        finalStringKey = str(country)+","+str(gender)+","
+        finalStringValue = str(resultado)
+        context.emit(finalStringKey, finalStringValue)
 
 def main():
     FACTORY = pipes.Factory(mapper_class=Mapper,

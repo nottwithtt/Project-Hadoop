@@ -22,7 +22,7 @@ class Mapper(api.Mapper):
         logger.info("Parsing: %s",context.value)
         data  = self.parse_line(context.value)
         for key, value in data.items():
-            if key == 'FirstDecade' or key == 'SecondDecade':
+            if key == '2000s' or key == '2010s':
                 context.emit((data['Subregion'],data['Gender'],key),data[key])
         
 
@@ -57,8 +57,8 @@ class Mapper(api.Mapper):
         data['2020'] = int(parts[24])
         first_decade = [int(x) for x in parts[4:11]]
         second_decade = [int(x) for x in parts[11:25]]
-        data['FirstDecade'] = sum(first_decade)
-        data['SecondDecade'] = sum(second_decade)
+        data['2000s'] = sum(first_decade)
+        data['2010s'] = sum(second_decade)
         return data
             
             
@@ -83,7 +83,9 @@ class Reducer(api.Reducer):
             minimum = 0
         else:
             minimum = min(filtered_data)
-        context.emit((region,gender,decade), (mean,maximum,minimum))
+        finalStringKey = str(region)+","+str(gender)+","+str(decade)+","
+        finalStringValue = str(mean)+","+str(maximum)+","+str(minimum)
+        context.emit(finalStringKey, finalStringValue)
 
 def main():
     FACTORY = pipes.Factory(mapper_class=Mapper,

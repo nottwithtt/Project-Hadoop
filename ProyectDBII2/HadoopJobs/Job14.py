@@ -54,7 +54,9 @@ class Reducer(api.Reducer):
         porcentage90s = (sumFor90s/sumForAll)*100
         porcentage00s = (sumFor00s/sumForAll)*100
         porcentage10s = (sumFor10s/sumForAll)*100
-        context.emit((country,"1990s","2000s","2010s"), (porcentage90s,porcentage00s,porcentage10s))
+        finalStringKey = str(country)+",1990s,2000s,2010s,"
+        finalStringValue = str(porcentage90s)+","+str(porcentage00s)+","+str(porcentage10s)
+        context.emit(finalStringKey, finalStringValue)
 
 def main():
     FACTORY = pipes.Factory(mapper_class=Mapper,
