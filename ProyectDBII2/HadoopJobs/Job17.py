@@ -22,8 +22,8 @@ class Mapper(api.Mapper):
         data = {}
         data['Country or Area'] = parts[0]
         data['Year(s)'] = parts[1]
-        data['Value'] = float(parts[5])
-        data['Quartile'] = parts[4]
+        data['Value'] = float(parts[6])
+        data['Quartile'] = parts[5]
         data['Decade'] = (int(data['Year(s)'])//10)*10
         return data
             

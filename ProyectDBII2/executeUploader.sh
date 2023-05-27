@@ -2,9 +2,15 @@ python3 Uploader.py
 python3 UploaderForHomicidesOne.py
 python3 UploaderForAdolescentFertility.py
 python3 UploaderForCancer.py
+python3 UploaderForCardiovascular.py
 python3 UplaoderForCommunicable.py
+python3 UploaderForExpenditureOnHealthFromTotalHealthExpenditure.py
+python3 UploaderForInfantMortality.py
 python3 UploaderForInjuries.py
 python3 UploaderForNoCommunicable.py
 python3 UploaderForMedianAge.py
 python3 UploaderForRespiratory.py
 python3 UploaderForPopulation.py
+python3 UploaderForTotalFertility.py
+python3 UploaderForLifeExpectancy.py
+

@@ -9,3 +9,7 @@ hdfs dfs -mkdir /MuertesNoComunicables
 hdfs dfs -mkdir /MuertesHeridas
 hdfs dfs -mkdir /MediaEdad
 hdfs dfs -mkdir /PoblacionTotal
+hdfs dfs -mkdir /MuertesBebes
+hdfs dfs -mkdir /FertilidadTotal
+hdfs dfs -mkdir /GastoEnSaludNoDelTotal
+hdfs dfs -mkdir /ExpectativaDeVida

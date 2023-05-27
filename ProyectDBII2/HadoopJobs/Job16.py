@@ -15,15 +15,14 @@ class Mapper(api.Mapper):
         logger.info("Parsing: %s",context.value)
         data  = self.parse_line(context.value)
         logger.info(data)
-        context.emit((data['Country or Area'],data['Quartile']),(data['Decade'],data['Value']))
+        context.emit(data['Country or Area'],(data['Decade'],data['Value']))
 
     def parse_line(self, line):
         parts = line.split(",")
         data = {}
         data['Country or Area'] = parts[0]
         data['Year(s)'] = parts[1]
-        data['Value'] = float(parts[5])
-        data['Quartile'] = parts[4]
+        data['Value'] = parts[6]
         data['Decade'] = (int(data['Year(s)'])//10)*10
         return data
             
@@ -36,7 +35,7 @@ class Reducer(api.Reducer):
         context.set_status("Initializing reducer")
 
     def reduce(self, context):
-        country,quartile = context.key
+        country = context.key
         sumFor90s = 0
         sumFor00s = 0
         sumFor10s = 0
@@ -55,7 +54,7 @@ class Reducer(api.Reducer):
         porcentage90s = (sumFor90s/sumForAll)*100
         porcentage00s = (sumFor00s/sumForAll)*100
         porcentage10s = (sumFor10s/sumForAll)*100
-        finalStringKey = str(country)+","+str(quartile)+",1990s,2000s,2010s,"
+        finalStringKey = str(country)+",1990s,2000s,2010s,"
         finalStringValue = str(porcentage90s)+","+str(porcentage00s)+","+str(porcentage10s)
         context.emit(finalStringKey, finalStringValue)
 
