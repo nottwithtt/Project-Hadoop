@@ -602,8 +602,8 @@ def getTotalFertility():
 
     print("Archivo CSV creado exitosamente.")
 
-def getGeneralExpenditure():
-    nombre = "generalExpenditure.csv"
+def getGeneralExpenditurePercentage():
+    nombre = "generalExpenditurePercentage.csv"
     driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_113')
     timeSleep(5)
 
