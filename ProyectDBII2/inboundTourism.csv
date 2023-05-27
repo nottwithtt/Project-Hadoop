@@ -1,36 +1,16 @@
 Basic data and indicators,Description,Units,Notes,Series,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021
-AFGHANISTAN,(blank),(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Arrivals,(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Total arrivals,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Overnights visitors (tourists),Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Same-day visitors (excursionists),Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),"of which, cruise passengers",Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AFGHANISTAN,(blank),(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Arrivals,(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Total arrivals,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Overnights visitors (tourists),Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Same-day visitors (excursionists),Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),"of which, cruise passengers",Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 (blank),Arrivals by region,(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Total,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Africa,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Americas,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),East Asia and the Pacific,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Europe,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Middle East,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),South Asia,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Other not classified,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),"of which, nationals residing abroad",Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Arrivals by main purpose,(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Total,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Personal,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Business and professional,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Arrivals by mode of transport,(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Total,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Air,(blank),Thousands,(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Water,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Land,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Accommodation,(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Total,(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Guests,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Overnights,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Hotels and similar establishments,(blank),(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Guests,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Overnights,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-(blank),Tourism expenditure in the country,US$ Millions,(blank),IMF,0,0,0,0,0,0,0,0,0,0,0,0,0,57,89,147,165,167,179,121,86,62,16,50,85,75,0
-(blank),Travel,US$ Millions,(blank),IMF,0,0,0,0,0,0,0,0,0,0,0,0,0,17,36,75,85,102,138,109,79,49,2,28,72
-(blank),Passenger transport,(blank),IMF,0,0,0,0,0,0,0,0,0,0,0,0,0,40,53,72,80,65,41,12,7,13,14,22,13,10
+(blank),Total,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Africa,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Americas,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),East Asia and the Pacific,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Europe,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Middle East,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),South Asia,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+(blank),Other not classified,Thousands,(blank),(blank),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
