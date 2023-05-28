@@ -1,0 +1,574 @@
+Chad,1990s,	56.300000000000004
+Chad,2000s,	94.19999999999999
+Chad,2010s,	9.899999999999999
+Cuba,1990s,	48.7
+Cuba,2000s,	120.10000000000001
+Cuba,2010s,	40.6
+Fiji,1990s,	42.9
+Fiji,2000s,	100.4
+Fiji,2010s,	28.799999999999997
+Iraq,1990s,	0.4
+Iraq,2000s,	28.299999999999997
+Iraq,2010s,	14.100000000000001
+Mali,1990s,	54.6
+Mali,2000s,	120.70000000000002
+Mali,2010s,	37.1
+Niue,1990s,	32.7
+Niue,2000s,	154.6
+Niue,2010s,	19.9
+Oman,1990s,	36.8
+Oman,2000s,	62.0
+Oman,2010s,	17.5
+Peru,1990s,	69.10000000000001
+Peru,2000s,	163.6
+Peru,2010s,	47.6
+Togo,1990s,	42.5
+Togo,2000s,	103.0
+Togo,2010s,	46.2
+Benin,1990s,	56.9
+Benin,2000s,	104.7
+Benin,2010s,	31.6
+Chile,1990s,	65.5
+Chile,2000s,	137.8
+Chile,2010s,	45.400000000000006
+China,1990s,	68.4
+China,2000s,	103.80000000000001
+China,2010s,	37.1
+Congo,1990s,	27.1
+Congo,2000s,	48.900000000000006
+Congo,2010s,	19.5
+Egypt,1990s,	32.4
+Egypt,2000s,	63.3
+Egypt,2010s,	17.799999999999997
+Gabon,1990s,	23.3
+Gabon,2000s,	58.199999999999996
+Gabon,2010s,	21.6
+Ghana,1990s,	48.800000000000004
+Ghana,2000s,	117.8
+Ghana,2010s,	35.2
+Haiti,1990s,	95.80000000000001
+Haiti,2000s,	122.5
+Haiti,2010s,	20.9
+India,1990s,	38.2
+India,2000s,	66.80000000000001
+India,2010s,	24.4
+Italy,1990s,	53.2
+Italy,2000s,	136.60000000000002
+Italy,2010s,	43.3
+Japan,1990s,	78.9
+Japan,2000s,	174.7
+Japan,2010s,	58.199999999999996
+Kenya,1990s,	37.900000000000006
+Kenya,2000s,	79.6
+Kenya,2010s,	17.700000000000003
+Libya,1990s,	28.0
+Libya,2000s,	54.699999999999996
+Libya,2010s,	15.600000000000001
+Malta,1990s,	51.99999999999999
+Malta,2000s,	130.9
+Malta,2010s,	39.6
+Nauru,1990s,	48.699999999999996
+Nauru,2000s,	175.60000000000002
+Nauru,2010s,	31.700000000000003
+Nepal,1990s,	47.4
+Nepal,2000s,	104.80000000000001
+Nepal,2010s,	35.6
+Niger,1990s,	46.1
+Niger,2000s,	112.4
+Niger,2010s,	31.7
+Palau,1990s,	70.2
+Palau,2000s,	144.2
+Palau,2010s,	49.699999999999996
+Qatar,1990s,	25.1
+Qatar,2000s,	73.4
+Qatar,2010s,	15.299999999999999
+Samoa,1990s,	51.2
+Samoa,2000s,	130.3
+Samoa,2010s,	39.2
+Spain,1990s,	63.5
+Spain,2000s,	147.6
+Spain,2010s,	45.4
+Sudan,1990s,	57.7
+Sudan,2000s,	79.3
+Sudan,2010s,	32.2
+Tonga,1990s,	63.2
+Tonga,2000s,	190.3
+Tonga,2010s,	39.300000000000004
+Yemen,1990s,	37.0
+Yemen,2000s,	60.4
+Yemen,2010s,	12.600000000000001
+Angola,1990s,	18.5
+Angola,2000s,	58.3
+Angola,2010s,	17.5
+Belize,1990s,	41.5
+Belize,2000s,	91.49999999999999
+Belize,2010s,	38.6
+Bhutan,1990s,	65.3
+Bhutan,2000s,	113.9
+Bhutan,2010s,	23.3
+Brazil,1990s,	34.6
+Brazil,2000s,	50.400000000000006
+Brazil,2010s,	26.999999999999996
+Canada,1990s,	69.4
+Canada,2000s,	170.29999999999998
+Canada,2010s,	53.2
+Cyprus,1990s,	28.299999999999997
+Cyprus,2000s,	66.10000000000001
+Cyprus,2010s,	20.700000000000003
+France,1990s,	76.1
+France,2000s,	158.7
+France,2010s,	47.7
+Gambia,1990s,	40.5
+Gambia,2000s,	110.0
+Gambia,2010s,	33.599999999999994
+Greece,1990s,	49.1
+Greece,2000s,	120.19999999999999
+Greece,2010s,	35.2
+Guinea,1990s,	32.0
+Guinea,2000s,	62.199999999999996
+Guinea,2010s,	20.4
+Guyana,1990s,	52.099999999999994
+Guyana,2000s,	114.9
+Guyana,2010s,	43.3
+Israel,1990s,	48.199999999999996
+Israel,2000s,	95.60000000000001
+Israel,2010s,	31.200000000000003
+Jordan,1990s,	73.8
+Jordan,2000s,	140.1
+Jordan,2010s,	55.099999999999994
+Kuwait,1990s,	31.8
+Kuwait,2000s,	62.099999999999994
+Kuwait,2010s,	16.4
+Latvia,1990s,	47.300000000000004
+Latvia,2000s,	99.7
+Latvia,2010s,	26.700000000000003
+Malawi,1990s,	26.999999999999996
+Malawi,2000s,	144.89999999999998
+Malawi,2010s,	53.400000000000006
+Mexico,1990s,	75.7
+Mexico,2000s,	159.7
+Mexico,2010s,	46.3
+Monaco,1990s,	69.3
+Monaco,2000s,	158.2
+Monaco,2010s,	56.400000000000006
+Norway,1990s,	80.5
+Norway,2000s,	187.9
+Norway,2010s,	56.0
+Panama,1990s,	90.2
+Panama,2000s,	129.0
+Panama,2010s,	40.7
+Poland,1990s,	43.900000000000006
+Poland,2000s,	102.39999999999999
+Poland,2010s,	33.2
+Rwanda,1990s,	49.3
+Rwanda,2000s,	160.89999999999998
+Rwanda,2010s,	69.6
+Serbia,1990s,	67.5
+Serbia,2000s,	136.70000000000002
+Serbia,2010s,	41.6
+Sweden,1990s,	57.199999999999996
+Sweden,2000s,	137.6
+Sweden,2010s,	45.0
+Turkey,1990s,	53.39999999999999
+Turkey,2000s,	109.89999999999999
+Turkey,2010s,	38.400000000000006
+Tuvalu,1990s,	36.2
+Tuvalu,2000s,	163.3
+Tuvalu,2010s,	48.099999999999994
+Uganda,1990s,	50.900000000000006
+Uganda,2000s,	98.4
+Uganda,2010s,	31.099999999999998
+Zambia,1990s,	68.1
+Zambia,2000s,	141.5
+Zambia,2010s,	49.199999999999996
+Albania,1990s,	32.4
+Albania,2000s,	83.1
+Albania,2010s,	28.299999999999997
+Algeria,1990s,	41.5
+Algeria,2000s,	83.49999999999999
+Algeria,2010s,	27.700000000000003
+Andorra,1990s,	120.1
+Andorra,2000s,	211.70000000000005
+Andorra,2010s,	21.3
+Armenia,1990s,	39.1
+Armenia,2000s,	81.5
+Armenia,2010s,	22.3
+Austria,1990s,	67.2
+Austria,2000s,	153.59999999999997
+Austria,2010s,	50.3
+Bahamas,1990s,	71.10000000000001
+Bahamas,2000s,	158.99999999999997
+Bahamas,2010s,	49.0
+Bahrain,1990s,	54.400000000000006
+Bahrain,2000s,	92.30000000000001
+Bahrain,2010s,	27.4
+Belarus,1990s,	55.2
+Belarus,2000s,	96.50000000000001
+Belarus,2010s,	39.6
+Belgium,1990s,	58.10000000000001
+Belgium,2000s,	141.3
+Belgium,2010s,	45.0
+Burundi,1990s,	33.1
+Burundi,2000s,	93.79999999999998
+Burundi,2010s,	40.8
+Comoros,1990s,	44.300000000000004
+Comoros,2000s,	94.3
+Comoros,2010s,	22.6
+Croatia,1990s,	67.0
+Croatia,2000s,	153.7
+Croatia,2010s,	47.9
+Denmark,1990s,	60.1
+Denmark,2000s,	153.7
+Denmark,2010s,	48.6
+Ecuador,1990s,	50.2
+Ecuador,2000s,	78.2
+Ecuador,2010s,	21.2
+Eritrea,1990s,	13.100000000000001
+Eritrea,2000s,	31.200000000000006
+Eritrea,2010s,	10.8
+Estonia,1990s,	66.7
+Estonia,2000s,	112.60000000000001
+Estonia,2010s,	36.3
+Finland,1990s,	48.9
+Finland,2000s,	119.7
+Finland,2010s,	36.7
+Georgia,1990s,	24.9
+Georgia,2000s,	62.5
+Georgia,2010s,	17.099999999999998
+Germany,1990s,	83.89999999999999
+Germany,2000s,	179.90000000000003
+Germany,2010s,	56.800000000000004
+Grenada,1990s,	51.5
+Grenada,2000s,	103.30000000000001
+Grenada,2010s,	28.2
+Hungary,1990s,	54.7
+Hungary,2000s,	108.5
+Hungary,2010s,	31.200000000000003
+Iceland,1990s,	84.6
+Iceland,2000s,	177.09999999999997
+Iceland,2010s,	46.1
+Ireland,1990s,	62.7
+Ireland,2000s,	160.99999999999997
+Ireland,2010s,	38.6
+Jamaica,1990s,	32.1
+Jamaica,2000s,	52.00000000000001
+Jamaica,2010s,	27.699999999999996
+Lebanon,1990s,	55.7
+Lebanon,2000s,	90.69999999999999
+Lebanon,2010s,	27.5
+Lesotho,1990s,	29.699999999999996
+Lesotho,2000s,	84.89999999999999
+Lesotho,2010s,	42.3
+Liberia,1990s,	13.600000000000001
+Liberia,2000s,	114.69999999999999
+Liberia,2010s,	49.5
+Morocco,1990s,	25.799999999999997
+Morocco,2000s,	54.1
+Morocco,2010s,	18.5
+Myanmar,1990s,	18.0
+Myanmar,2000s,	35.6
+Myanmar,2010s,	4.6
+Namibia,1990s,	69.30000000000001
+Namibia,2000s,	127.20000000000003
+Namibia,2010s,	41.7
+Nigeria,1990s,	39.1
+Nigeria,2000s,	67.0
+Nigeria,2010s,	18.9
+Romania,1990s,	40.3
+Romania,2000s,	113.39999999999999
+Romania,2010s,	34.5
+Senegal,1990s,	38.1
+Senegal,2000s,	100.70000000000002
+Senegal,2010s,	28.799999999999997
+Somalia,1990s,	21.400000000000002
+Somalia,2000s,	8.4
+Tunisia,1990s,	40.8
+Tunisia,2000s,	93.4
+Tunisia,2010s,	39.900000000000006
+Ukraine,1990s,	56.800000000000004
+Ukraine,2000s,	122.69999999999999
+Ukraine,2010s,	35.900000000000006
+Uruguay,1990s,	86.9
+Uruguay,2000s,	148.9
+Uruguay,2010s,	41.5
+Vanuatu,1990s,	46.3
+Vanuatu,2000s,	128.9
+Vanuatu,2010s,	43.5
+Barbados,1990s,	60.9
+Barbados,2000s,	118.1
+Barbados,2010s,	29.500000000000004
+Botswana,1990s,	29.6
+Botswana,2000s,	89.6
+Botswana,2010s,	24.700000000000003
+Bulgaria,1990s,	46.5
+Bulgaria,2000s,	108.6
+Bulgaria,2010s,	34.400000000000006
+Cambodia,1990s,	56.900000000000006
+Cambodia,2000s,	94.0
+Cambodia,2010s,	19.0
+Cameroon,1990s,	28.5
+Cameroon,2000s,	70.89999999999999
+Cameroon,2010s,	25.5
+Colombia,1990s,	103.4
+Colombia,2000s,	172.0
+Colombia,2010s,	56.8
+Djibouti,1990s,	91.7
+Djibouti,2000s,	126.6
+Djibouti,2010s,	42.3
+Dominica,1990s,	51.0
+Dominica,2000s,	84.60000000000001
+Dominica,2010s,	33.3
+Ethiopia,1990s,	33.8
+Ethiopia,2000s,	112.3
+Ethiopia,2010s,	36.0
+Honduras,1990s,	64.1
+Honduras,2000s,	184.9
+Honduras,2010s,	45.900000000000006
+Kiribati,1990s,	48.7
+Kiribati,2000s,	97.9
+Kiribati,2010s,	30.6
+Malaysia,1990s,	24.1
+Malaysia,2000s,	55.0
+Malaysia,2010s,	19.1
+Maldives,1990s,	52.8
+Maldives,2000s,	109.7
+Maldives,2010s,	27.900000000000002
+Mongolia,1990s,	53.69999999999999
+Mongolia,2000s,	111.7
+Mongolia,2010s,	28.0
+Pakistan,1990s,	18.0
+Pakistan,2000s,	41.0
+Pakistan,2010s,	14.100000000000001
+Paraguay,1990s,	73.6
+Paraguay,2000s,	131.2
+Paraguay,2010s,	32.4
+Portugal,1990s,	60.9
+Portugal,2000s,	148.6
+Portugal,2010s,	39.8
+Slovakia,1990s,	54.4
+Slovakia,2000s,	131.4
+Slovakia,2010s,	43.9
+Slovenia,1990s,	63.199999999999996
+Slovenia,2000s,	134.70000000000002
+Slovenia,2010s,	39.0
+Suriname,1990s,	51.1
+Suriname,2000s,	119.7
+Suriname,2010s,	35.7
+Thailand,1990s,	50.0
+Thailand,2000s,	127.7
+Thailand,2010s,	43.5
+Viet Nam,1990s,	36.4
+Viet Nam,2000s,	69.80000000000001
+Viet Nam,2010s,	29.8
+Argentina,1990s,	75.60000000000001
+Argentina,2000s,	142.3
+Argentina,2010s,	61.599999999999994
+Australia,1990s,	71.1
+Australia,2000s,	164.3
+Australia,2010s,	52.8
+Guatemala,1990s,	70.39999999999999
+Guatemala,2000s,	159.5
+Guatemala,2010s,	51.0
+Indonesia,1990s,	20.999999999999996
+Indonesia,2000s,	50.4
+Indonesia,2010s,	19.9
+Lithuania,1990s,	53.9
+Lithuania,2000s,	127.60000000000001
+Lithuania,2010s,	38.0
+Mauritius,1990s,	43.3
+Mauritius,2000s,	91.00000000000001
+Mauritius,2010s,	30.599999999999998
+Nicaragua,1990s,	79.60000000000001
+Nicaragua,2000s,	179.49999999999997
+Nicaragua,2010s,	58.6
+Singapore,1990s,	41.599999999999994
+Singapore,2000s,	66.1
+Singapore,2010s,	29.4
+Sri Lanka,1990s,	30.400000000000002
+Sri Lanka,2000s,	71.6
+Sri Lanka,2010s,	19.7
+Swaziland,1990s,	59.0
+Swaziland,2000s,	122.39999999999999
+Swaziland,2010s,	51.6
+Azerbaijan,1990s,	33.5
+Azerbaijan,2000s,	48.6
+Azerbaijan,2010s,	11.8
+Bangladesh,1990s,	43.2
+Bangladesh,2000s,	81.39999999999999
+Bangladesh,2010s,	26.400000000000002
+Cabo Verde,1990s,	45.5
+Cabo Verde,2000s,	109.7
+Cabo Verde,2010s,	25.900000000000002
+Costa Rica,1990s,	112.70000000000002
+Costa Rica,2000s,	241.79999999999998
+Costa Rica,2010s,	84.7
+Kazakhstan,1990s,	64.3
+Kazakhstan,2000s,	92.0
+Kazakhstan,2010s,	32.8
+Kyrgyzstan,1990s,	57.7
+Kyrgyzstan,2000s,	122.9
+Kyrgyzstan,2010s,	35.7
+Luxembourg,1990s,	64.7
+Luxembourg,2000s,	163.7
+Luxembourg,2010s,	41.4
+Madagascar,1990s,	53.199999999999996
+Madagascar,2000s,	128.6
+Madagascar,2010s,	40.7
+Mauritania,1990s,	56.1
+Mauritania,2000s,	92.10000000000001
+Mauritania,2010s,	32.7
+Montenegro,1990s,	84.5
+Montenegro,2000s,	141.8
+Montenegro,2010s,	28.6
+Mozambique,1990s,	73.0
+Mozambique,2000s,	141.5
+Mozambique,2010s,	27.000000000000004
+San Marino,1990s,	94.70000000000002
+San Marino,2000s,	157.39999999999998
+San Marino,2010s,	40.3
+Seychelles,1990s,	40.0
+Seychelles,2000s,	83.5
+Seychelles,2010s,	30.5
+Tajikistan,1990s,	38.4
+Tajikistan,2000s,	55.89999999999999
+Tajikistan,2010s,	18.9
+Uzbekistan,1990s,	46.599999999999994
+Uzbekistan,2000s,	78.3
+Uzbekistan,2010s,	27.299999999999997
+Afghanistan,2000s,	19.6
+Afghanistan,2010s,	14.1
+El Salvador,1990s,	75.0
+El Salvador,2000s,	144.3
+El Salvador,2010s,	43.7
+Netherlands,1990s,	54.900000000000006
+Netherlands,2000s,	150.5
+Netherlands,2010s,	57.599999999999994
+New Zealand,1990s,	69.5
+New Zealand,2000s,	173.3
+New Zealand,2010s,	60.8
+Philippines,1990s,	39.0
+Philippines,2000s,	78.0
+Philippines,2010s,	29.8
+Saint Lucia,1990s,	57.7
+Saint Lucia,2000s,	113.50000000000001
+Saint Lucia,2010s,	34.7
+South Sudan,2000s,	8.0
+South Sudan,2010s,	12.0
+Switzerland,1990s,	75.6
+Switzerland,2000s,	181.9
+Switzerland,2010s,	62.7
+Timor-Leste,2000s,	182.2
+Timor-Leste,2010s,	10.5
+Burkina Faso,1990s,	48.39999999999999
+Burkina Faso,2000s,	141.4
+Burkina Faso,2010s,	40.0
+Cook Islands,1990s,	45.49999999999999
+Cook Islands,2000s,	116.7
+Cook Islands,2010s,	33.199999999999996
+Saudi Arabia,1990s,	28.6
+Saudi Arabia,2000s,	77.60000000000001
+Saudi Arabia,2010s,	17.1
+Sierra Leone,1990s,	71.0
+Sierra Leone,2000s,	132.3
+Sierra Leone,2010s,	36.3
+South Africa,1990s,	56.7
+South Africa,2000s,	126.69999999999999
+South Africa,2010s,	38.3
+Turkmenistan,1990s,	63.50000000000001
+Turkmenistan,2000s,	116.2
+Turkmenistan,2010s,	26.099999999999998
+Guinea-Bissau,1990s,	34.1
+Guinea-Bissau,2000s,	52.699999999999996
+Guinea-Bissau,2010s,	26.7
+Czech Republic,1990s,	66.2
+Czech Republic,2000s,	137.3
+Czech Republic,2010s,	43.4
+United Kingdom,1990s,	67.39999999999999
+United Kingdom,2000s,	151.7
+United Kingdom,2010s,	48.0
+Solomon Islands,1990s,	79.3
+Solomon Islands,2000s,	229.10000000000002
+Solomon Islands,2010s,	61.800000000000004
+Côte d’Ivoire,1990s,	42.3
+Côte d’Ivoire,2000s,	78.9
+Côte d’Ivoire,2010s,	24.900000000000002
+Marshall Islands,1990s,	86.9
+Marshall Islands,2000s,	209.39999999999998
+Marshall Islands,2010s,	70.0
+Papua New Guinea,1990s,	53.9
+Papua New Guinea,2000s,	101.1
+Papua New Guinea,2010s,	34.0
+Brunei Darussalam,1990s,	28.700000000000003
+Brunei Darussalam,2000s,	65.7
+Brunei Darussalam,2010s,	18.5
+Equatorial Guinea,1990s,	57.30000000000001
+Equatorial Guinea,2000s,	74.9
+Equatorial Guinea,2010s,	21.0
+Republic of Korea,1990s,	40.2
+Republic of Korea,2000s,	112.3
+Republic of Korea,2010s,	40.8
+Dominican Republic,1990s,	61.39999999999999
+Dominican Republic,2000s,	129.2
+Dominican Republic,2010s,	42.8
+Russian Federation,1990s,	48.2
+Russian Federation,2000s,	111.5
+Russian Federation,2010s,	30.099999999999998
+Antigua and Barbuda,1990s,	60.8
+Antigua and Barbuda,2000s,	109.9
+Antigua and Barbuda,2010s,	51.5
+Republic of Moldova,1990s,	72.6
+Republic of Moldova,2000s,	116.0
+Republic of Moldova,2010s,	39.7
+Trinidad and Tobago,1990s,	30.799999999999997
+Trinidad and Tobago,2000s,	82.6
+Trinidad and Tobago,2010s,	22.9
+Syrian Arab Republic,1990s,	34.5
+Syrian Arab Republic,2000s,	63.9
+Syrian Arab Republic,2010s,	16.5
+United Arab Emirates,1990s,	40.0
+United Arab Emirates,2000s,	86.50000000000001
+United Arab Emirates,2010s,	27.900000000000002
+Saint Kitts and Nevis,1990s,	49.0
+Saint Kitts and Nevis,2000s,	67.9
+Saint Kitts and Nevis,2010s,	20.4
+Sao Tome and Principe,1990s,	41.2
+Sao Tome and Principe,2000s,	84.09999999999998
+Sao Tome and Principe,2010s,	16.799999999999997
+Bosnia and Herzegovina,1990s,	46.7
+Bosnia and Herzegovina,2000s,	127.1
+Bosnia and Herzegovina,2010s,	50.00000000000001
+Central African Republic,1990s,	45.8
+Central African Republic,2000s,	137.5
+Central African Republic,2010s,	34.2
+United States of America,1990s,	84.70000000000002
+United States of America,2000s,	190.29999999999998
+United States of America,2010s,	59.89999999999999
+Iran (Islamic Republic of),1990s,	6234.2
+Iran (Islamic Republic of),2000s,	105.29999999999998
+Iran (Islamic Republic of),2010s,	42.4
+United Republic of Tanzania,1990s,	47.0
+United Republic of Tanzania,2000s,	116.10000000000001
+United Republic of Tanzania,2010s,	30.900000000000002
+Bolivia (Plurinational State of),1990s,	49.8
+Bolivia (Plurinational State of),2000s,	93.39999999999999
+Bolivia (Plurinational State of),2010s,	25.8
+Democratic Republic of the Congo,1990s,	10.899999999999999
+Democratic Republic of the Congo,2000s,	78.5
+Democratic Republic of the Congo,2010s,	39.4
+Lao People's Democratic Republic,1990s,	60.99999999999999
+Lao People's Democratic Republic,2000s,	60.900000000000006
+Lao People's Democratic Republic,2010s,	17.6
+Micronesia (Federated States of),1990s,	52.599999999999994
+Micronesia (Federated States of),2000s,	158.3
+Micronesia (Federated States of),2010s,	55.7
+Saint Vincent and the Grenadines,1990s,	51.4
+Saint Vincent and the Grenadines,2000s,	106.89999999999999
+Saint Vincent and the Grenadines,2010s,	35.8
+Venezuela (Bolivarian Republic of),1990s,	34.6
+Venezuela (Bolivarian Republic of),2000s,	82.1
+Venezuela (Bolivarian Republic of),2010s,	19.7
+Democratic People's Republic of Korea,1990s,	30.0
+Democratic People's Republic of Korea,2000s,	54.0
+The former Yugoslav Republic of Macedonia,1990s,	78.0
+The former Yugoslav Republic of Macedonia,2000s,	141.1
+The former Yugoslav Republic of Macedonia,2010s,	40.8
