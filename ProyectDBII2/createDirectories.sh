@@ -13,3 +13,6 @@ hdfs dfs -mkdir /MuertesBebes
 hdfs dfs -mkdir /FertilidadTotal
 hdfs dfs -mkdir /GastoEnSaludNoDelTotal
 hdfs dfs -mkdir /ExpectativaDeVida
+hdfs dfs -mkdir /TurismoEntrante
+hdfs dfs -mkdir /TurismoSaliente
+hdfs dfs -mkdir /GastoEnSalud
