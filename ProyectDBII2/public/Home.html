@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <title>Document</title>
+    
 </head>
 <body>
-    
+    <nav class="navbar" style="background: linear-gradient(to bottom right, #0096c7, #90e0ef);">
+        <div class="container-fluid">
+            <div class="d-flex flex-row justify-content-between">
+                <div style="margin-top: 0.1vw; margin-bottom: 0vw; margin-left: 0.5vw;">
+                    <p style="font-size:xx-large; color: white; font-weight:500;">MAD Statistics</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 d-flex flex-column justify-content-start" style="background-color: white; ">
+                <div class="d-flex flex-column" style="height: 40.2vw;">
+                    <div style="margin-left: 1vw; margin-top: 2vw; margin-right: 1vw;">
+                        <p style="color: black; font-size: larger; font-weight:bolder;">Tables</p>
+                        <select class="form-select" aria-label="Filters">
+                            <option selected>Open</option>
+                            <option value="1">Countries</option>
+                            <option value="2">Years</option>
+                        </select>
+                    </div>
+                    <div style="margin-left: 1vw; margin-top: 2vw; margin-right: 1vw;">
+                        <p style="color: black; font-size: larger; font-weight:bolder;">Filter</p>
+                        <select class="form-select" aria-label="Filters">
+                            <option selected>Open</option>
+                            <option value="1">Countries</option>
+                            <option value="2">Years</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-left: 1vw; margin-top: 2.5vw; margin-right: 1vw;">
+                        <button type="button" style="width: 13vw;" class="btn btn-outline-info">Select and onload</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-10">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
