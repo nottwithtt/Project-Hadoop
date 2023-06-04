@@ -317,6 +317,690 @@ async function getJob8(SubRegionSelected, genre, data){
     }
 }
 
+async function getJob9A(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job9A"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+
+    let paises = [];
+    let porcentajeMuertes = [];
+    
+    for (let i = 0; i < answer.length; i++) {
+        if (data == "2008" ){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Porcentaje);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeMuertes: porcentajeMuertes[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeMuertesOrdenados = listaCombinada.map(item => item.porcentajeMuertes);
+
+    if(data == "2008"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Percentage of deaths in ${data} of people between 30 and 70 for Cancer compared to the total.`,"bar");
+    }
+}
+
+async function getJob9B(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job9B"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeMuertes = [];
+    
+    for (let i = 0; i < answer.length; i++) {
+        if (data == "2008" ){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Porcentaje);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeMuertes: porcentajeMuertes[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeMuertesOrdenados = listaCombinada.map(item => item.porcentajeMuertes);
+
+    if(data == "2008"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Percentage of deaths in ${data} of people between 30 and 70 for Cardiovasular disease and diabetes compared to the total.`,"bar");
+    }
+}
+
+async function getJob9C(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job9C"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeMuertes = [];
+    
+    for (let i = 0; i < answer.length; i++) {
+        if (data == "2008" ){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Porcentaje);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeMuertes: porcentajeMuertes[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeMuertesOrdenados = listaCombinada.map(item => item.porcentajeMuertes);
+
+
+    if(data == "2008"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Percentage of deaths in ${data} of people between 30 and 70 for Chronic respiratory conditions compared to the total.`,"bar");
+    }
+}
+
+async function getJob10A(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job10A"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeMuertes = [];
+    
+    for (let i = 0; i < answer.length; i++) {
+        if (data == "PromedioMuertes"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].PromedioDeMuertes);
+        }
+        else if (data == "Max"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Max);
+        }
+        else if (data == "Min"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Min);
+        }
+        
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeMuertes: porcentajeMuertes[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeMuertesOrdenados = listaCombinada.map(item => item.porcentajeMuertes);
+
+
+    if(data == "PromedioMuertes"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Average number of deaths per country per reported causes.`,"bar");
+    }
+    else if(data == "Max"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Maximum number of deaths per country per reported causes.`,"bar");
+    }
+    else if(data == "Min"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Minimum number of deaths per country per reported causes.`,"bar");
+    }
+}
+
+async function getJob10B(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job10B"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeMuertes = [];
+    
+    for (let i = 0; i < answer.length; i++) {
+        if (data == "PromedioMuertes"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].PromedioDeMuertes);
+        }
+        else if (data == "Max"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Max);
+        }
+        else if (data == "Min"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Min);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeMuertes: porcentajeMuertes[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeMuertesOrdenados = listaCombinada.map(item => item.porcentajeMuertes);
+
+
+    if(data == "PromedioMuertes"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Average number of deaths per country per non-communication causes.`,"bar");
+    }
+    else if(data == "Max"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Maximum number of deaths per country per non-communication causes.`,"bar");
+    }
+    else if(data == "Min"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Minimum number of deaths per country per non-communication causes.`,"bar");
+    }
+}
+
+async function getJob10C(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job10C"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeMuertes = [];
+    
+    for (let i = 0; i < answer.length; i++) {
+        if (data == "PromedioMuertes"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].PromedioDeMuertes);
+        }
+        else if (data == "Max"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Max);
+        }
+        else if (data == "Min"){
+            paises.push(answer[i].Pais);
+            porcentajeMuertes.push(answer[i].Min);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeMuertes: porcentajeMuertes[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeMuertesOrdenados = listaCombinada.map(item => item.porcentajeMuertes);
+
+    if(data == "PromedioMuertes"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Average number of deaths per country per injuries.`,"bar");
+    }
+    else if(data == "Max"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Maximum number of deaths per country per injuries.`,"bar");
+    }
+    else if(data == "Min"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Minimum number of deaths per country per injuries.`,"bar");
+    }
+}
+
+async function getJob11(){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job11"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let diferenciaEdad = [];
+    
+    for (let i = 0; i < answer.length; i++){
+        paises.push(answer[i].Pais);
+        diferenciaEdad.push(answer[i].DiferenciaEdades);
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, diferenciaEdad: diferenciaEdad[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeMuertesOrdenados = listaCombinada.map(item => item.diferenciaEdad);
+
+    await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `The difference between the first year of measured average age by country and the last year measured by country.`,"bar");
+    
+}
+
+async function getJob12(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job12"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeEdad = [];
+    
+    for (let i = 0; i < answer.length; i++){
+        if (data == "2010s"){
+            paises.push(answer[i].Pais);
+            porcentajeEdad.push(answer[i].EdadPromedio);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeEdad: porcentajeEdad[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeMuertesOrdenados = listaCombinada.map(item => item.porcentajeEdad);
+
+
+    if (data == "2010s"){
+        await onloadeddata(paisesOrdenados, porcentajeMuertesOrdenados, `Average age by country by decade of 2010s.`,"bar");
+    }
+}
+
+async function getJob13(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job13"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let poblacion = [];
+    
+    for (let i = 0; i < answer.length; i++){
+        if (data == "1990s" && answer[i].Decada == "1990s"){
+            paises.push(answer[i].Pais);
+            poblacion.push(answer[i].Poblacion);
+        }
+        else if (data == "2000s" && answer[i].Decada == "2000s"){
+            paises.push(answer[i].Pais);
+            poblacion.push(answer[i].Poblacion);
+        }
+        else if (data == "2010s" && answer[i].Decada == "2010s"){
+            paises.push(answer[i].Pais);
+            poblacion.push(answer[i].Poblacion);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, poblacion: poblacion[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajePoblacionOrdenados = listaCombinada.map(item => item.poblacion);
+
+
+    await onloadeddata(paisesOrdenados, porcentajePoblacionOrdenados, `The amount of population per decade of the ${data}.`,"bar");
+}
+
+async function getJob14(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job14"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeFertilidad = [];
+    
+    for (let i = 0; i < answer.length; i++){
+        if (data == "1990s"){
+            paises.push(answer[i].Pais);
+            porcentajeFertilidad.push(answer[i]["1990s"]);
+        }
+        else if (data == "2000s"){
+            paises.push(answer[i].Pais);
+            porcentajeFertilidad.push(answer[i]["2000s"]);
+        }
+        else if (data == "2010s"){
+            paises.push(answer[i].Pais);
+            porcentajeFertilidad.push(answer[i]["2010s"]);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeFertilidad: porcentajeFertilidad[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajePoblacionOrdenados = listaCombinada.map(item => item.porcentajeFertilidad);
+    
+
+    await onloadeddata(paisesOrdenados, porcentajePoblacionOrdenados, `Adolescent fertility rate per 1000, by decade of the ${data} and country.`,"bar");
+}
+
+async function getJob15(quintil,decada){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job15"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeFertilidad = [];
+
+    for (let i = 0; i < answer.length; i++){
+        if (answer[i].Quintil == quintil){
+            paises.push(answer[i].Pais);
+            porcentajeFertilidad.push(answer[i][decada]);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeFertilidad: porcentajeFertilidad[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeFertilidadOrdenados = listaCombinada.map(item => item.porcentajeFertilidad);
+
+
+    await onloadeddata(paisesOrdenados,porcentajeFertilidadOrdenados, `Adolescent fertility rate per 1000, per economic quintile ${quintil} and per decade of ${decada}.`,"bar");
+}
+
+async function getJob16(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job16"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+    let porcentajeFatalidad = [];
+    let paises = [];
+
+    
+    for (let i = 0; i < answer.length; i++){
+        if (data == "1990s"){
+            porcentajeFatalidad.push(answer[i]["1990s"]);
+            paises.push(answer[i].Pais);
+        }
+        else if (data == "2000s"){
+            porcentajeFatalidad.push(answer[i]["2000s"]);
+            paises.push(answer[i].Pais);
+        }
+        else if (data == "2010s"){
+            porcentajeFatalidad.push(answer[i]["2010s"]);
+            paises.push(answer[i].Pais);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeFatalidad: porcentajeFatalidad[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeFatalidadOrdenados = listaCombinada.map(item => item.porcentajeFatalidad);
+
+
+    await onloadeddata(paisesOrdenados,porcentajeFatalidadOrdenados, `The percentage of child fatalities before the first year of life per 1000, by decade of ${data} and country.`,"bar");
+}
+
+async function getJob17(quintil,decada){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job17"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeFatalidad = [];
+
+    for (let i = 0; i < answer.length; i++){
+        if (answer[i].Quintil == quintil){
+            paises.push(answer[i].Pais);
+            porcentajeFatalidad.push(answer[i][decada]);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeFatalidad: porcentajeFatalidad[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeFatalidadOrdenados = listaCombinada.map(item => item.porcentajeFatalidad);
+
+
+    await onloadeddata(paisesOrdenados,porcentajeFatalidadOrdenados, `The percentage of infant fatalities before the first year of life per 1000, per economic quintile ${quintil}, country and decade of ${decada}`,"bar");
+}
+
+async function getJob18(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job18"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+
+    let paises = [];
+    let porcentajeFertilidad = [];
+
+    
+    for (let i = 0; i < answer.length; i++){
+        porcentajeFertilidad.push(answer[i][data]);
+        paises.push(answer[i].Pais);
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, porcentajeFertilidad: porcentajeFertilidad[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeFertilidadOrdenados = listaCombinada.map(item => item.porcentajeFertilidad);
+
+
+
+    await onloadeddata(paisesOrdenados,porcentajeFertilidadOrdenados, `Fertility rate per decade of ${data} by country.`,"bar");
+}
+
+async function getJob19(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job19"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+    let gastosTotales = [];
+    let paises = [];
+    
+    console.log(data);
+    for (let i = 0; i < answer.length; i++){
+        if(answer[i].Decada == data){
+            gastosTotales.push(answer[i].GastoEnSaludTotal);
+            paises.push(answer[i].Pais);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, gastosTotales: gastosTotales[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let gastosTotalesOrdenados = listaCombinada.map(item => item.gastosTotales);
+
+
+    await onloadeddata(paisesOrdenados,gastosTotalesOrdenados, `Total, spent on health care by country and decade of ${data}`,"bar");
+}
+
+async function getJob20(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job20"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+    let gastosTotales = [];
+    let paises = [];
+
+    
+    for (let i = 0; i < answer.length; i++){
+        if(answer[i].Decada == data){
+            gastosTotales.push(answer[i].PorcentajeGastadoEnSalud);
+            paises.push(answer[i].Pais);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, gastosTotales: gastosTotales[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let gastosTotalesOrdenados = listaCombinada.map(item => item.gastosTotales);
+
+
+    await onloadeddata(paisesOrdenados,gastosTotalesOrdenados, `Percentage spent on health by country and decade of ${data} of total government budget.`,"bar");
+}
+
+async function getJob21(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job21"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+    let expectativasDeVida = [];
+    let paises = [];
+
+    
+    for (let i = 0; i < answer.length; i++){
+        if(answer[i].Decada == data){
+            expectativasDeVida.push(answer[i].ExpectativaDeVidaTotal);
+            paises.push(answer[i].Pais);
+        }
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, expectativasDeVida: expectativasDeVida[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajePoblacionOrdenados = listaCombinada.map(item => item.expectativasDeVida);
+
+    await onloadeddata(paisesOrdenados,porcentajePoblacionOrdenados, `Life expectancy at birth by country and decade of ${data + 's'}.`,"bar");
+}
+
+async function getJob22(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job22"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+    let turistasTotal = [];
+    let paises = [];
+
+    
+    for (let i = 0; i < answer.length; i++){
+        turistasTotal.push(answer[i][data]);
+        paises.push(answer[i].Pais);
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, turistasTotal: turistasTotal[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeTuristasOrdenados = listaCombinada.map(item => item.turistasTotal);
+
+
+    await onloadeddata(paisesOrdenados,porcentajeTuristasOrdenados, `Total inbound tourists per country per decade of ${data}.`,"bar");
+}
+
+async function getJob23(data){
+    const response = await fetch('/getJob',{
+        method: "POST",
+        body: JSON.stringify({name: "Job23"}),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    let json = await response.json();
+    let answer = json.answer;
+    let turistasTotal = [];
+    let paises = [];
+
+    
+    for (let i = 0; i < answer.length; i++){
+        turistasTotal.push(answer[i][data]);
+        paises.push(answer[i].Pais);
+    }
+
+    let listaCombinada = paises.map((pais, index) => ({ pais, turistasTotal: turistasTotal[index] }));
+
+    listaCombinada.sort((a, b) => a.pais.localeCompare(b.pais));
+
+    let paisesOrdenados = listaCombinada.map(item => item.pais);
+    let porcentajeTuristasOrdenados = listaCombinada.map(item => item.turistasTotal);
+
+
+    await onloadeddata(paisesOrdenados,porcentajeTuristasOrdenados, `Total number of outbound tourists per decade of ${data}`,"bar");
+}
+
 function onloadeddata(list1, list2, name, typeChart){
     myChart.data.labels = [];
     myChart.data.datasets = [];
@@ -330,7 +1014,6 @@ function onloadeddata(list1, list2, name, typeChart){
     }];
     
     myChart.update();
-
 }
 
 function clickFilter(){
@@ -395,6 +1078,86 @@ function clickFilter(){
     else if (comboSelect.value == "1" && comboSelect2.value == "20" && comboSelect3.value != "0"){
         getJob8(comboSelect3.options[comboSelect3.value].text.split(" - ")[0].replace(/\s/g, ""),comboSelect3.options[comboSelect3.value].text.split(" - ")[1].replace(/\s/g, ""), "Min");
     }
+    else if (comboSelect.value == "2" && comboSelect2.value == "1"){
+        getJob9A("2008");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "2"){
+        getJob9B("2008");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "3"){
+        getJob9C("2008");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "4"){
+        getJob10A("PromedioMuertes");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "5"){
+        getJob10A("Max");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "6"){
+        getJob10A("Min");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "7"){
+        getJob10B("PromedioMuertes");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "8"){
+        getJob10B("Max");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "9"){
+        getJob10B("Min");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "10"){
+        getJob10C("PromedioMuertes");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "11"){
+        getJob10C("Max");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "12"){
+        getJob10C("Min");
+    }
+    else if (comboSelect.value == "2" && comboSelect2.value == "12"){
+        getJob10C("Min");
+    }
+    else if (comboSelect.value == "3" && comboSelect2.value == "1"){
+        getJob11();
+    }
+    else if (comboSelect.value == "3" && comboSelect2.value == "2" && comboSelect3.value == "1"){
+        getJob12("2010s");
+    }
+    else if (comboSelect.value == "4" && comboSelect2.value == "1" && comboSelect3.value != "0"){
+        getJob13((comboSelect3.options[comboSelect3.value].text));
+    }
+    else if (comboSelect.value == "5" && comboSelect2.value == "1" && comboSelect3.value != "0"){
+        getJob14((comboSelect3.options[comboSelect3.value].text));
+    }
+    else if (comboSelect.value == "5" && comboSelect2.value == "2" && comboSelect3.value != "0"){
+        getJob15(comboSelect3.options[comboSelect3.value].text.split(" - ")[0],comboSelect3.options[comboSelect3.value].text.split(" - ")[1]);
+    }
+    else if (comboSelect.value == "5" && comboSelect2.value == "3" && comboSelect3.value != "0"){
+        getJob18(comboSelect3.options[comboSelect3.value].text);
+    }    
+    else if (comboSelect.value == "6" && comboSelect2.value == "1" && comboSelect3.value != "0"){
+        getJob16(comboSelect3.options[comboSelect3.value].text);
+    }
+    else if (comboSelect.value == "6" && comboSelect2.value == "2" && comboSelect3.value != "0"){
+        getJob17(comboSelect3.options[comboSelect3.value].text.split(" - ")[0],comboSelect3.options[comboSelect3.value].text.split(" - ")[1]);
+    }
+    else if (comboSelect.value == "7" && comboSelect2.value == "1" && comboSelect3.value != "0"){
+        getJob19(comboSelect3.options[comboSelect3.value].text.slice(0,-1));
+    }
+    else if (comboSelect.value == "7" && comboSelect2.value == "2" && comboSelect3.value != "0"){
+        getJob20(comboSelect3.options[comboSelect3.value].text);
+    }
+    else if (comboSelect.value == "8" && comboSelect2.value == "1" && comboSelect3.value != "0"){
+        getJob21(comboSelect3.options[comboSelect3.value].text.slice(0,-1));
+    }
+    else if (comboSelect.value == "9" && comboSelect2.value == "1" && comboSelect3.value != "0"){
+        getJob22(comboSelect3.options[comboSelect3.value].text);
+    }
+    else if (comboSelect.value == "9" && comboSelect2.value == "2" && comboSelect3.value != "0"){
+        getJob23(comboSelect3.options[comboSelect3.value].text);
+    }
+
+
     
 }
 
@@ -497,13 +1260,124 @@ function onloadOptionsFilter(){
         <option value="34">WesternEurope - Male</option>
         `;
     }
+    else if(comboSelect.value == "2" && (comboSelect2.value == "1" || comboSelect2.value == "2" ||
+     comboSelect2.value == "3" || comboSelect2.value == "4" || comboSelect2.value == "5" ||
+     comboSelect2.value == "6" || comboSelect2.value == "7" || comboSelect2.value == "8" ||
+     comboSelect2.value == "9" || comboSelect2.value == "10" || comboSelect2.value == "11" ||
+     comboSelect2.value == "12")){
+        comboSelect3.innerHTML=``;
+    }
+    else if(comboSelect.value == "3" && (comboSelect2.value == "1")){
+        comboSelect3.innerHTML=``;
+    }
+    else if(comboSelect.value == "3" && (comboSelect2.value == "2")){
+        comboSelect3.innerHTML=``;
+        comboSelect3.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">2010s</option>]
+        `
+    }
+    else if(comboSelect.value == "4" && (comboSelect2.value == "1")){
+        comboSelect3.innerHTML=``;
+        comboSelect3.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">1990s</option>
+        <option value="2">2000s</option>
+        <option value="3">2010s</option>
+        `
+    }
+    else if(comboSelect.value == "5" && (comboSelect2.value == "1")){
+        comboSelect3.innerHTML=``;
+        comboSelect3.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">1990s</option>
+        <option value="2">2000s</option>
+        <option value="3">2010s</option>
+        `
+    }
+    else if(comboSelect.value == "5" && (comboSelect2.value == "2")){
+        comboSelect3.innerHTML=``;
+        comboSelect3.innerHTML= `<option selected value ="0">Select</option>
+        <option value="1">Q1(Poorest) - 1990s</option>
+        <option value="2">Q1(Poorest) - 2000s</option>
+        <option value="3">Q1(Poorest) - 2010s</option>
+        <option value="4">Q2 - 1990s</option>
+        <option value="5">Q2 - 2000s</option>
+        <option value="6">Q2 - 2010s</option>
+        <option value="7">Q3 - 1990s</option>
+        <option value="8">Q3 - 2000s</option>
+        <option value="9">Q3 - 2010s</option>
+        <option value="10">Q4 - 1990s</option>
+        <option value="11">Q4 - 2000s</option>
+        <option value="12">Q4 - 2010s</option>
+        <option value="13">Q5(Richest) - 1990s</option>
+        <option value="14">Q5(Richest) - 2000s</option>
+        <option value="15">Q5(Richest) - 2010s</option>
+        `
+    }
+    else if(comboSelect.value == "5" && (comboSelect2.value == "3")){
+        comboSelect3.innerHTML=``
+        comboSelect3.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">1990s</option>
+        <option value="2">2000s</option>
+        <option value="3">2010s</option>
+        `
+    }
+    else if(comboSelect.value == "6" && (comboSelect2.value == "1")){
+        comboSelect3.innerHTML=``
+        comboSelect3.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">1990s</option>
+        <option value="2">2000s</option>
+        <option value="3">2010s</option>
+        `
+    }
+    else if(comboSelect.value == "6" && (comboSelect2.value == "2")){
+        comboSelect3.innerHTML=``;
+        comboSelect3.innerHTML= `<option selected value ="0">Select</option>
+        <option value="1">Q1(Poorest) - 1990s</option>
+        <option value="2">Q1(Poorest) - 2000s</option>
+        <option value="3">Q1(Poorest) - 2010s</option>
+        <option value="4">Q2 - 1990s</option>
+        <option value="5">Q2 - 2000s</option>
+        <option value="6">Q2 - 2010s</option>
+        <option value="7">Q3 - 1990s</option>
+        <option value="8">Q3 - 2000s</option>
+        <option value="9">Q3 - 2010s</option>
+        <option value="10">Q4 - 1990s</option>
+        <option value="11">Q4 - 2000s</option>
+        <option value="12">Q4 - 2010s</option>
+        <option value="13">Q5(Richest) - 1990s</option>
+        <option value="14">Q5(Richest) - 2000s</option>
+        <option value="15">Q5(Richest) - 2010s</option>
+        `
+    }
+    else if(comboSelect.value == "7" && (comboSelect2.value == "1" || comboSelect2.value == "2")){
+        comboSelect3.innerHTML=``
+        comboSelect3.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">1990s</option>
+        <option value="2">2000s</option>
+        <option value="3">2010s</option>
+        `
+    }
+    else if(comboSelect.value == "8" && (comboSelect2.value == "1" )){
+        comboSelect3.innerHTML=``
+        comboSelect3.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">1990s</option>
+        <option value="2">2000s</option>
+        <option value="3">2010s</option>
+        `
+    }
+    else if(comboSelect.value == "9" && (comboSelect2.value == "1" || comboSelect2.value == "2")){
+        comboSelect3.innerHTML=``
+        comboSelect3.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">1990s</option>
+        <option value="2">2000s</option>
+        <option value="3">2010s</option>
+        `
+    }
     
 }
 
 function onloadOptions(){
-    console.log(comboSelect.value);
     if(comboSelect.value == "1"){
-
+        comboSelect2.innerHTML=``; 
         comboSelect2.innerHTML = `<option selected value ="0">Select</option>
         <option value="1">Average Number of Homicide Victims per Country</option>
         <option value="2">Average Number of Homicides per Region per Year</option>
@@ -528,23 +1402,64 @@ function onloadOptions(){
     }
     else if(comboSelect.value == "2"){
         comboSelect2.innerHTML=``; 
+        comboSelect2.innerHTML = `<option selected value ="0">Select</option>
+        <option value="1">Percentage of deaths of people between 30 and 70 for Cancer compared to the total</option>
+        <option value="2">Percentage of deaths of people between 30 and 70 for Cardiovasular disease and diabetes compared to the total</option>
+        <option value="3">Percentage of deaths of people between 30 and 70 for Chronic respiratory conditions compared to the total</option>
+        <option value="4">Average number of deaths per country per reported causes</option>
+        <option value="5">Maximum number of deaths per country per reported causes</option>
+        <option value="6">Minimum number of deaths per country per reported causes</option>
+        <option value="7">Average number of deaths per country per non-communication causes</option>
+        <option value="8">Maximum number of deaths per country per non-communication causes</option>
+        <option value="9">Minimum number of deaths per country per non-communication causes</option>
+        <option value="10">Average number of deaths per country per injuries</option>
+        <option value="11">Maximum number of deaths per country per injuries</option>
+        <option value="12">Minimum number of deaths per country per injuries</option>
+        `
     }
     else if(comboSelect.value == "3"){
         comboSelect2.innerHTML=``;
+        comboSelect2.innerHTML = `<option selected value ="0">Select</option>
+        <option value="1">The difference between the first year of measured average age by country and the last year measured by country</option>
+        <option value="2">Average age by country by decade</option>`;
+
     }
     else if(comboSelect.value == "4"){
         comboSelect2.innerHTML=``;
+        comboSelect2.innerHTML = `<option selected value ="0">Select</option>
+        <option value="1">The amount of population per decade</option>`;
     }
     else if(comboSelect.value == "5"){
         comboSelect2.innerHTML=``;
+        comboSelect2.innerHTML = `<option selected value ="0">Select</option>
+        <option value="1">Adolescent fertility rate per 1000, per decade of and country</option>
+        <option value="2">Adolescent fertility rate per 1,000, per economic quintile, country and decade</option>
+        <option value="3">Fertility rate per decade per country</option>
+        `;
     }
     else if(comboSelect.value == "6"){
         comboSelect2.innerHTML=``;
+        comboSelect2.innerHTML = `<option selected value ="0">Select</option>
+        <option value="1">The percentage of infant fatalities before the first year of life per 1000, per decade and country</option>
+        <option value="2">The percentage of infant fatalities before the first year of life per 1000, per economic quintile, country and decade</option>`;
     }
     else if(comboSelect.value == "7"){
         comboSelect2.innerHTML=``;
+        comboSelect2.innerHTML = `<option selected value ="0">Select</option>
+        <option value="1">Total, spent on health care by country and decade</option>
+        <option value="2">Percentage spent on health by country and decade of total government budget</option>
+        `;
     }
     else if(comboSelect.value == "8"){
         comboSelect2.innerHTML=``;
+        comboSelect2.innerHTML =`<option selected value ="0">Select</option>
+        <option value="1">Life expectancy at birth by country and decade</option>`;
+    }
+    else if(comboSelect.value == "9"){
+        comboSelect2.innerHTML=``;
+        comboSelect2.innerHTML=`<option selected value ="0">Select</option>
+        <option value="1">Total inbound tourists per country per decade</option>
+        <option value="2">Total number of outbound tourists per decade</option>
+        `;
     }
 }

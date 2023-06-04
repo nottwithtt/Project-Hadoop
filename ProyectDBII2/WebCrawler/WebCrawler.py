@@ -7,7 +7,7 @@ import time
 import csv
 
 driver = webdriver.Chrome()
-#driver.get("http://data.un.org/Explorer.aspx")
+driver.get("http://data.un.org/Explorer.aspx")
 
 time.sleep(10)
 
@@ -19,43 +19,31 @@ listWHOHealthSystem = []
 listWHOMortaAndHealth = []
 listTurist = []
 
-optionsWHO =[]
-
-
-'''
-['http://data.un.org/DocumentData.aspx?id=443', 'http://data.un.org/DocumentData.aspx?id=444']
-['http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_cancer', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_cdd', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_chronic', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_513', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_162', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_163']
-['http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_86', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_88']
-['http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aasfr1', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aimr', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3atfr']
-['http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_120', 'http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_149']
-['http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHOSIS_000001']
-['http://data.un.org/DocumentData.aspx?id=481', 'http://data.un.org/DocumentData.aspx?id=458']
-'''
-
 def links():
-    #getTableHomicide1()
-    #getTableHomicide2()
-    #getMediaAge()
-    #getAdolescentFertility()
-    #getInfantMortality()
-    #getTotalFertility()
-    #getExternalResources()
-    #getGeneralExpenditure()
-    #getlifeExpectancy()
-    #-------------
-    #getCancerData()
-    #getCardiovasularData()
-    #getChronicRespiratoryData()
-    #getCommunicableData()
-    #getInjuriesData()
-    #getNoncommunicableData()
-    #getAllCausesData()
+    getTableHomicide1()
+    getTableHomicide2()
+    getAllCausesData()
+    getCancerData()
+    getCardiovasularData()
+    getChronicRespiratoryData()
+    getCommunicableData()
+    getInjuriesData()
+    getNoncommunicableData()
+    getPopulationData()
+    getMediaAge()
+    getAdolescentFertility()
+    getInfantMortality()
+    getTotalFertility()
+    getGeneralExpenditurePercentage()
+    getGeneralExpenditure()
+    getlifeExpectancy()
+    getInboundTourism()
     getOutboundTourism()
     print("Exit")
 
 def getTableHomicide1():
     nombre = "homicide1.csv"
-    driver.get('http://data.un.org/DocumentData.aspx?id=443')
+    driver.get(listHomicideLinks[0])
     timeSleep(5)
 
     tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
@@ -86,7 +74,7 @@ def getTableHomicide1():
 
 def getTableHomicide2():
     nombre = "homicide2.csv"
-    driver.get('http://data.un.org/DocumentData.aspx?id=444')
+    driver.get(listHomicideLinks[1])
     timeSleep(5)
 
     tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
@@ -126,10 +114,9 @@ def getTableHomicide2():
 
     print("Archivo CSV creado exitosamente.")
 
-#http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_all
 def getAllCausesData():
     nombre = "allCauses.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_all')
+    driver.get(listWHOMortality[0])
     timeSleep(5)
 
     with open(nombre, "w", newline="") as archivo_csv:
@@ -169,7 +156,7 @@ def getAllCausesData():
 
 def getCancerData():
     nombre = "cancer.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_cancer')
+    driver.get(listWHOMortality[1])
     timeSleep(5)
 
     with open(nombre, "w", newline="") as archivo_csv:
@@ -209,7 +196,7 @@ def getCancerData():
 
 def getCardiovasularData():
     nombre = "cardiovasular.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_cdd')
+    driver.get(listWHOMortality[2])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -249,7 +236,7 @@ def getCardiovasularData():
 
 def getChronicRespiratoryData():
     nombre = "chronicRespiratory.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_3070_chronic')
+    driver.get(listWHOMortality[3])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -289,7 +276,7 @@ def getChronicRespiratoryData():
 
 def getCommunicableData():
     nombre = "communicable.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_513')
+    driver.get(listWHOMortality[4])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -329,7 +316,7 @@ def getCommunicableData():
 
 def getInjuriesData():
     nombre = "injuries.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_162')
+    driver.get(listWHOMortality[5])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -367,7 +354,7 @@ def getInjuriesData():
 
 def getNoncommunicableData():
     nombre = "noncommunicable.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS2_163')
+    driver.get(listWHOMortality[6])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -405,7 +392,7 @@ def getNoncommunicableData():
 
 def getPopulationData():
     nombre = "population.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_86')
+    driver.get(listWHODemoAndSocie[0])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -443,7 +430,7 @@ def getPopulationData():
 
 def getMediaAge():
     nombre = "mediaAge.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS9_88')
+    driver.get(listWHODemoAndSocie[1])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -481,7 +468,7 @@ def getMediaAge():
 
 def getAdolescentFertility():
     nombre = "adolescentFertility.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aasfr1')
+    driver.get(listWHOEquity[0])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -522,7 +509,7 @@ def getAdolescentFertility():
 
 def getInfantMortality():
     nombre = "infantMortality.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aimr')
+    driver.get(listWHOEquity[1])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -563,7 +550,7 @@ def getInfantMortality():
 
 def getTotalFertility():
     nombre = "totalFertility.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3atfr')
+    driver.get(listWHOEquity[2])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -604,7 +591,7 @@ def getTotalFertility():
 
 def getGeneralExpenditurePercentage():
     nombre = "generalExpenditurePercentage.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_113')
+    driver.get(listWHOHealthSystem[1])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -645,7 +632,7 @@ def getGeneralExpenditurePercentage():
 
 def getGeneralExpenditure():
     nombre = "generalExpenditure.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHS7_149')
+    driver.get(listWHOHealthSystem[0])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -686,7 +673,7 @@ def getGeneralExpenditure():
 
 def getlifeExpectancy():
     nombre = "lifeExpectancy.csv"
-    driver.get('http://data.un.org/Data.aspx?d=WHO&f=MEASURE_CODE%3aWHOSIS_000001')
+    driver.get(listWHOMortaAndHealth[0])
     timeSleep(5)
 
     with open(nombre, "w", newline="",encoding='utf-8') as archivo_csv:
@@ -727,7 +714,7 @@ def getlifeExpectancy():
 
 def getInboundTourism():
     nombre = "inboundTourism.csv"
-    driver.get('http://data.un.org/DocumentData.aspx?id=481')
+    driver.get(listTurist[0])
     timeSleep(20)
 
     tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
@@ -779,10 +766,9 @@ def getInboundTourism():
                     filaN = 0
     print("Archivo CSV creado exitosamente.")
 
-#'http://data.un.org/DocumentData.aspx?id=458'
 def getOutboundTourism():
     nombre = "outboundTourism.csv"
-    driver.get('http://data.un.org/DocumentData.aspx?id=458')
+    driver.get(listTurist[1])
     timeSleep(20)
 
     tableContent = driver.find_elements(By.TAG_NAME, 'tbody')[1]
@@ -863,7 +849,7 @@ def webCrawler():
 
     timeSleep(10)
 
-    HomicideLinks()
+    links()
 
     driver.quit()
 
@@ -908,7 +894,6 @@ def buttonsHomicide():
     return links
 
 
-#ygtvt164
 def buttonsWHOMortality():
 
     timeSleep(10)
@@ -923,15 +908,17 @@ def buttonsWHOMortality():
     clickButton(driver.find_element(By.ID,'ygtvt167').find_element(By.TAG_NAME, 'a'))
 
 
-    buttons = driver.find_element(By.ID,'ygtv167').find_elements(By.TAG_NAME,'a')[4:23]
+    buttons = driver.find_element(By.ID,'ygtv167').find_elements(By.TAG_NAME,'a')[:23]
 
-    buttons = buttons[::3]
+    buttons = buttons[3::3]
 
     links = [] 
 
     for e in buttons:
+        print(e.get_attribute("outerHTML"))
         links.append(e.get_attribute('href'))
 
+    print()
     return links
 
 def buttonsWHODemoAndSocie():
@@ -980,12 +967,14 @@ def buttonsWHOHealthSystem():
 
     links = [] 
 
-    i = 1
+    i = 0
     for e in buttons:
         if (i == 9 or i == 10):
+            print(e.get_attribute("outerHTML"))
             links.append(e.get_attribute('href'))
         i += 1
 
+    print()
     return links
 
 
@@ -1031,6 +1020,5 @@ def buttonsTurist():
     return links
 
 
-#webCrawler()
-links()
+webCrawler()
 

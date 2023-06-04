@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const multer = require("multer");
 const {GridFsStorage} = require('multer-gridfs-storage');
@@ -100,10 +101,15 @@ app.post("/getJob7",async (req,res)=>{
 })
 
 app.post("/getJob8",async (req,res)=>{
-    let job8 = await getJob('Job8');
-
-    
+    let job8 = await getJob('Job8');    
     res.json({"answer":job8});
+})
+
+app.post("/getJob",bodyParser.json(),async (req,res)=>{
+    let nameJob = req.body.name;
+    console.log(nameJob);
+    let job = await getJob(nameJob);    
+    res.json({"answer":job});
 })
 
 async function getJob(name){
